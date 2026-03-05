@@ -1,0 +1,281 @@
+[
+  {
+    "model": "CX-01",
+    "type": "CX",
+    "main_blade": "翔龍⬧蒼龍",
+    "assist_blade": "勇者⬧勇氣",
+    "ratchet": "6-60",
+    "bit_code": "V",
+    "bit_name": "Vortex"
+  },
+  {
+    "model": "CX-02",
+    "type": "CX",
+    "main_blade": "巫師⬧魔導",
+    "assist_blade": "弧光⬧至尊",
+    "ratchet": "4-55",
+    "bit_code": "LO",
+    "bit_name": "Low Orb"
+  },
+  {
+    "model": "CX-03",
+    "type": "CX",
+    "main_blade": "英仙",
+    "assist_blade": "幽暗⬧幽冥",
+    "ratchet": "6-80",
+    "bit_code": "W",
+    "bit_name": "Wedge"
+  },
+  {
+    "model": "CX-04",
+    "type": "CX",
+    "main_blade": "英仙",
+    "assist_blade": "幽暗⬧幽冥",
+    "ratchet": "6-80",
+    "bit_code": "W",
+    "bit_name": "Wedge"
+  },
+  {
+    "model": "CX-04",
+    "type": "CX",
+    "main_blade": "翔龍⬧蒼龍",
+    "assist_blade": "勇者⬧勇氣",
+    "ratchet": "6-60",
+    "bit_code": "V",
+    "bit_name": "Vortex"
+  },
+  {
+    "model": "CX-0501",
+    "type": "CX",
+    "main_blade": "煉獄⬧惡魔",
+    "assist_blade": "死神⬧獵魂",
+    "ratchet": "4-70",
+    "bit_code": "K",
+    "bit_name": "Kick"
+  },
+  {
+    "model": "CX-0502",
+    "type": "CX",
+    "main_blade": "犀牛⬧戰犀",
+    "assist_blade": "死神⬧獵魂",
+    "ratchet": "4-55",
+    "bit_code": "D",
+    "bit_name": "Dot"
+  },
+  {
+    "model": "CX-0503",
+    "type": "CX",
+    "main_blade": "煉獄⬧惡魔",
+    "assist_blade": "弧光⬧至尊",
+    "ratchet": "3-85",
+    "bit_code": "O",
+    "bit_name": "Orb"
+  },
+  {
+    "model": "CX-0504",
+    "type": "CX",
+    "main_blade": "獅王徽章⬧雄獅巔峰",
+    "assist_blade": "",
+    "ratchet": "9-80",
+    "bit_code": "K",
+    "bit_name": "Kick"
+  },
+  {
+    "model": "CX-0505",
+    "type": "CX",
+    "main_blade": "鳳凰炎舵⬧鳳凰尾翼",
+    "assist_blade": "",
+    "ratchet": "4-70",
+    "bit_code": "LF",
+    "bit_name": "Low Flat"
+  },
+  {
+    "model": "CX-0506",
+    "type": "CX",
+    "main_blade": "戰鯨波浪⬧巨鯨怒濤",
+    "assist_blade": "",
+    "ratchet": "7-60",
+    "bit_code": "K",
+    "bit_name": "Kick"
+  },
+  {
+    "model": "CX-0601",
+    "type": "CX",
+    "main_blade": "妖狐⬧極狐",
+    "assist_blade": "兇尾⬧九尾",
+    "ratchet": "9-70",
+    "bit_code": "GR",
+    "bit_name": "Gear Rush"
+  },
+  {
+    "model": "CX-0602",
+    "type": "CX",
+    "main_blade": "妖狐⬧極狐",
+    "assist_blade": "兇尾⬧九尾",
+    "ratchet": "0-80",
+    "bit_code": "DB",
+    "bit_name": "Disk Ball"
+  },
+  {
+    "model": "CX-0603",
+    "type": "CX",
+    "main_blade": "妖狐⬧極狐",
+    "assist_blade": "兇尾⬧九尾",
+    "ratchet": "2-60",
+    "bit_code": "U",
+    "bit_name": "Unite"
+  },
+  {
+    "model": "CX-07",
+    "type": "CX",
+    "main_blade": "天馬",
+    "assist_blade": "轟裂⬧爆擊",
+    "ratchet": "",
+    "bit_code": "Tr",
+    "bit_name": "Turbo"
+  },
+  {
+    "model": "CX-0801",
+    "type": "CX",
+    "main_blade": "地獄犬⬧魔犬",
+    "assist_blade": "烈焰",
+    "ratchet": "5-80",
+    "bit_code": "WB",
+    "bit_name": "Wall Ball"
+  },
+  {
+    "model": "CX-0802",
+    "type": "CX",
+    "main_blade": "戰鯨⬧巨鯨",
+    "assist_blade": "烈焰",
+    "ratchet": "3-85",
+    "bit_code": "HT",
+    "bit_name": "High Taper"
+  },
+  {
+    "model": "CX-0803",
+    "type": "CX",
+    "main_blade": "地獄犬⬧魔犬",
+    "assist_blade": "幽暗⬧幽冥",
+    "ratchet": "1-60",
+    "bit_code": "F",
+    "bit_name": "Flat"
+  },
+  {
+    "model": "CX-0804",
+    "type": "CX",
+    "main_blade": "翔龍破壞劍⬧蒼龍爆刃",
+    "assist_blade": "",
+    "ratchet": "5-80",
+    "bit_code": "MN",
+    "bit_name": "Metal Needle"
+  },
+  {
+    "model": "CX-0805",
+    "type": "CX",
+    "main_blade": "漆黑護殼⬧玄冥戰甲",
+    "assist_blade": "",
+    "ratchet": "7-70",
+    "bit_code": "WB",
+    "bit_name": "Wall Ball"
+  },
+  {
+    "model": "CX-0806",
+    "type": "CX",
+    "main_blade": "鈷藍青龍⬧蒼穹龍騎士",
+    "assist_blade": "",
+    "ratchet": "4-55",
+    "bit_code": "WB",
+    "bit_name": "Wall Ball"
+  },
+  {
+    "model": "CX-09",
+    "type": "CX",
+    "main_blade": "天陽⬧焰神",
+    "assist_blade": "光噬⬧滅世",
+    "ratchet": "5-70",
+    "bit_code": "TK",
+    "bit_name": "Trans Kick"
+  },
+  {
+    "model": "CX-10",
+    "type": "CX",
+    "main_blade": "戰狼⬧銀狼",
+    "assist_blade": "狩獵",
+    "ratchet": "0-60",
+    "bit_code": "DB",
+    "bit_name": "Disk Ball"
+  },
+  {
+    "model": "CX-11",
+    "type": "CX",
+    "main_blade": "帝皇",
+    "assist_blade": "霸權⬧威能",
+    "ratchet": "",
+    "bit_code": "Op",
+    "bit_name": "Operate"
+  },
+  {
+    "model": "CX-11",
+    "type": "CX",
+    "main_blade": "魔像巨石⬧魔像奇岩",
+    "assist_blade": "",
+    "ratchet": "M-85",
+    "bit_code": "HN",
+    "bit_name": "High Needle"
+  },
+  {
+    "model": "CX-11",
+    "type": "CX",
+    "main_blade": "烈鯊鰓刃⬧鮫鯊撕裂",
+    "assist_blade": "",
+    "ratchet": "5-60",
+    "bit_code": "FB",
+    "bit_name": "Free Ball"
+  },
+  {
+    "model": "CX-12",
+    "type": "CX",
+    "main_blade": "鳳凰",
+    "assist_blade": "炎光⬧閃焰",
+    "ratchet": "9-80",
+    "bit_code": "WW",
+    "bit_name": "Wall Wedge"
+  },
+  {
+    "model": "CX-13",
+    "type": "CX",
+    "main_blade": "Bahamut",
+    "assist_blade": "Blitz",
+    "ratchet": "1-50",
+    "bit_code": "I",
+    "bit_name": "Ignition"
+  },
+  {
+    "model": "CX-14",
+    "type": "CX",
+    "main_blade": "Knight",
+    "assist_blade": "Fortress",
+    "ratchet": "8-70",
+    "bit_code": "GN",
+    "bit_name": "Gear Needle"
+  },
+  {
+    "model": "CX-15",
+    "type": "CX",
+    "main_blade": "Ragna",
+    "assist_blade": "Rage",
+    "ratchet": "4-55",
+    "bit_code": "Y",
+    "bit_name": "Yielding"
+  },
+  {
+    "model": "CX-16",
+    "type": "CX",
+    "main_blade": "Bahamut",
+    "assist_blade": "Blitz",
+    "ratchet": "1-50",
+    "bit_code": "I",
+    "bit_name": "Ignition"
+  }
+]
