@@ -15,7 +15,8 @@
     "bit_code": "V",
     "bit_name_zh": "Vortex",
     "bit_name_en": "Vortex",
-    "bit_name_jp": "ボルテックス"
+    "bit_name_jp": "ボルテックス",
+    "data_get": ""
   },
   {
     "model": "CX-02",
@@ -33,7 +34,8 @@
     "bit_code": "LO",
     "bit_name_zh": "Low Orb",
     "bit_name_en": "Low Orb",
-    "bit_name_jp": "ローオーブ"
+    "bit_name_jp": "ローオーブ",
+    "data_get": ""
   },
   {
     "model": "CX-03",
@@ -51,7 +53,8 @@
     "bit_code": "W",
     "bit_name_zh": "Wedge",
     "bit_name_en": "Wedge",
-    "bit_name_jp": "ウェッジ"
+    "bit_name_jp": "ウェッジ",
+    "data_get": ""
   },
   {
     "model": "CX-04",
@@ -69,7 +72,8 @@
     "bit_code": "W",
     "bit_name_zh": "Wedge",
     "bit_name_en": "Wedge",
-    "bit_name_jp": "ウェッジ"
+    "bit_name_jp": "ウェッジ",
+    "data_get": ""
   },
   {
     "model": "CX-04",
@@ -87,7 +91,8 @@
     "bit_code": "V",
     "bit_name_zh": "Vortex",
     "bit_name_en": "Vortex",
-    "bit_name_jp": "ボルテックス"
+    "bit_name_jp": "ボルテックス",
+    "data_get": ""
   },
   {
     "model": "CX-0501",
@@ -105,7 +110,8 @@
     "bit_code": "K",
     "bit_name_zh": "Kick",
     "bit_name_en": "Kick",
-    "bit_name_jp": "キック"
+    "bit_name_jp": "キック",
+    "data_get": "×3"
   },
   {
     "model": "CX-0502",
@@ -123,7 +129,8 @@
     "bit_code": "D",
     "bit_name_zh": "Dot",
     "bit_name_en": "Dot",
-    "bit_name_jp": "ドット"
+    "bit_name_jp": "ドット",
+    "data_get": "×4"
   },
   {
     "model": "CX-0503",
@@ -141,7 +148,8 @@
     "bit_code": "O",
     "bit_name_zh": "Orb",
     "bit_name_en": "Orb",
-    "bit_name_jp": "オーブ"
+    "bit_name_jp": "オーブ",
+    "data_get": "×5"
   },
   {
     "model": "CX-0504",
@@ -159,7 +167,8 @@
     "bit_code": "K",
     "bit_name_zh": "Kick",
     "bit_name_en": "Kick",
-    "bit_name_jp": "キック"
+    "bit_name_jp": "キック",
+    "data_get": "×4"
   },
   {
     "model": "CX-0505",
@@ -177,7 +186,8 @@
     "bit_code": "LF",
     "bit_name_zh": "Low Flat",
     "bit_name_en": "Low Flat",
-    "bit_name_jp": "ローフラット"
+    "bit_name_jp": "ローフラット",
+    "data_get": "×4"
   },
   {
     "model": "CX-0506",
@@ -195,7 +205,8 @@
     "bit_code": "K",
     "bit_name_zh": "Kick",
     "bit_name_en": "Kick",
-    "bit_name_jp": "キック"
+    "bit_name_jp": "キック",
+    "data_get": "×4"
   },
   {
     "model": "CX-0601",
@@ -213,7 +224,8 @@
     "bit_code": "GR",
     "bit_name_zh": "Gear Rush",
     "bit_name_en": "Gear Rush",
-    "bit_name_jp": "ギアラッシュ"
+    "bit_name_jp": "ギアラッシュ",
+    "data_get": "×8"
   },
   {
     "model": "CX-0602",
@@ -231,7 +243,8 @@
     "bit_code": "DB",
     "bit_name_zh": "Disk Ball",
     "bit_name_en": "Disk Ball",
-    "bit_name_jp": "ディスクボール"
+    "bit_name_jp": "ディスクボール",
+    "data_get": "×8"
   },
   {
     "model": "CX-0603",
@@ -249,7 +262,8 @@
     "bit_code": "U",
     "bit_name_zh": "Unite",
     "bit_name_en": "Unite",
-    "bit_name_jp": "ユナイト"
+    "bit_name_jp": "ユナイト",
+    "data_get": "×8"
   },
   {
     "model": "CX-07",
@@ -267,7 +281,8 @@
     "bit_code": "Tr",
     "bit_name_zh": "Turbo",
     "bit_name_en": "Turbo",
-    "bit_name_jp": "ターボ"
+    "bit_name_jp": "ターボ",
+    "data_get": ""
   },
   {
     "model": "CX-0801",
@@ -285,7 +300,8 @@
     "bit_code": "WB",
     "bit_name_zh": "Wall Ball",
     "bit_name_en": "Wall Ball",
-    "bit_name_jp": "ウォールボール"
+    "bit_name_jp": "ウォールボール",
+    "data_get": "×3"
   },
   {
     "model": "CX-0802",
@@ -303,7 +319,8 @@
     "bit_code": "HT",
     "bit_name_zh": "High Taper",
     "bit_name_en": "High Taper",
-    "bit_name_jp": "ハイテーパー"
+    "bit_name_jp": "ハイテーパー",
+    "data_get": "×4"
   },
   {
     "model": "CX-0803",
@@ -321,7 +338,8 @@
     "bit_code": "F",
     "bit_name_zh": "Flat",
     "bit_name_en": "Flat",
-    "bit_name_jp": "フラット"
+    "bit_name_jp": "フラット",
+    "data_get": "×5"
   },
   {
     "model": "CX-0804",
@@ -339,7 +357,8 @@
     "bit_code": "MN",
     "bit_name_zh": "Metal Needle",
     "bit_name_en": "Metal Needle",
-    "bit_name_jp": "メタルニードル"
+    "bit_name_jp": "メタルニードル",
+    "data_get": "×4"
   },
   {
     "model": "CX-0805",
@@ -357,7 +376,8 @@
     "bit_code": "WB",
     "bit_name_zh": "Wall Ball",
     "bit_name_en": "Wall Ball",
-    "bit_name_jp": "ウォールボール"
+    "bit_name_jp": "ウォールボール",
+    "data_get": "×4"
   },
   {
     "model": "CX-0806",
@@ -375,7 +395,8 @@
     "bit_code": "WB",
     "bit_name_zh": "Wall Ball",
     "bit_name_en": "Wall Ball",
-    "bit_name_jp": "ウォールボール"
+    "bit_name_jp": "ウォールボール",
+    "data_get": "×4"
   },
   {
     "model": "CX-09",
@@ -393,7 +414,8 @@
     "bit_code": "TK",
     "bit_name_zh": "Trans Kick",
     "bit_name_en": "Trans Kick",
-    "bit_name_jp": "トランスキック"
+    "bit_name_jp": "トランスキック",
+    "data_get": ""
   },
   {
     "model": "CX-10",
@@ -411,7 +433,8 @@
     "bit_code": "DB",
     "bit_name_zh": "Disk Ball",
     "bit_name_en": "Disk Ball",
-    "bit_name_jp": "ディスクボール"
+    "bit_name_jp": "ディスクボール",
+    "data_get": ""
   },
   {
     "model": "CX-11",
@@ -429,7 +452,8 @@
     "bit_code": "Op",
     "bit_name_zh": "Operate",
     "bit_name_en": "Operate",
-    "bit_name_jp": "オペレート"
+    "bit_name_jp": "オペレート",
+    "data_get": ""
   },
   {
     "model": "CX-11",
@@ -447,7 +471,8 @@
     "bit_code": "HN",
     "bit_name_zh": "High Needle",
     "bit_name_en": "High Needle",
-    "bit_name_jp": "ハイニードル"
+    "bit_name_jp": "ハイニードル",
+    "data_get": ""
   },
   {
     "model": "CX-11",
@@ -465,7 +490,8 @@
     "bit_code": "FB",
     "bit_name_zh": "Free Ball",
     "bit_name_en": "Free Ball",
-    "bit_name_jp": "フリーボール"
+    "bit_name_jp": "フリーボール",
+    "data_get": ""
   },
   {
     "model": "CX-12",
@@ -483,7 +509,8 @@
     "bit_code": "WW",
     "bit_name_zh": "Wall Wedge",
     "bit_name_en": "Wall Wedge",
-    "bit_name_jp": "ウォールウェッジ"
+    "bit_name_jp": "ウォールウェッジ",
+    "data_get": ""
   },
   {
     "model": "CX-13",
@@ -504,7 +531,8 @@
     "bit_code": "I",
     "bit_name_zh": "Ignition",
     "bit_name_en": "Ignition",
-    "bit_name_jp": "イグニッション"
+    "bit_name_jp": "イグニッション",
+    "data_get": ""
   },
   {
     "model": "CX-14",
@@ -525,7 +553,8 @@
     "bit_code": "GN",
     "bit_name_zh": "Gear Needle",
     "bit_name_en": "Gear Needle",
-    "bit_name_jp": "ギアニードル"
+    "bit_name_jp": "ギアニードル",
+    "data_get": ""
   },
   {
     "model": "CX-15",
@@ -546,7 +575,8 @@
     "bit_code": "Y",
     "bit_name_zh": "Yielding",
     "bit_name_en": "Yielding",
-    "bit_name_jp": "イールディング"
+    "bit_name_jp": "イールディング",
+    "data_get": ""
   },
   {
     "model": "CX-16",
@@ -567,7 +597,8 @@
     "bit_code": "I",
     "bit_name_zh": "Ignition",
     "bit_name_en": "Ignition",
-    "bit_name_jp": "イグニッション"
+    "bit_name_jp": "イグニッション",
+    "data_get": ""
   },
   {
     "model": "BX-01",
@@ -579,7 +610,8 @@
     "bit_code": "F",
     "bit_name_zh": "Flat",
     "bit_name_en": "Flat",
-    "bit_name_jp": "フラット"
+    "bit_name_jp": "フラット",
+    "data_get": ""
   },
   {
     "model": "BX-02",
@@ -591,7 +623,8 @@
     "bit_code": "T",
     "bit_name_zh": "Taper",
     "bit_name_en": "Taper",
-    "bit_name_jp": "テーパー"
+    "bit_name_jp": "テーパー",
+    "data_get": ""
   },
   {
     "model": "BX-03",
@@ -603,7 +636,8 @@
     "bit_code": "B",
     "bit_name_zh": "Ball",
     "bit_name_en": "Ball",
-    "bit_name_jp": "ボール"
+    "bit_name_jp": "ボール",
+    "data_get": ""
   },
   {
     "model": "BX-04",
@@ -615,7 +649,8 @@
     "bit_code": "N",
     "bit_name_zh": "Needle",
     "bit_name_en": "Needle",
-    "bit_name_jp": "ニードル"
+    "bit_name_jp": "ニードル",
+    "data_get": ""
   },
   {
     "model": "BX-05",
@@ -627,7 +662,8 @@
     "bit_code": "B",
     "bit_name_zh": "Ball",
     "bit_name_en": "Ball",
-    "bit_name_jp": "ボール"
+    "bit_name_jp": "ボール",
+    "data_get": ""
   },
   {
     "model": "BX-06",
@@ -639,7 +675,8 @@
     "bit_code": "N",
     "bit_name_zh": "Needle",
     "bit_name_en": "Needle",
-    "bit_name_jp": "ニードル"
+    "bit_name_jp": "ニードル",
+    "data_get": ""
   },
   {
     "model": "BX-07",
@@ -651,7 +688,8 @@
     "bit_code": "F",
     "bit_name_zh": "Flat",
     "bit_name_en": "Flat",
-    "bit_name_jp": "フラット"
+    "bit_name_jp": "フラット",
+    "data_get": ""
   },
   {
     "model": "BX-08",
@@ -663,7 +701,8 @@
     "bit_code": "T",
     "bit_name_zh": "Taper",
     "bit_name_en": "Taper",
-    "bit_name_jp": "テーパー"
+    "bit_name_jp": "テーパー",
+    "data_get": ""
   },
   {
     "model": "BX-08",
@@ -675,7 +714,8 @@
     "bit_code": "N",
     "bit_name_zh": "Needle",
     "bit_name_en": "Needle",
-    "bit_name_jp": "ニードル"
+    "bit_name_jp": "ニードル",
+    "data_get": ""
   },
   {
     "model": "BX-08",
@@ -687,7 +727,8 @@
     "bit_code": "B",
     "bit_name_zh": "Ball",
     "bit_name_en": "Ball",
-    "bit_name_jp": "ボール"
+    "bit_name_jp": "ボール",
+    "data_get": ""
   },
   {
     "model": "BX-13",
@@ -699,7 +740,8 @@
     "bit_code": "HN",
     "bit_name_zh": "High Needle",
     "bit_name_en": "High Needle",
-    "bit_name_jp": "ハイニードル"
+    "bit_name_jp": "ハイニードル",
+    "data_get": ""
   },
   {
     "model": "BX-1401",
@@ -711,7 +753,8 @@
     "bit_code": "LF",
     "bit_name_zh": "Low Flat",
     "bit_name_en": "Low Flat",
-    "bit_name_jp": "ローフラット"
+    "bit_name_jp": "ローフラット",
+    "data_get": "×3"
   },
   {
     "model": "BX-1402",
@@ -723,7 +766,8 @@
     "bit_code": "N",
     "bit_name_zh": "Needle",
     "bit_name_en": "Needle",
-    "bit_name_jp": "ニードル"
+    "bit_name_jp": "ニードル",
+    "data_get": "×3"
   },
   {
     "model": "BX-1403",
@@ -735,7 +779,8 @@
     "bit_code": "B",
     "bit_name_zh": "Ball",
     "bit_name_en": "Ball",
-    "bit_name_jp": "ボール"
+    "bit_name_jp": "ボール",
+    "data_get": "×5"
   },
   {
     "model": "BX-1404",
@@ -747,7 +792,8 @@
     "bit_code": "LF",
     "bit_name_zh": "Low Flat",
     "bit_name_en": "Low Flat",
-    "bit_name_jp": "ローフラット"
+    "bit_name_jp": "ローフラット",
+    "data_get": "×4"
   },
   {
     "model": "BX-1405",
@@ -759,7 +805,8 @@
     "bit_code": "LF",
     "bit_name_zh": "Low Flat",
     "bit_name_en": "Low Flat",
-    "bit_name_jp": "ローフラット"
+    "bit_name_jp": "ローフラット",
+    "data_get": "×4"
   },
   {
     "model": "BX-1406",
@@ -771,7 +818,8 @@
     "bit_code": "T",
     "bit_name_zh": "Taper",
     "bit_name_en": "Taper",
-    "bit_name_jp": "テーパー"
+    "bit_name_jp": "テーパー",
+    "data_get": ""
   },
   {
     "model": "BX-15",
@@ -783,7 +831,8 @@
     "bit_code": "P",
     "bit_name_zh": "Point",
     "bit_name_en": "Point",
-    "bit_name_jp": "ポイント"
+    "bit_name_jp": "ポイント",
+    "data_get": "A"
   },
   {
     "model": "BX-1601",
@@ -795,7 +844,8 @@
     "bit_code": "O",
     "bit_name_zh": "Orb",
     "bit_name_en": "Orb",
-    "bit_name_jp": "オーブ"
+    "bit_name_jp": "オーブ",
+    "data_get": "×8"
   },
   {
     "model": "BX-1602",
@@ -807,7 +857,8 @@
     "bit_code": "F",
     "bit_name_zh": "Flat",
     "bit_name_en": "Flat",
-    "bit_name_jp": "フラット"
+    "bit_name_jp": "フラット",
+    "data_get": "×8"
   },
   {
     "model": "BX-1603",
@@ -819,7 +870,8 @@
     "bit_code": "HN",
     "bit_name_zh": "High Needle",
     "bit_name_en": "High Needle",
-    "bit_name_jp": "ハイニードル"
+    "bit_name_jp": "ハイニードル",
+    "data_get": "×8"
   },
   {
     "model": "BX-17",
@@ -828,4 +880,2166 @@
     "name_en": "Dran Sword",
     "name_jp": "ドランソード",
     "ratchet": "3-60",
-    "bit_code":
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BX-17",
+    "type": "BX",
+    "name_zh": "巫師弩箭⬧魔導幻箭",
+    "name_en": "Wizard Arrow",
+    "name_jp": "ウィザードアロー",
+    "ratchet": "4-80",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "BX-19",
+    "type": "BX",
+    "name_zh": "犀牛號角⬧戰犀號角",
+    "name_en": "Rhino Horn",
+    "name_jp": "ライノホーン",
+    "ratchet": "3-80",
+    "bit_code": "S",
+    "bit_name_zh": "Spike",
+    "bit_name_en": "Spike",
+    "bit_name_jp": "スパイク",
+    "data_get": ""
+  },
+  {
+    "model": "BX-20",
+    "type": "BX",
+    "name_zh": "翔龍雙刃⬧蒼龍利刃",
+    "name_en": "Dran Dagger",
+    "name_jp": "ドランダガー",
+    "ratchet": "4-60",
+    "bit_code": "R",
+    "bit_name_zh": "Rush",
+    "bit_name_en": "Rush",
+    "bit_name_jp": "ラッシュ",
+    "data_get": ""
+  },
+  {
+    "model": "BX-20",
+    "type": "BX",
+    "name_zh": "烈鯊利刃⬧鮫鯊鋒鰭",
+    "name_en": "Shark Edge",
+    "name_jp": "シャークエッジ",
+    "ratchet": "3-80",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BX-20",
+    "type": "BX",
+    "name_zh": "騎士護盾⬧騎士重盾",
+    "name_en": "Knight Shield",
+    "name_jp": "ナイトシールド",
+    "ratchet": "5-80",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": ""
+  },
+  {
+    "model": "BX-21",
+    "type": "BX",
+    "name_zh": "煉獄鎖鏈⬧惡魔鎖鏈",
+    "name_en": "Hells Chain",
+    "name_jp": "ヘルズチェイン",
+    "ratchet": "5-60",
+    "bit_code": "HT",
+    "bit_name_zh": "High Taper",
+    "bit_name_en": "High Taper",
+    "bit_name_jp": "ハイテーパー",
+    "data_get": "A"
+  },
+  {
+    "model": "BX-21",
+    "type": "BX",
+    "name_zh": "騎士長槍",
+    "name_en": "Knight Lance",
+    "name_jp": "ナイトランス",
+    "ratchet": "3-60",
+    "bit_code": "LF",
+    "bit_name_zh": "Low Flat",
+    "bit_name_en": "Low Flat",
+    "bit_name_jp": "ローフラット",
+    "data_get": ""
+  },
+  {
+    "model": "BX-21",
+    "type": "BX",
+    "name_zh": "巫師弩箭⬧魔導幻箭",
+    "name_en": "Wizard Arrow",
+    "name_jp": "ウィザードアロー",
+    "ratchet": "4-80",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BX-22",
+    "type": "BX",
+    "name_zh": "翔龍神劍⬧蒼龍神劍",
+    "name_en": "Dran Sword",
+    "name_jp": "ドランソード",
+    "ratchet": "3-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BX-23",
+    "type": "BX",
+    "name_zh": "鳳凰飛翼",
+    "name_en": "Phoenix Wing",
+    "name_jp": "フェニックスウイング",
+    "ratchet": "9-60",
+    "bit_code": "GF",
+    "bit_name_zh": "Gear Flat",
+    "bit_name_en": "Gear Flat",
+    "bit_name_jp": "ギアフラット",
+    "data_get": ""
+  },
+  {
+    "model": "BX-2401",
+    "type": "BX",
+    "name_zh": "飛龍狂風⬧飛龍旋翼",
+    "name_en": "Wyvern Gale",
+    "name_jp": "ワイバーンゲイル",
+    "ratchet": "5-80",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": "×3"
+  },
+  {
+    "model": "BX-2402",
+    "type": "BX",
+    "name_zh": "飛龍狂風⬧飛龍旋翼",
+    "name_en": "Wyvern Gale",
+    "name_jp": "ワイバーンゲイル",
+    "ratchet": "3-60",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": "×3"
+  },
+  {
+    "model": "BX-2403",
+    "type": "BX",
+    "name_zh": "騎士長槍",
+    "name_en": "Knight Lance",
+    "name_jp": "ナイトランス",
+    "ratchet": "4-60",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-2404",
+    "type": "BX",
+    "name_zh": "毒蛇靈尾⬧王蛇鞭尾",
+    "name_en": "Viper Tail",
+    "name_jp": "ヴァイパーテイル",
+    "ratchet": "5-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": "×4"
+  },
+  {
+    "model": "BX-2405",
+    "type": "BX",
+    "name_zh": "獅王鋭爪⬧雄獅獵爪",
+    "name_en": "Leon Claw",
+    "name_jp": "レオンクロー",
+    "ratchet": "3-80",
+    "bit_code": "HN",
+    "bit_name_zh": "High Needle",
+    "bit_name_en": "High Needle",
+    "bit_name_jp": "ハイニードル",
+    "data_get": "×4"
+  },
+  {
+    "model": "BX-2406",
+    "type": "BX",
+    "name_zh": "巫師弩箭⬧魔導幻箭",
+    "name_en": "Wizard Arrow",
+    "name_jp": "ウィザードアロー",
+    "ratchet": "4-80",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": ""
+  },
+  {
+    "model": "BX-26",
+    "type": "BX",
+    "name_zh": "獨角幻刺⬧獨角刺心",
+    "name_en": "Unicorn Sting",
+    "name_jp": "ユニコーンスティング",
+    "ratchet": "5-60",
+    "bit_code": "GP",
+    "bit_name_zh": "Gear Point",
+    "bit_name_en": "Gear Point",
+    "bit_name_jp": "ギアポイント",
+    "data_get": ""
+  },
+  {
+    "model": "BX-2701",
+    "type": "BX",
+    "name_zh": "史芬克斯斗篷⬧幻神護甲",
+    "name_en": "Sphinx Cowl",
+    "name_jp": "スフィンクスカウル",
+    "ratchet": "9-80",
+    "bit_code": "GN",
+    "bit_name_zh": "Gear Needle",
+    "bit_name_en": "Gear Needle",
+    "bit_name_jp": "ギアニードル",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-2702",
+    "type": "BX",
+    "name_zh": "史芬克斯斗篷⬧幻神護甲",
+    "name_en": "Sphinx Cowl",
+    "name_jp": "スフィンクスカウル",
+    "ratchet": "4-80",
+    "bit_code": "HT",
+    "bit_name_zh": "High Taper",
+    "bit_name_en": "High Taper",
+    "bit_name_jp": "ハイテーパー",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-2703",
+    "type": "BX",
+    "name_zh": "史芬克斯斗篷⬧幻神護甲",
+    "name_en": "Sphinx Cowl",
+    "name_jp": "スフィンクスカウル",
+    "ratchet": "5-60",
+    "bit_code": "O",
+    "bit_name_zh": "Orb",
+    "bit_name_en": "Orb",
+    "bit_name_jp": "オーブ",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-3101",
+    "type": "BX",
+    "name_zh": "暴龍節拍⬧暴龍霸擊",
+    "name_en": "Tyranno Beat",
+    "name_jp": "ティラノビート",
+    "ratchet": "4-70",
+    "bit_code": "Q",
+    "bit_name_zh": "Quake",
+    "bit_name_en": "Quake",
+    "bit_name_jp": "クエイク",
+    "data_get": "×3"
+  },
+  {
+    "model": "BX-3102",
+    "type": "BX",
+    "name_zh": "暴龍節拍⬧暴龍霸擊",
+    "name_en": "Tyranno Beat",
+    "name_jp": "ティラノビート",
+    "ratchet": "3-60",
+    "bit_code": "S",
+    "bit_name_zh": "Spike",
+    "bit_name_en": "Spike",
+    "bit_name_jp": "スパイク",
+    "data_get": "×3"
+  },
+  {
+    "model": "BX-3103",
+    "type": "BX",
+    "name_zh": "煉獄鎖鏈⬧惡魔鎖鏈",
+    "name_en": "Hells Chain",
+    "name_jp": "ヘルズチェイン",
+    "ratchet": "9-80",
+    "bit_code": "O",
+    "bit_name_zh": "Orb",
+    "bit_name_en": "Orb",
+    "bit_name_jp": "オーブ",
+    "data_get": "×4"
+  },
+  {
+    "model": "BX-3104",
+    "type": "BX",
+    "name_zh": "翔龍雙刃⬧蒼龍利刃",
+    "name_en": "Dran Dagger",
+    "name_jp": "ドランダガー",
+    "ratchet": "4-70",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": "×4"
+  },
+  {
+    "model": "BX-3105",
+    "type": "BX",
+    "name_zh": "烈鯊利刃⬧鮫鯊鋒鰭",
+    "name_en": "Shark Edge",
+    "name_jp": "シャークエッジ",
+    "ratchet": "1-60",
+    "bit_code": "Q",
+    "bit_name_zh": "Quake",
+    "bit_name_en": "Quake",
+    "bit_name_jp": "クエイク",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-3106",
+    "type": "BX",
+    "name_zh": "犀牛號角⬧戰犀號角",
+    "name_en": "Rhino Horn",
+    "name_jp": "ライノホーン",
+    "ratchet": "5-80",
+    "bit_code": "Q",
+    "bit_name_zh": "Quake",
+    "bit_name_en": "Quake",
+    "bit_name_jp": "クエイク",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-33",
+    "type": "BX",
+    "name_zh": "純白猛虎⬧皓戰猛虎",
+    "name_en": "Weiss Tiger",
+    "name_jp": "ヴァイスタイガー",
+    "ratchet": "3-60",
+    "bit_code": "U",
+    "bit_name_zh": "Unite",
+    "bit_name_en": "Unite",
+    "bit_name_jp": "ユナイト",
+    "data_get": ""
+  },
+  {
+    "model": "BX-34",
+    "type": "BX",
+    "name_zh": "鈷藍青龍⬧蒼穹龍騎士",
+    "name_en": "Cobalt Dragoon",
+    "name_jp": "コバルトドラグーン",
+    "ratchet": "2-60",
+    "bit_code": "C",
+    "bit_name_zh": "Cyclone",
+    "bit_name_en": "Cyclone",
+    "bit_name_jp": "サイクロン",
+    "data_get": ""
+  },
+  {
+    "model": "BX-3501",
+    "type": "BX",
+    "name_zh": "漆黑護殼⬧玄冥戰甲",
+    "name_en": "Black Shell",
+    "name_jp": "ブラックシェル",
+    "ratchet": "4-60",
+    "bit_code": "D",
+    "bit_name_zh": "Dot",
+    "bit_name_en": "Dot",
+    "bit_name_jp": "ドット",
+    "data_get": "×3"
+  },
+  {
+    "model": "BX-3502",
+    "type": "BX",
+    "name_zh": "漆黑護殼⬧玄冥戰甲",
+    "name_en": "Black Shell",
+    "name_jp": "ブラックシェル",
+    "ratchet": "9-80",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": "×3"
+  },
+  {
+    "model": "BX-3503",
+    "type": "BX",
+    "name_zh": "獨角幻刺⬧獨角刺心",
+    "name_en": "Unicorn Sting",
+    "name_jp": "ユニコーンスティング",
+    "ratchet": "3-70",
+    "bit_code": "D",
+    "bit_name_zh": "Dot",
+    "bit_name_en": "Dot",
+    "bit_name_jp": "ドット",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-3504",
+    "type": "BX",
+    "name_zh": "巫師幻杖⬧魔導神杖",
+    "name_en": "Wizard Rod",
+    "name_jp": "ウィザードロッド",
+    "ratchet": "1-60",
+    "bit_code": "R",
+    "bit_name_zh": "Rush",
+    "bit_name_en": "Rush",
+    "bit_name_jp": "ラッシュ",
+    "data_get": ""
+  },
+  {
+    "model": "BX-3505",
+    "type": "BX",
+    "name_zh": "鳳凰飛翼",
+    "name_en": "Phoenix Wing",
+    "name_jp": "フェニックスウイング",
+    "ratchet": "5-80",
+    "bit_code": "H",
+    "bit_name_zh": "Hexa",
+    "bit_name_en": "Hexa",
+    "bit_name_jp": "ヘキサ",
+    "data_get": "×4"
+  },
+  {
+    "model": "BX-3506",
+    "type": "BX",
+    "name_zh": "毒蛇靈尾⬧王蛇鞭尾",
+    "name_en": "Viper Tail",
+    "name_jp": "ヴァイパーテイル",
+    "ratchet": "5-70",
+    "bit_code": "D",
+    "bit_name_zh": "Dot",
+    "bit_name_en": "Dot",
+    "bit_name_jp": "ドット",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-3601",
+    "type": "BX",
+    "name_zh": "戰鯨波浪⬧巨鯨怒濤",
+    "name_en": "Whale Wave",
+    "name_jp": "ホエールウェーブ",
+    "ratchet": "5-80",
+    "bit_code": "E",
+    "bit_name_zh": "Elevate",
+    "bit_name_en": "Elevate",
+    "bit_name_jp": "エレベート",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-3602",
+    "type": "BX",
+    "name_zh": "戰鯨波浪⬧巨鯨怒濤",
+    "name_en": "Whale Wave",
+    "name_jp": "ホエールウェーブ",
+    "ratchet": "4-70",
+    "bit_code": "HN",
+    "bit_name_zh": "High Needle",
+    "bit_name_en": "High Needle",
+    "bit_name_jp": "ハイニードル",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-3603",
+    "type": "BX",
+    "name_zh": "戰鯨波浪⬧巨鯨怒濤",
+    "name_en": "Whale Wave",
+    "name_jp": "ホエールウェーブ",
+    "ratchet": "3-80",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-37",
+    "type": "BX",
+    "name_zh": "狂熊鋭爪⬧悍熊猛爪",
+    "name_en": "Bear Scratch",
+    "name_jp": "ベアスクラッチ",
+    "ratchet": "5-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BX-38",
+    "type": "BX",
+    "name_zh": "緋紅迦樓羅⬧赫燃天鳳",
+    "name_en": "Crimson Garuda",
+    "name_jp": "クリムゾンガルーダ",
+    "ratchet": "4-70",
+    "bit_code": "TP",
+    "bit_name_zh": "Trans Point",
+    "bit_name_en": "Trans Point",
+    "bit_name_jp": "トランスポイント",
+    "data_get": ""
+  },
+  {
+    "model": "BX-3901",
+    "type": "BX",
+    "name_zh": "神護魔龍⬧護城龍神",
+    "name_en": "Shelter Drake",
+    "name_jp": "シェルタードレイク",
+    "ratchet": "7-80",
+    "bit_code": "GP",
+    "bit_name_zh": "Gear Point",
+    "bit_name_en": "Gear Point",
+    "bit_name_jp": "ギアポイント",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-3902",
+    "type": "BX",
+    "name_zh": "神護魔龍⬧護城龍神",
+    "name_en": "Shelter Drake",
+    "name_jp": "シェルタードレイク",
+    "ratchet": "5-70",
+    "bit_code": "O",
+    "bit_name_zh": "Orb",
+    "bit_name_en": "Orb",
+    "bit_name_jp": "オーブ",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-3903",
+    "type": "BX",
+    "name_zh": "神護魔龍⬧護城龍神",
+    "name_en": "Shelter Drake",
+    "name_jp": "シェルタードレイク",
+    "ratchet": "3-60",
+    "bit_code": "D",
+    "bit_name_zh": "Dot",
+    "bit_name_en": "Dot",
+    "bit_name_jp": "ドット",
+    "data_get": "×8"
+  },
+  {
+    "model": "BX-44",
+    "type": "BX",
+    "name_zh": "三角龍壓⬧三角強襲",
+    "name_en": "Tricera Press",
+    "name_jp": "トリケラプレス",
+    "ratchet": "M-85",
+    "bit_code": "BS",
+    "bit_name_zh": "Bound Spike",
+    "bit_name_en": "Bound Spike",
+    "bit_name_jp": "バウンドスパイク",
+    "data_get": ""
+  },
+  {
+    "model": "BX-45",
+    "type": "BX",
+    "name_zh": "武士聖劍⬧武士魂斬",
+    "name_en": "Samurai Calibur",
+    "name_jp": "サムライカリバー",
+    "ratchet": "6-70",
+    "bit_code": "M",
+    "bit_name_zh": "Merge",
+    "bit_name_en": "Merge",
+    "bit_name_jp": "マージ",
+    "data_get": ""
+  },
+  {
+    "model": "BX-46",
+    "type": "BX",
+    "name_zh": "鈷藍魔龍⬧蒼穹龍神",
+    "name_en": "Cobalt Drake",
+    "name_jp": "コバルトドレイク",
+    "ratchet": "9-60",
+    "bit_code": "R",
+    "bit_name_zh": "Rush",
+    "bit_name_en": "Rush",
+    "bit_name_jp": "ラッシュ",
+    "data_get": ""
+  },
+  {
+    "model": "BX-46",
+    "type": "BX",
+    "name_zh": "凶羊截擊⬧戰羊阻截",
+    "name_en": "Goat Tackle",
+    "name_jp": "ゴートタックル",
+    "ratchet": "7-70",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": ""
+  },
+  {
+    "model": "BX-4801",
+    "type": "BX",
+    "name_zh": "鈷藍青龍⬧蒼穹龍騎士",
+    "name_en": "Cobalt Dragoon",
+    "name_jp": "コバルトドラグーン",
+    "ratchet": "9-80",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-4802",
+    "type": "BX",
+    "name_zh": "烈鯊利刃⬧鮫鯊鋒鰭",
+    "name_en": "Shark Edge",
+    "name_jp": "シャークエッジ",
+    "ratchet": "4-70",
+    "bit_code": "E",
+    "bit_name_zh": "Elevate",
+    "bit_name_en": "Elevate",
+    "bit_name_jp": "エレベート",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-4803",
+    "type": "BX",
+    "name_zh": "狂象長牙⬧猛獁獠牙",
+    "name_en": "Mammoth Tusk",
+    "name_jp": "マンモスタスク",
+    "ratchet": "7-60",
+    "bit_code": "S",
+    "bit_name_zh": "Spike",
+    "bit_name_en": "Spike",
+    "bit_name_jp": "スパイク",
+    "data_get": "×4"
+  },
+  {
+    "model": "BX-4804",
+    "type": "BX",
+    "name_zh": "煉獄魔鐮⬧惡魔紅鐮",
+    "name_en": "Hells Scythe",
+    "name_jp": "ヘルズサイズ",
+    "ratchet": "3-85",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-4805",
+    "type": "BX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "2-80",
+    "bit_code": "Q",
+    "bit_name_zh": "Quake",
+    "bit_name_en": "Quake",
+    "bit_name_jp": "クエイク",
+    "data_get": "×5"
+  },
+  {
+    "model": "BX-49",
+    "type": "BX",
+    "name_zh": "Dran Strike",
+    "name_en": "Dran Strike",
+    "name_jp": "ドランストライク",
+    "ratchet": "4-50",
+    "bit_code": "FF",
+    "bit_name_zh": "Free Flat",
+    "bit_name_en": "Free Flat",
+    "bit_name_jp": "フリーフラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-03",
+    "type": "BX",
+    "name_zh": "Captain America",
+    "name_en": "Captain America",
+    "name_jp": "キャプテン・アメリカ",
+    "ratchet": "4-70",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-03",
+    "type": "BX",
+    "name_zh": "Red Hulk",
+    "name_en": "Red Hulk",
+    "name_jp": "レッド・ハルク",
+    "ratchet": "1-80",
+    "bit_code": "R",
+    "bit_name_zh": "Rush",
+    "bit_name_en": "Rush",
+    "bit_name_jp": "ラッシュ",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-04",
+    "type": "BX",
+    "name_zh": "Miles Morales",
+    "name_en": "Miles Morales",
+    "name_jp": "マイルズ・モラレス",
+    "ratchet": "1-60",
+    "bit_code": "GN",
+    "bit_name_zh": "Gear Needle",
+    "bit_name_en": "Gear Needle",
+    "bit_name_jp": "ギアニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-04",
+    "type": "BX",
+    "name_zh": "Green Goblin",
+    "name_en": "Green Goblin",
+    "name_jp": "グリーンゴブリン",
+    "ratchet": "9-80",
+    "bit_code": "HT",
+    "bit_name_zh": "High Taper",
+    "bit_name_en": "High Taper",
+    "bit_name_jp": "ハイテーパー",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-05",
+    "type": "BX",
+    "name_zh": "Obi-Wan Kenobi",
+    "name_en": "Obi-Wan Kenobi",
+    "name_jp": "オビ＝ワン・ケノービ",
+    "ratchet": "4-60",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-05",
+    "type": "BX",
+    "name_zh": "General Grievous",
+    "name_en": "General Grievous",
+    "name_jp": "グリーヴァス",
+    "ratchet": "3-80",
+    "bit_code": "HN",
+    "bit_name_zh": "High Needle",
+    "bit_name_en": "High Needle",
+    "bit_name_jp": "ハイニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-06",
+    "type": "BX",
+    "name_zh": "Chewbacca",
+    "name_en": "Chewbacca",
+    "name_jp": "チューバッカ",
+    "ratchet": "4-80",
+    "bit_code": "LF",
+    "bit_name_zh": "Low Flat",
+    "bit_name_en": "Low Flat",
+    "bit_name_jp": "ローフラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXA-06",
+    "type": "BX",
+    "name_zh": "Stormtrooper",
+    "name_en": "Stormtrooper",
+    "name_jp": "ストームトルーパー",
+    "ratchet": "5-70",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-01",
+    "type": "BX",
+    "name_zh": "朱雀戰神⬧烈焰飛鳳 S",
+    "name_en": "Dranzer Spiral",
+    "name_jp": "ドランザースパイラル",
+    "ratchet": "3-80",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-03",
+    "type": "BX",
+    "name_zh": "煉獄魔鐮⬧惡魔紅鐮",
+    "name_en": "Hells Scythe",
+    "name_jp": "ヘルズサイズ",
+    "ratchet": "4-60",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": "A"
+  },
+  {
+    "model": "BXG-04",
+    "type": "BX",
+    "name_zh": "青翼白虎⬧銀牙烈虎 S",
+    "name_en": "Driger Slash",
+    "name_jp": "ドライガースラッシュ",
+    "ratchet": "4-80",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-05",
+    "type": "BX",
+    "name_zh": "獅王鋭爪⬧雄獅獵爪",
+    "name_en": "Leon Claw",
+    "name_jp": "レオンクロー",
+    "ratchet": "5-60",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": "A"
+  },
+  {
+    "model": "BXG-06",
+    "type": "BX",
+    "name_zh": "烈鯊利刃⬧鮫鯊鋒鰭",
+    "name_en": "Shark Edge",
+    "name_jp": "シャークエッジ",
+    "ratchet": "5-60",
+    "bit_code": "GF",
+    "bit_name_zh": "Gear Flat",
+    "bit_name_en": "Gear Flat",
+    "bit_name_jp": "ギアフラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-0701",
+    "type": "BX",
+    "name_zh": "雷霆魔龍 (高空扣殺)",
+    "name_en": "Lightning L-Drago Upper",
+    "name_jp": "ライトニングエルドラゴアッパー",
+    "ratchet": "1-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": "×12"
+  },
+  {
+    "model": "BXG-0702",
+    "type": "BX",
+    "name_zh": "雷霆魔龍 (連環攻擊)",
+    "name_en": "Lightning L-Drago Rush",
+    "name_jp": "ライトニングエルドラゴ連打",
+    "ratchet": "1-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": "×12"
+  },
+  {
+    "model": "BXG-08",
+    "type": "BX",
+    "name_zh": "煉獄鎖鏈⬧惡魔鎖鏈",
+    "name_en": "Hells Chain",
+    "name_jp": "ヘルズチェイン",
+    "ratchet": "5-60",
+    "bit_code": "HT",
+    "bit_name_zh": "High Taper",
+    "bit_name_en": "High Taper",
+    "bit_name_jp": "ハイテーパー",
+    "data_get": "A"
+  },
+  {
+    "model": "BXG-09",
+    "type": "BX",
+    "name_zh": "鈷藍青龍⬧蒼穹龍騎士",
+    "name_en": "Cobalt Dragoon",
+    "name_jp": "コバルトドラグーン",
+    "ratchet": "2-60",
+    "bit_code": "C",
+    "bit_name_zh": "Cyclone",
+    "bit_name_en": "Cyclone",
+    "bit_name_jp": "サイクロン",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-11",
+    "type": "BX",
+    "name_zh": "青銅玄武⬧堅甲戰龜 S",
+    "name_en": "Draciel Shield",
+    "name_jp": "ドラシエルシールド",
+    "ratchet": "7-60",
+    "bit_code": "D",
+    "bit_name_zh": "Dot",
+    "bit_name_en": "Dot",
+    "bit_name_jp": "ドット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-12",
+    "type": "BX",
+    "name_zh": "暴風戰龍⬧龍騎士 S",
+    "name_en": "Dragoon Storm",
+    "name_jp": "ドラグーンストーム",
+    "ratchet": "4-60",
+    "bit_code": "RA",
+    "bit_name_zh": "Rubber Accel",
+    "bit_name_en": "Rubber Accel",
+    "bit_name_jp": "ラバーアクセル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-12",
+    "type": "BX",
+    "name_zh": "烈風天馬⬧暴風天馬",
+    "name_en": "Storm Pegasis",
+    "name_jp": "ストームペガシス",
+    "ratchet": "3-70",
+    "bit_code": "RA",
+    "bit_name_zh": "Rubber Accel",
+    "bit_name_en": "Rubber Accel",
+    "bit_name_jp": "ラバーアクセル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-12",
+    "type": "BX",
+    "name_zh": "勝利武神⬧天翼戰神",
+    "name_en": "Victory Valkyrie",
+    "name_jp": "ビクトリーヴァルキリー",
+    "ratchet": "2-60",
+    "bit_code": "RA",
+    "bit_name_zh": "Rubber Accel",
+    "bit_name_en": "Rubber Accel",
+    "bit_name_jp": "ラバーアクセル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-12",
+    "type": "BX",
+    "name_zh": "翔龍神劍⬧蒼龍神劍",
+    "name_en": "Dran Sword",
+    "name_jp": "ドランソード",
+    "ratchet": "3-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-13",
+    "type": "BX",
+    "name_zh": "異界聖劍⬧神力聖劍",
+    "name_en": "Xeno Xcalibur",
+    "name_jp": "ゼノエクスカリバー",
+    "ratchet": "3-60",
+    "bit_code": "GF",
+    "bit_name_zh": "Gear Flat",
+    "bit_name_en": "Gear Flat",
+    "bit_name_jp": "ギアフラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-14",
+    "type": "BX",
+    "name_zh": "翔龍雙刃⬧蒼龍利刃",
+    "name_en": "Dran Dagger",
+    "name_jp": "ドランダガー",
+    "ratchet": "2-80",
+    "bit_code": "GP",
+    "bit_name_zh": "Gear Point",
+    "bit_name_en": "Gear Point",
+    "bit_name_jp": "ギアポイント",
+    "data_get": "J"
+  },
+  {
+    "model": "BXG-15",
+    "type": "BX",
+    "name_zh": "朱雀戰神⬧烈焰飛鳳 S",
+    "name_en": "Dranzer Spiral",
+    "name_jp": "ドランザースパイラル",
+    "ratchet": "3-80",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-17",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-17",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-17",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-17",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-18",
+    "type": "BX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "1-60",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-19",
+    "type": "BX",
+    "name_zh": "煉獄惡鎚⬧惡魔戰鎚",
+    "name_en": "Hells Hammer",
+    "name_jp": "ヘルズハンマー",
+    "ratchet": "3-70",
+    "bit_code": "H",
+    "bit_name_zh": "Hexa",
+    "bit_name_en": "Hexa",
+    "bit_name_jp": "ヘキサ",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-20",
+    "type": "BX",
+    "name_zh": "岩巖獅王⬧巨岩雄獅",
+    "name_en": "Rock Leone",
+    "name_jp": "ロックレオーネ",
+    "ratchet": "6-80",
+    "bit_code": "GN",
+    "bit_name_zh": "Gear Needle",
+    "bit_name_en": "Gear Needle",
+    "bit_name_jp": "ギアニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-22",
+    "type": "BX",
+    "name_zh": "暴風戰龍⬧龍騎士 S",
+    "name_en": "Dragoon Storm",
+    "name_jp": "ドラグーンストーム",
+    "ratchet": "4-60",
+    "bit_code": "RA",
+    "bit_name_zh": "Rubber Accel",
+    "bit_name_en": "Rubber Accel",
+    "bit_name_jp": "ラバーアクセル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-23",
+    "type": "BX",
+    "name_zh": "鈷藍魔龍⬧蒼穹龍神",
+    "name_en": "Cobalt Drake",
+    "name_jp": "コバルトドレイク",
+    "ratchet": "4-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": "A"
+  },
+  {
+    "model": "BXG-24",
+    "type": "BX",
+    "name_zh": "翔空天馬⬧空力天馬",
+    "name_en": "Aero Pegasus",
+    "name_jp": "エアロペガサス",
+    "ratchet": "3-70",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-25",
+    "type": "BX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "3-70",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-25",
+    "type": "BX",
+    "name_zh": "翔龍雙刃⬧蒼龍利刃",
+    "name_en": "Dran Dagger",
+    "name_jp": "ドランダガー",
+    "ratchet": "9-60",
+    "bit_code": "LF",
+    "bit_name_zh": "Low Flat",
+    "bit_name_en": "Low Flat",
+    "bit_name_jp": "ローフラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-25",
+    "type": "BX",
+    "name_zh": "翔龍神劍⬧蒼龍神劍",
+    "name_en": "Dran Sword",
+    "name_jp": "ドランソード",
+    "ratchet": "4-80",
+    "bit_code": "DB",
+    "bit_name_zh": "Disk Ball",
+    "bit_name_en": "Disk Ball",
+    "bit_name_jp": "ディスクボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-29",
+    "type": "BX",
+    "name_zh": "鐵甲奇俠⬧鋼鐵人",
+    "name_en": "Ironman",
+    "name_jp": "アイアンマン",
+    "ratchet": "4-80",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-29",
+    "type": "BX",
+    "name_zh": "魁隆⬧薩諾斯",
+    "name_en": "Thanos",
+    "name_jp": "サノス",
+    "ratchet": "4-60",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-30",
+    "type": "BX",
+    "name_zh": "蜘蛛俠⬧蜘蛛人",
+    "name_en": "Spiderman",
+    "name_jp": "スパイダーマン",
+    "ratchet": "3-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-30",
+    "type": "BX",
+    "name_zh": "毒魔⬧猛毒",
+    "name_en": "Venom",
+    "name_jp": "ヴェノム",
+    "ratchet": "3-80",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-31",
+    "type": "BX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "1-60",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": "J"
+  },
+  {
+    "model": "BXG-31",
+    "type": "BX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "1-60",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": "J"
+  },
+  {
+    "model": "BXG-31",
+    "type": "BX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "1-60",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": "J"
+  },
+  {
+    "model": "BXG-32",
+    "type": "BX",
+    "name_zh": "狂象長牙⬧猛獁獠牙",
+    "name_en": "Mammoth Tusk",
+    "name_jp": "マンモスタスク",
+    "ratchet": "2-80",
+    "bit_code": "E",
+    "bit_name_zh": "Elevate",
+    "bit_name_en": "Elevate",
+    "bit_name_jp": "エレベート",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-33",
+    "type": "BX",
+    "name_zh": "路克天行者",
+    "name_en": "Luke Skywalker",
+    "name_jp": "ルーク・スカイウォーカー",
+    "ratchet": "4-80",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-33",
+    "type": "BX",
+    "name_zh": "達斯維達",
+    "name_en": "Darth Vader",
+    "name_jp": "ダース・ベイダー",
+    "ratchet": "4-60",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-34",
+    "type": "BX",
+    "name_zh": "曼達洛人",
+    "name_en": "The Mandalorian",
+    "name_jp": "マンダロリアン",
+    "ratchet": "3-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-34",
+    "type": "BX",
+    "name_zh": "星區長吉迪恩",
+    "name_en": "Moff Gideon",
+    "name_jp": "モフ・ギデオン",
+    "ratchet": "3-80",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-35",
+    "type": "BX",
+    "name_zh": "鳳凰飛翼",
+    "name_en": "Phoenix Wing",
+    "name_jp": "フェニックスウイング",
+    "ratchet": "9-60",
+    "bit_code": "LF",
+    "bit_name_zh": "Low Flat",
+    "bit_name_en": "Low Flat",
+    "bit_name_jp": "ローフラット",
+    "data_get": "J"
+  },
+  {
+    "model": "BXG-36",
+    "type": "BX",
+    "name_zh": "柯柏文⬧柯博文",
+    "name_en": "Optimus Prime",
+    "name_jp": "オプティマスプライム",
+    "ratchet": "4-60",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-36",
+    "type": "BX",
+    "name_zh": "麥加登⬧密卡登",
+    "name_en": "Megatron",
+    "name_jp": "メガトロン",
+    "ratchet": "4-80",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-37",
+    "type": "BX",
+    "name_zh": "奧狄武⬧金剛王",
+    "name_en": "Optimus Primal",
+    "name_jp": "オプティマスプライマル",
+    "ratchet": "3-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-37",
+    "type": "BX",
+    "name_zh": "星星叫⬧天王星",
+    "name_en": "Starscream",
+    "name_jp": "スタースクリーム",
+    "ratchet": "3-80",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-40",
+    "type": "BX",
+    "name_zh": "暴龍節拍⬧暴龍霸擊暴龍",
+    "name_en": "Tyranno Beat T-Rex",
+    "name_jp": "ティラノビートT-レックス",
+    "ratchet": "1-80",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-40",
+    "type": "BX",
+    "name_zh": "Tricera Spiky莫薩龍⬧滄龍",
+    "name_en": "Tricera Spiky Mosasaurus",
+    "name_jp": "トリケラスパイキーモササウルス",
+    "ratchet": "9-60",
+    "bit_code": "U",
+    "bit_name_zh": "Unite",
+    "bit_name_en": "Unite",
+    "bit_name_jp": "ユナイト",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-41",
+    "type": "BX",
+    "name_zh": "暴龍咆哮棘龍",
+    "name_en": "Tyranno Roar Spinosaurus",
+    "name_jp": "ティラノロアスピノサウルス",
+    "ratchet": "3-85",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-41",
+    "type": "BX",
+    "name_zh": "翼龍波動風神翼龍",
+    "name_en": "Ptera Swing Quetzalcoatlus",
+    "name_jp": "プテラスイングケツァルコアトルス",
+    "ratchet": "4-55",
+    "bit_code": "D",
+    "bit_name_zh": "Dot",
+    "bit_name_en": "Dot",
+    "bit_name_jp": "ドット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-42",
+    "type": "BX",
+    "name_zh": "騎士護甲⬧騎士圓甲",
+    "name_en": "Knight Mail",
+    "name_jp": "ナイトメイル",
+    "ratchet": "3-85",
+    "bit_code": "BS",
+    "bit_name_zh": "Bound Spike",
+    "bit_name_en": "Bound Spike",
+    "bit_name_jp": "バウンドスパイク",
+    "data_get": "A"
+  },
+  {
+    "model": "BXG-43",
+    "type": "BX",
+    "name_zh": "巫師⬧魔導",
+    "name_en": "Wizard",
+    "name_jp": "ウィザード",
+    "assist_blade_zh": "弧光⬧至尊",
+    "assist_blade_en": "Arc",
+    "assist_blade_jp": "アーク",
+    "main_blade_code": "R",
+    "main_blade_eng": "Round",
+    "main_blade_jp": "ラウンド",
+    "ratchet": "4-55",
+    "bit_code": "LO",
+    "bit_name_zh": "Low Orb",
+    "bit_name_en": "Low Orb",
+    "bit_name_jp": "ローオーブ",
+    "data_get": "A"
+  },
+  {
+    "model": "BXG-45",
+    "type": "BX",
+    "name_zh": "天馬 轟裂⬧爆擊",
+    "name_en": "Pegasus Blast",
+    "name_jp": "ペガサス ブラスト",
+    "main_blade_code": "A",
+    "main_blade_eng": "Assault",
+    "main_blade_jp": "アサルト",
+    "ratchet": "",
+    "bit_code": "Tr",
+    "bit_name_zh": "Turbo",
+    "bit_name_en": "Turbo",
+    "bit_name_jp": "ターボ",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-50",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-50",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "T",
+    "bit_name_zh": "Taper",
+    "bit_name_en": "Taper",
+    "bit_name_jp": "テーパー",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-50",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-50",
+    "type": "BX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-51",
+    "type": "BX",
+    "name_zh": "翔龍⬧蒼龍",
+    "name_en": "Dran",
+    "name_jp": "ドラン",
+    "assist_blade_zh": "勇者⬧勇氣",
+    "assist_blade_en": "Brave",
+    "assist_blade_jp": "ブレイブ",
+    "main_blade_code": "S",
+    "main_blade_eng": "Slash",
+    "main_blade_jp": "スラッシュ",
+    "ratchet": "6-60",
+    "bit_code": "V",
+    "bit_name_zh": "Vortex",
+    "bit_name_en": "Vortex",
+    "bit_name_jp": "ボルテックス",
+    "data_get": ""
+  },
+  {
+    "model": "BXG-52",
+    "type": "BX",
+    "name_zh": "翔龍神劍⬧蒼龍神劍",
+    "name_en": "Dran Sword",
+    "name_jp": "ドランソード",
+    "ratchet": "1-60",
+    "bit_code": "V",
+    "bit_name_zh": "Vortex",
+    "bit_name_en": "Vortex",
+    "bit_name_jp": "ボルテックス",
+    "data_get": "J"
+  },
+  {
+    "model": "BXG-53",
+    "type": "BX",
+    "name_zh": "鈷藍青龍⬧蒼穹龍騎士",
+    "name_en": "Cobalt Dragoon",
+    "name_jp": "コバルトドラグーン",
+    "ratchet": "9-60",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": "J"
+  },
+  {
+    "model": "UX-01",
+    "type": "UX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "1-60",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-02",
+    "type": "UX",
+    "name_zh": "煉獄惡鎚⬧惡魔戰鎚",
+    "name_en": "Hells Hammer",
+    "name_jp": "ヘルズハンマー",
+    "ratchet": "3-70",
+    "bit_code": "H",
+    "bit_name_zh": "Hexa",
+    "bit_name_en": "Hexa",
+    "bit_name_jp": "ヘキサ",
+    "data_get": ""
+  },
+  {
+    "model": "UX-03",
+    "type": "UX",
+    "name_zh": "巫師幻杖⬧魔導神杖",
+    "name_en": "Wizard Rod",
+    "name_jp": "ウィザードロッド",
+    "ratchet": "5-70",
+    "bit_code": "DB",
+    "bit_name_zh": "Disk Ball",
+    "bit_name_en": "Disk Ball",
+    "bit_name_jp": "ディスクボール",
+    "data_get": ""
+  },
+  {
+    "model": "UX-04",
+    "type": "UX",
+    "name_zh": "翔龍破壞劍⬧蒼龍爆刃",
+    "name_en": "Dran Buster",
+    "name_jp": "ドランバスター",
+    "ratchet": "1-60",
+    "bit_code": "A",
+    "bit_name_zh": "Accel",
+    "bit_name_en": "Accel",
+    "bit_name_jp": "アクセル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-04",
+    "type": "UX",
+    "name_zh": "巫師幻杖⬧魔導神杖",
+    "name_en": "Wizard Rod",
+    "name_jp": "ウィザードロッド",
+    "ratchet": "5-70",
+    "bit_code": "DB",
+    "bit_name_zh": "Disk Ball",
+    "bit_name_en": "Disk Ball",
+    "bit_name_jp": "ディスクボール",
+    "data_get": ""
+  },
+  {
+    "model": "UX-0501",
+    "type": "UX",
+    "name_zh": "忍者幻影⬧忍者闇影",
+    "name_en": "Shinobi Shadow",
+    "name_jp": "シノビシャドウ",
+    "ratchet": "1-80",
+    "bit_code": "MN",
+    "bit_name_zh": "Metal Needle",
+    "bit_name_en": "Metal Needle",
+    "bit_name_jp": "メタルニードル",
+    "data_get": "×8"
+  },
+  {
+    "model": "UX-0502",
+    "type": "UX",
+    "name_zh": "忍者幻影⬧忍者闇影",
+    "name_en": "Shinobi Shadow",
+    "name_jp": "シノビシャドウ",
+    "ratchet": "9-60",
+    "bit_code": "LF",
+    "bit_name_zh": "Low Flat",
+    "bit_name_en": "Low Flat",
+    "bit_name_jp": "ローフラット",
+    "data_get": "×8"
+  },
+  {
+    "model": "UX-0503",
+    "type": "UX",
+    "name_zh": "忍者幻影⬧忍者闇影",
+    "name_en": "Shinobi Shadow",
+    "name_jp": "シノビシャドウ",
+    "ratchet": "3-70",
+    "bit_code": "GP",
+    "bit_name_zh": "Gear Point",
+    "bit_name_en": "Gear Point",
+    "bit_name_jp": "ギアポイント",
+    "data_get": "×8"
+  },
+  {
+    "model": "UX-06",
+    "type": "UX",
+    "name_zh": "獅王徽章⬧雄獅巔峰",
+    "name_en": "Leon Crest",
+    "name_jp": "レオンクレスト",
+    "ratchet": "7-60",
+    "bit_code": "GN",
+    "bit_name_zh": "Gear Needle",
+    "bit_name_en": "Gear Needle",
+    "bit_name_jp": "ギアニードル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-07",
+    "type": "UX",
+    "name_zh": "鳳凰炎舵⬧鳳凰尾翼",
+    "name_en": "Phoenix Rudder",
+    "name_jp": "フェニックスラダー",
+    "ratchet": "9-70",
+    "bit_code": "G",
+    "bit_name_zh": "Glide",
+    "bit_name_en": "Glide",
+    "bit_name_jp": "グライド",
+    "data_get": ""
+  },
+  {
+    "model": "UX-07",
+    "type": "UX",
+    "name_zh": "飛龍狂風⬧飛龍旋翼",
+    "name_en": "Wyvern Gale",
+    "name_jp": "ワイバーンゲイル",
+    "ratchet": "2-60",
+    "bit_code": "S",
+    "bit_name_zh": "Spike",
+    "bit_name_en": "Spike",
+    "bit_name_jp": "スパイク",
+    "data_get": ""
+  },
+  {
+    "model": "UX-07",
+    "type": "UX",
+    "name_zh": "史芬克斯斗篷⬧幻神護甲",
+    "name_en": "Sphinx Cowl",
+    "name_jp": "スフィンクスカウル",
+    "ratchet": "1-80",
+    "bit_code": "GF",
+    "bit_name_zh": "Gear Flat",
+    "bit_name_en": "Gear Flat",
+    "bit_name_jp": "ギアフラット",
+    "data_get": ""
+  },
+  {
+    "model": "UX-08",
+    "type": "UX",
+    "name_zh": "白銀戰狼⬧霜輝銀狼",
+    "name_en": "Silver Wolf",
+    "name_jp": "シルバーウルフ",
+    "ratchet": "3-80",
+    "bit_code": "FB",
+    "bit_name_zh": "Free Ball",
+    "bit_name_en": "Free Ball",
+    "bit_name_jp": "フリーボール",
+    "data_get": ""
+  },
+  {
+    "model": "UX-09",
+    "type": "UX",
+    "name_zh": "武士之刃⬧武士星劍",
+    "name_en": "Samurai Saber",
+    "name_jp": "サムライセイバー",
+    "ratchet": "2-70",
+    "bit_code": "L",
+    "bit_name_zh": "Level",
+    "bit_name_en": "Level",
+    "bit_name_jp": "レベル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-10",
+    "type": "UX",
+    "name_zh": "騎士護甲⬧騎士圓甲",
+    "name_en": "Knight Mail",
+    "name_jp": "ナイトメイル",
+    "ratchet": "3-85",
+    "bit_code": "BS",
+    "bit_name_zh": "Bound Spike",
+    "bit_name_en": "Bound Spike",
+    "bit_name_jp": "バウンドスパイク",
+    "data_get": ""
+  },
+  {
+    "model": "UX-10",
+    "type": "UX",
+    "name_zh": "翼龍波動⬧翼龍神翼",
+    "name_en": "Ptera Swing",
+    "name_jp": "プテラスイング",
+    "ratchet": "7-70",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": ""
+  },
+  {
+    "model": "UX-10",
+    "type": "UX",
+    "name_zh": "暴龍節拍⬧暴龍霸擊",
+    "name_en": "Tyranno Beat",
+    "name_jp": "ティラノビート",
+    "ratchet": "1-60",
+    "bit_code": "RA",
+    "bit_name_zh": "Rubber Accel",
+    "bit_name_en": "Rubber Accel",
+    "bit_name_jp": "ラバーアクセル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-10",
+    "type": "UX",
+    "name_zh": "煉獄惡鎚⬧惡魔戰鎚",
+    "name_en": "Hells Hammer",
+    "name_jp": "ヘルズハンマー",
+    "ratchet": "",
+    "bit_code": "P",
+    "bit_name_zh": "Point",
+    "bit_name_en": "Point",
+    "bit_name_jp": "ポイント",
+    "data_get": ""
+  },
+  {
+    "model": "UX-10",
+    "type": "UX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "MN",
+    "bit_name_zh": "Metal Needle",
+    "bit_name_en": "Metal Needle",
+    "bit_name_jp": "メタルニードル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-10",
+    "type": "UX",
+    "name_zh": "",
+    "name_en": "",
+    "name_jp": "",
+    "ratchet": "",
+    "bit_code": "R",
+    "bit_name_zh": "Rush",
+    "bit_name_en": "Rush",
+    "bit_name_jp": "ラッシュ",
+    "data_get": ""
+  },
+  {
+    "model": "UX-11",
+    "type": "UX",
+    "name_zh": "衝擊魔龍⬧衝擊龍神",
+    "name_en": "Impact Drake",
+    "name_jp": "インパクトドレイク",
+    "ratchet": "9-60",
+    "bit_code": "LR",
+    "bit_name_zh": "Low Rush",
+    "bit_name_en": "Low Rush",
+    "bit_name_jp": "ローラッシュ",
+    "data_get": ""
+  },
+  {
+    "model": "UX-1201",
+    "type": "UX",
+    "name_zh": "幽靈圓環⬧幽靈元魂",
+    "name_en": "Ghost Circle",
+    "name_jp": "ゴーストサークル",
+    "ratchet": "0-80",
+    "bit_code": "GB",
+    "bit_name_zh": "Gear Ball",
+    "bit_name_en": "Gear Ball",
+    "bit_name_jp": "ギアボール",
+    "data_get": "×3"
+  },
+  {
+    "model": "UX-1202",
+    "type": "UX",
+    "name_zh": "幽靈圓環⬧幽靈元魂",
+    "name_en": "Ghost Circle",
+    "name_jp": "ゴーストサークル",
+    "ratchet": "4-60",
+    "bit_code": "H",
+    "bit_name_zh": "Hexa",
+    "bit_name_en": "Hexa",
+    "bit_name_jp": "ヘキサ",
+    "data_get": "×3"
+  },
+  {
+    "model": "UX-1203",
+    "type": "UX",
+    "name_zh": "忍者幻影⬧忍者闇影",
+    "name_en": "Shinobi Shadow",
+    "name_jp": "シノビシャドウ",
+    "ratchet": "3-80",
+    "bit_code": "F",
+    "bit_name_zh": "Flat",
+    "bit_name_en": "Flat",
+    "bit_name_jp": "フラット",
+    "data_get": "×5"
+  },
+  {
+    "model": "UX-1204",
+    "type": "UX",
+    "name_zh": "獅王鋭爪⬧雄獅獵爪",
+    "name_en": "Leon Claw",
+    "name_jp": "レオンクロー",
+    "ratchet": "0-80",
+    "bit_code": "E",
+    "bit_name_zh": "Elevate",
+    "bit_name_en": "Elevate",
+    "bit_name_jp": "エレベート",
+    "data_get": "×4"
+  },
+  {
+    "model": "UX-1205",
+    "type": "UX",
+    "name_zh": "鳳凰炎羽⬧鳳凰翔羽",
+    "name_en": "Phoenix Feather",
+    "name_jp": "フェニックスフェザー",
+    "ratchet": "2-60",
+    "bit_code": "N",
+    "bit_name_zh": "Needle",
+    "bit_name_en": "Needle",
+    "bit_name_jp": "ニードル",
+    "data_get": "×4"
+  },
+  {
+    "model": "UX-1206",
+    "type": "UX",
+    "name_zh": "飛龍狂風⬧飛龍旋翼",
+    "name_en": "Wyvern Gale",
+    "name_jp": "ワイバーンゲイル",
+    "ratchet": "0-80",
+    "bit_code": "C",
+    "bit_name_zh": "Cyclone",
+    "bit_name_en": "Cyclone",
+    "bit_name_jp": "サイクロン",
+    "data_get": "×5"
+  },
+  {
+    "model": "UX-13",
+    "type": "UX",
+    "name_zh": "魔像巨石⬧魔像奇岩",
+    "name_en": "Golem Rock",
+    "name_jp": "ゴーレムロック",
+    "ratchet": "1-60",
+    "bit_code": "UN",
+    "bit_name_zh": "Under Needle",
+    "bit_name_en": "Under Needle",
+    "bit_name_jp": "アンダーニードル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-14",
+    "type": "UX",
+    "name_zh": "毒蠍刺槍⬧天蠍長矛",
+    "name_en": "Scorpio Spear",
+    "name_jp": "スコーピオスピア",
+    "ratchet": "0-70",
+    "bit_code": "Z",
+    "bit_name_zh": "Zap",
+    "bit_name_en": "Zap",
+    "bit_name_jp": "ザップ",
+    "data_get": ""
+  },
+  {
+    "model": "UX-15",
+    "type": "UX",
+    "name_zh": "烈鯊鱗甲⬧鮫鯊狂鱗",
+    "name_en": "Shark Scale",
+    "name_jp": "シャークスケイル",
+    "ratchet": "4-50",
+    "bit_code": "UF",
+    "bit_name_zh": "Under Flat",
+    "bit_name_en": "Under Flat",
+    "bit_name_jp": "アンダーフラット",
+    "data_get": ""
+  },
+  {
+    "model": "UX-15",
+    "type": "UX",
+    "name_zh": "暴龍咆哮",
+    "name_en": "Tyranno Roar",
+    "name_jp": "ティラノロア",
+    "ratchet": "1-70",
+    "bit_code": "L",
+    "bit_name_zh": "Level",
+    "bit_name_en": "Level",
+    "bit_name_jp": "レベル",
+    "data_get": ""
+  },
+  {
+    "model": "UX-15",
+    "type": "UX",
+    "name_zh": "煉獄⬧惡魔 勇者⬧勇氣",
+    "name_en": "Hells Brave",
+    "name_jp": "ヘルズ ブレイブ",
+    "main_blade_code": "J",
+    "main_blade_eng": "Jaggy",
+    "main_blade_jp": "ジャギー",
+    "ratchet": "3-60",
+    "bit_code": "GF",
+    "bit_name_zh": "Gear Flat",
+    "bit_name_en": "Gear Flat",
+    "bit_name_jp": "ギアフラット",
+    "data_get": ""
+  },
+  {
+    "model": "UX-1601",
+    "type": "UX",
+    "name_zh": "時鐘幽景⬧時鐘幻象",
+    "name_en": "Clock Mirage",
+    "name_jp": "クロックミラージュ",
+    "ratchet": "9-65",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": "×8"
+  },
+  {
+    "model": "UX-1602",
+    "type": "UX",
+    "name_zh": "時鐘幽景⬧時鐘幻象",
+    "name_en": "Clock Mirage",
+    "name_jp": "クロックミラージュ",
+    "ratchet": "9-65",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": "×8"
+  },
+  {
+    "model": "UX-1603",
+    "type": "UX",
+    "name_zh": "時鐘幽景⬧時鐘幻象",
+    "name_en": "Clock Mirage",
+    "name_jp": "クロックミラージュ",
+    "ratchet": "9-65",
+    "bit_code": "B",
+    "bit_name_zh": "Ball",
+    "bit_name_en": "Ball",
+    "bit_name_jp": "ボール",
+    "data_get": "×8"
+  },
+  {
+    "model": "UX-17",
+    "type": "UX",
+    "name_zh": "隕石青龍⬧隕星龍騎士",
+    "name_en": "Meteor Dragoon",
+    "name_jp": "メテオドラグーン",
+    "ratchet": "3-70",
+    "bit_code": "J",
+    "bit_name_zh": "Jolt",
+    "bit_name_en": "Jolt",
+    "bit_name_jp": "ジョルト",
+    "data_get": ""
+  },
+  {
+    "model": "UX-1801",
+    "type": "UX",
+    "name_zh": "木乃伊詛咒⬧古屍詛咒",
+    "name_en": "Mummy Curse",
+    "name_jp": "マミーカース",
+    "ratchet": "7-55",
+    "bit_code": "W",
+    "bit_name_zh": "Wedge",
+    "bit_name_en": "Wedge",
+    "bit_name_jp": "ウェッジ",
+    "data_get": "×3"
+  },
+  {
+    "model": "UX-1802",
+    "type": "UX",
+    "name_zh": "木乃伊詛咒⬧古屍詛咒",
+    "name_en": "Mummy Curse",
+    "name_jp": "マミーカース",
+    "ratchet": "4-60",
+    "bit_code": "C",
+    "bit_name_zh": "Cyclone",
+    "bit_name_en": "Cyclone",
+    "bit_name_jp": "サイクロン",
+    "data_get": "×4"
+  },
+  {
+    "model": "UX-1803",
+    "type": "UX",
+    "name_zh": "天馬 兇尾⬧九尾",
+    "name_en": "Pegasus Brush",
+    "name_jp": "ペガサス ブラッシュ",
+    "main_blade_code": "M",
+    "main_blade_eng": "Massive",
+    "main_blade_jp": "マッシブ",
+    "ratchet": "3-85",
+    "bit_code": "W",
+    "bit_name_zh": "Wedge",
+    "bit_name_en": "Wedge",
+    "bit_name_jp": "ウェッジ",
+    "data_get": "×4"
+  },
+  {
+    "model": "UX-1804",
+    "type": "UX",
+    "name_zh": "天陽⬧焰神 勇者⬧勇氣",
+    "name_en": "Sol Brave",
+    "name_jp": "ソル ブレイブ",
+    "main_blade_code": "C",
+    "main_blade_eng": "Charge",
+    "main_blade_jp": "チャージ",
+    "ratchet": "9-70",
+    "bit_code": "TP",
+    "bit_name_zh": "Trans Point",
+    "bit_name_en": "Trans Point",
+    "bit_name_jp": "トランスポイント",
+    "data_get": "×3"
+  },
+  {
+    "model": "UX-1805",
+    "type": "UX",
+    "name_zh": "翔龍雙刃⬧蒼龍利刃",
+    "name_en": "Dran Dagger",
+    "name_jp": "ドランダガー",
+    "ratchet": "7-55",
+    "bit_code": "G",
+    "bit_name_zh": "Glide",
+    "bit_name_en": "Glide",
+    "bit_name_jp": "グライド",
+    "data_get": "×5"
+  },
+  {
+    "model": "UX-1806",
+    "type": "UX",
+    "name_zh": "純白猛虎⬧皓戰猛虎",
+    "name_en": "Weiss Tiger",
+    "name_jp": "ヴァイスタイガー",
+    "ratchet": "4-80",
+    "bit_code": "LR",
+    "bit_name_zh": "Low Rush",
+    "bit_name_en": "Low Rush",
+    "bit_name_jp": "ローラッシュ",
+    "data_get": "×5"
+  },
+  {
+    "model": "UX-19",
+    "type": "UX",
+    "name_zh": "Bullet Griffon",
+    "name_en": "Bullet Griffon",
+    "name_jp": "バレットグリフォン",
+    "ratchet": "",
+    "bit_code": "H",
+    "bit_name_zh": "Hexa",
+    "bit_name_en": "Hexa",
+    "bit_name_jp": "ヘキサ",
+    "data_get": ""
+  }
+]
