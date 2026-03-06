@@ -2586,7 +2586,7 @@
     "bit_name_en": "Ball",
     "bit_name_jp": "ボール",
     "data_get": ""
-  }
+  },
     {
     "model": "BXC-01",
     "type": "BX",
@@ -3544,7 +3544,7 @@
     "bit_name_en": "Flat",
     "bit_name_jp": "フラット",
     "data_get": "J"
-  }
+  },
     {
     "model": "BXG-02",
     "type": "BX",
@@ -3606,4 +3606,5 @@
     "data_get": ""
   }
 ]
+
 
