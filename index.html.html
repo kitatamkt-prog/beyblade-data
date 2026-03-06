@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Beyblade X 查詢 (GitHub Pages)</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f7;
+            color: #1e2b3c;
+        }
+        
+        .header {
+            background: #1e2b3c;
+            color: white;
+            padding: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        
+        .search-box {
+            background: white;
+            margin: 16px;
+            padding: 12px 16px;
+            border-radius: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            border: 1px solid #ddd;
+        }
+        
+        .search-box input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+        }
+        
+        .stats {
+            background: white;
+            margin: 0 16px 16px;
+            padding: 12px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border: 1px solid #ddd;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        
+        .stat-label {
+            font-size: 0.8rem;
+            color: #888;
+        }
+        
+        .product-list {
+            margin: 0 16px 20px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-left-width: 4px;
+        }
+        
+        .product-card.CX { border-left-color: #5b8c5b; }
+        .product-card.BX { border-left-color: #4a6fa5; }
+        .product-card.UX { border-left-color: #b05b5b; }
+        
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        
+        .product-model {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        
+        .product-type {
+            font-size: 0.8rem;
+            background: #eef2f5;
+            padding: 4px 8px;
+            border-radius: 12px;
+        }
+        
+        .product-name {
+            font-size: 1rem;
+            color: #555;
+            margin: 8px 0;
+        }
+        
+        .product-name-small {
+            font-size: 0.9rem;
+            color: #888;
+            margin: 4px 0;
+        }
+        
+        .product-specs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        .product-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 8px;
+        }
+        
+        .data-get-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .data-get-a {
+            background: #ffd700;
+            color: #1e2b3c;
+        }
+        
+        .data-get-j {
+            background: #ff6b6b;
+            color: white;
+        }
+        
+        .data-get-t {
+            background: #9c27b0;
+            color: white;
+        }
+        
+        .data-get-box {
+            background: #4caf50;
+            color: white;
+        }
+        
+        .loading-message {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+        
+        .lang-tag {
+            display: inline-block;
+            background: #eef2f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            margin-right: 4px;
+        }
+        
+        .detail-section {
+            margin: 20px 0;
+        }
+        
+        .detail-title {
+            font-size: 1rem;
+            font-weight: bold;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 100;
+        }
+        
+        .modal.show {
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .modal-content {
+            background: white;
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+            padding: 24px;
+            max-height: 80vh;
+            overflow-y: auto;
+            animation: slideUp 0.2s;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        
+        .close-btn {
+            float: right;
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            text-align: center;
+            line-height: 36px;
+            border-radius: 50%;
+            background: #f0f0f0;
+        }
+        
+        .data-get-info {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⚙️ Beyblade X 查詢 <span id="dataCount" style="font-size:0.8rem;">0</span></h1>
+    </div>
+    
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜尋型號、名稱...">
+    </div>
+    
+    <div id="stats" class="stats"></div>
+    <div id="productList" class="product-list">
+        <div class="loading-message">⏳ 載入數據中...</div>
+    </div>
+    
+    <div id="detailModal" class="modal" onclick="if(event.target===this) hideDetail()">
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <script>
+        // ==== 直接用同一個 domain 嘅 JSON (GitHub Pages) ====
+        const DATA_URL = 'beyblade_db.json';  // 相對路徑
+        
+        let products = [];
+        let searchTerm = '';
+
+        async function loadData() {
+            const listEl = document.getElementById('productList');
+            const dataCountEl = document.getElementById('dataCount');
+            
+            try {
+                const response = await fetch(DATA_URL);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                
+                const data = await response.json();
+                products = Array.isArray(data) ? data : [];
+                
+                dataCountEl.textContent = products.length;
+                updateStats();
+                render();
+                
+            } catch (error) {
+                console.error('載入失敗:', error);
+                listEl.innerHTML = `
+                    <div style="text-align:center; padding:40px; color:#cc0000;">
+                        <h3>📛 無法載入數據</h3>
+                        <p>${error.message}</p>
+                        <p>請確保 <code>beyblade_db.json</code> 同 HTML 放埋一齊</p>
+                    </div>
+                `;
+            }
+        }
+
+        function updateStats() {
+            const total = products.length;
+            const bx = products.filter(p => p.type === 'BX').length;
+            const ux = products.filter(p => p.type === 'UX').length;
+            const cx = products.filter(p => p.type === 'CX').length;
+            
+            document.getElementById('stats').innerHTML = `
+                <div class="stat-item">
+                    <div class="stat-number">${total}</div>
+                    <div class="stat-label">總數</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">${bx}</div>
+                    <div class="stat-label">BX</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">${ux}</div>
+                    <div class="stat-label">UX</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">${cx}</div>
+                    <div class="stat-label">CX</div>
+                </div>
+            `;
+        }
+
+        function getDataGetClass(dataGet) {
+            if (!dataGet || dataGet === '') return 'data-get-t';
+            if (dataGet === 'A') return 'data-get-a';
+            if (dataGet === 'J') return 'data-get-j';
+            if (dataGet.match(/^×\d+$/)) return 'data-get-box';
+            return 'data-get-t';
+        }
+
+        function getDataGetDisplay(dataGet) {
+            if (!dataGet || dataGet === '') return '📦 通販';
+            if (dataGet === 'A') return '📱 App';
+            if (dataGet === 'J') return '🇯🇵 日本';
+            if (dataGet === '×3') return '🎲 抽包 ×3';
+            if (dataGet === '×4') return '🎲 抽包 ×4';
+            if (dataGet === '×5') return '🎲 抽包 ×5';
+            if (dataGet === '×8') return '🎲 抽包 ×8';
+            if (dataGet === '×12') return '🎲 抽包 ×12';
+            return '📦 通販';
+        }
+
+        function getFilteredProducts() {
+            if (!searchTerm) return products;
+            
+            const term = searchTerm.toLowerCase();
+            return products.filter(p => {
+                return (p.model && p.model.toLowerCase().includes(term)) ||
+                       (p.chip_zh_hk && p.chip_zh_hk.toLowerCase().includes(term)) ||
+                       (p.chip_zh_tw && p.chip_zh_tw.toLowerCase().includes(term)) ||
+                       (p.chip_en && p.chip_en.toLowerCase().includes(term)) ||
+                       (p.chip_jp && p.chip_jp.toLowerCase().includes(term));
+            });
+        }
+
+        function render() {
+            const filtered = getFilteredProducts();
+            const listEl = document.getElementById('productList');
+            
+            if (filtered.length === 0) {
+                listEl.innerHTML = '<div class="loading-message">🔍 沒有符合的產品</div>';
+                return;
+            }
+            
+            let html = '';
+            filtered.forEach(p => {
+                const chipName = p.chip_zh_hk || p.chip_zh_tw || p.chip_en || p.chip_jp || '';
+                const mainName = p.main_blade_zh_hk || p.main_blade_zh_tw || p.main_blade_en || p.main_blade_jp || '';
+                
+                let nameHtml = chipName;
+                if (p.type === 'CX' && mainName) {
+                    nameHtml = `${chipName} + ${mainName}`;
+                }
+                
+                const dataGetClass = getDataGetClass(p.data_get);
+                const dataGetDisplay = getDataGetDisplay(p.data_get);
+                
+                html += `
+                    <div class="product-card ${p.type}" onclick="showDetail('${p.model}')">
+                        <div class="product-header">
+                            <span class="product-model">${p.model}</span>
+                            <span class="product-type">${p.type}</span>
+                        </div>
+                        <div class="product-name">${nameHtml}</div>
+                        <div class="product-specs">
+                            ${p.ratchet ? `<span>⚙️ ${p.ratchet}</span>` : ''}
+                            ${p.bit_code ? `<span>🔰 ${p.bit_code}</span>` : ''}
+                        </div>
+                        <div class="product-footer">
+                            <span class="data-get-badge ${dataGetClass}">${dataGetDisplay}</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            listEl.innerHTML = html;
+        }
+
+        window.showDetail = function(model) {
+            const product = products.find(p => p.model === model);
+            if (!product) return;
+            
+            const dataGetClass = getDataGetClass(product.data_get);
+            const dataGetDisplay = getDataGetDisplay(product.data_get);
+            
+            let content = `
+                <span class="close-btn" onclick="hideDetail()">&times;</span>
+                <h2 style="margin-top:0;">${product.model}</h2>
+                <div style="background:#f0f4f8; padding:4px 12px; border-radius:20px; display:inline-block; margin-bottom:16px;">${product.type} 系列</div>
+                
+                <div class="detail-section">
+                    <div class="detail-title">📝 本體名稱</div>
+                    <div><span class="lang-tag">🇨🇳 港</span> ${product.chip_zh_hk || '—'}</div>
+                    <div><span class="lang-tag">🇨🇳 台</span> ${product.chip_zh_tw || '—'}</div>
+                    <div><span class="lang-tag">🇬🇧 英</span> ${product.chip_en || '—'}</div>
+                    <div><span class="lang-tag">🇯🇵 日</span> ${product.chip_jp || '—'}</div>
+                </div>
+            `;
+            
+            if (product.main_blade_zh_hk) {
+                content += `
+                    <div class="detail-section">
+                        <div class="detail-title">⚔️ 主 blade</div>
+                        <div><span class="lang-tag">🇨🇳 港</span> ${product.main_blade_zh_hk || '—'}</div>
+                        <div><span class="lang-tag">🇨🇳 台</span> ${product.main_blade_zh_tw || '—'}</div>
+                        <div><span class="lang-tag">🇬🇧 英</span> ${product.main_blade_en || '—'}</div>
+                        <div><span class="lang-tag">🇯🇵 日</span> ${product.main_blade_jp || '—'}</div>
+                    </div>
+                `;
+            }
+            
+            if (product.assist_blade_zh_hk) {
+                content += `
+                    <div class="detail-section">
+                        <div class="detail-title">🔪 輔助刀</div>
+                        <div><strong>代碼:</strong> ${product.assist_blade_code || '—'}</div>
+                        <div><span class="lang-tag">🇨🇳 港</span> ${product.assist_blade_zh_hk || '—'}</div>
+                        <div><span class="lang-tag">🇨🇳 台</span> ${product.assist_blade_zh_tw || '—'}</div>
+                        <div><span class="lang-tag">🇬🇧 英</span> ${product.assist_blade_en || '—'}</div>
+                        <div><span class="lang-tag">🇯🇵 日</span> ${product.assist_blade_jp || '—'}</div>
+                    </div>
+                `;
+            }
+            
+            if (product.ratchet) {
+                content += `
+                    <div class="detail-section">
+                        <div class="detail-title">⚙️ Ratchet</div>
+                        <div style="font-size:1.2rem;">${product.ratchet}</div>
+                    </div>
+                `;
+            }
+            
+            if (product.bit_code) {
+                content += `
+                    <div class="detail-section">
+                        <div class="detail-title">🔰 Bit</div>
+                        <div><strong>代碼:</strong> ${product.bit_code}</div>
+                        <div><span class="lang-tag">🇨🇳 港</span> ${product.bit_name_zh_hk || '—'}</div>
+                        <div><span class="lang-tag">🇨🇳 台</span> ${product.bit_name_zh_tw || '—'}</div>
+                        <div><span class="lang-tag">🇬🇧 英</span> ${product.bit_name_en || '—'}</div>
+                        <div><span class="lang-tag">🇯🇵 日</span> ${product.bit_name_jp || '—'}</div>
+                    </div>
+                `;
+            }
+            
+            content += `
+                <div class="detail-section">
+                    <div class="detail-title">📦 入手方式</div>
+                    <div class="data-get-info ${dataGetClass}">${dataGetDisplay}</div>
+                </div>
+            `;
+            
+            document.getElementById('modalContent').innerHTML = content;
+            document.getElementById('detailModal').classList.add('show');
+        };
+
+        window.hideDetail = function() {
+            document.getElementById('detailModal').classList.remove('show');
+        };
+
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            render();
+        });
+
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
