@@ -42,10 +42,9 @@
             --get-box-text: white;
             --get-t-bg: #9c27b0;
             --get-t-text: white;
-            --sort-btn-bg: #e0e0e0;
-            --sort-btn-text: #1e2b3c;
-            --sort-btn-active: #1e2b3c;
-            --sort-btn-active-text: white;
+            --dropdown-bg: white;
+            --dropdown-border: #ddd;
+            --dropdown-hover: #eef2f5;
         }
         
         body.dark-mode {
@@ -79,10 +78,9 @@
             --get-box-text: white;
             --get-t-bg: #6a1b9a;
             --get-t-text: white;
-            --sort-btn-bg: #404040;
-            --sort-btn-text: #e0e0e0;
-            --sort-btn-active: #4a6fa5;
-            --sort-btn-active-text: white;
+            --dropdown-bg: #2d2d2d;
+            --dropdown-border: #444;
+            --dropdown-hover: #404040;
         }
         
         body {
@@ -211,59 +209,97 @@
             border-color: var(--filter-btn-active-bg);
         }
         
-        /* 零件篩選行 */
-        .part-filter-row {
+        /* 下拉選單樣式 */
+        .dropdown-container {
             display: flex;
-            gap: 8px;
+            gap: 12px;
             margin: 0 16px 16px;
             flex-wrap: wrap;
-            justify-content: center;
         }
         
-        .part-filter-btn {
-            background: var(--filter-btn-bg);
-            border: 1px solid var(--filter-btn-border);
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .dropdown-button {
+            background: var(--dropdown-bg);
+            border: 1px solid var(--dropdown-border);
             border-radius: 30px;
-            padding: 8px 24px;
+            padding: 10px 16px;
             font-size: 0.95rem;
             cursor: pointer;
-            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             color: var(--text-primary);
-            min-width: 100px;
-            text-align: center;
+            width: 100%;
         }
         
-        .part-filter-btn.active {
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 45px;
+            left: 0;
+            right: 0;
+            background: var(--dropdown-bg);
+            border: 1px solid var(--dropdown-border);
+            border-radius: 16px;
+            padding: 8px;
+            z-index: 20;
+            max-height: 300px;
+            overflow-y: auto;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .dropdown-menu.show {
+            display: block;
+        }
+        
+        .dropdown-item {
+            padding: 10px 16px;
+            cursor: pointer;
+            border-radius: 30px;
+            margin: 4px 0;
+            color: var(--text-primary);
+        }
+        
+        .dropdown-item:hover {
+            background: var(--dropdown-hover);
+        }
+        
+        .dropdown-item.active {
             background: var(--filter-btn-active-bg);
             color: var(--filter-btn-active-text);
-            border-color: var(--filter-btn-active-bg);
         }
         
         /* 排序按鈕 */
         .sort-section {
             display: flex;
-            justify-content: flex-end;
-            margin: 0 16px 16px;
             gap: 8px;
+            margin: 0 16px 16px;
+            flex-wrap: wrap;
         }
         
         .sort-btn {
-            background: var(--sort-btn-bg);
-            border: 1px solid var(--border-color);
+            background: var(--filter-btn-bg);
+            border: 1px solid var(--filter-btn-border);
             border-radius: 30px;
-            padding: 6px 14px;
-            font-size: 0.85rem;
+            padding: 8px 16px;
+            font-size: 0.9rem;
             cursor: pointer;
-            color: var(--sort-btn-text);
-            display: flex;
-            align-items: center;
-            gap: 4px;
+            color: var(--text-primary);
+            flex: 1;
+            min-width: 100px;
+            text-align: center;
         }
         
         .sort-btn.active {
-            background: var(--sort-btn-active);
-            color: var(--sort-btn-active-text);
-            border-color: var(--sort-btn-active);
+            background: var(--filter-btn-active-bg);
+            color: var(--filter-btn-active-text);
+            border-color: var(--filter-btn-active-bg);
         }
         
         .stats {
@@ -521,15 +557,39 @@
         <input type="text" id="searchInput" placeholder="搜尋型號、名稱...">
     </div>
     
-    <!-- 零件篩選 -->
-    <div class="part-filter-row" id="partFilter">
-        <button class="part-filter-btn active" data-type="all">全部零件</button>
-        <button class="part-filter-btn" data-type="blade">⚔️ Blade</button>
-        <button class="part-filter-btn" data-type="ratchet">⚙️ Ratchet</button>
-        <button class="part-filter-btn" data-type="bit">🔰 Bit</button>
+    <!-- 零件篩選下拉選單 + 入手方式篩選 -->
+    <div class="dropdown-container">
+        <!-- 零件篩選下拉選單 -->
+        <div class="dropdown" id="partDropdown">
+            <button class="dropdown-button" id="partButton">
+                <span id="selectedPart">⚔️ 全部零件</span>
+                <span>▼</span>
+            </button>
+            <div class="dropdown-menu" id="partMenu">
+                <div class="dropdown-item active" data-part="all">⚔️ 全部零件</div>
+                <div class="dropdown-item" data-part="blade">⚔️ Blade</div>
+                <div class="dropdown-item" data-part="ratchet">⚙️ Ratchet</div>
+                <div class="dropdown-item" data-part="bit">🔰 Bit</div>
+            </div>
+        </div>
+        
+        <!-- 入手方式篩選下拉選單 -->
+        <div class="dropdown" id="getDropdown">
+            <button class="dropdown-button" id="getButton">
+                <span id="selectedGet">📦 全部入手</span>
+                <span>▼</span>
+            </button>
+            <div class="dropdown-menu" id="getMenu">
+                <div class="dropdown-item active" data-get="all">📦 全部入手</div>
+                <div class="dropdown-item" data-get="A">📱 App</div>
+                <div class="dropdown-item" data-get="J">🇯🇵 日本</div>
+                <div class="dropdown-item" data-get="T">📦 通販</div>
+                <div class="dropdown-item" data-get="box">🎲 抽包</div>
+            </div>
+        </div>
     </div>
     
-    <!-- 篩選按鈕 -->
+    <!-- 系列篩選 -->
     <div class="filter-section">
         <div class="filter-row" id="seriesFilter">
             <button class="filter-btn active" data-type="all">全部系列</button>
@@ -537,19 +597,14 @@
             <button class="filter-btn" data-type="UX">UX系列</button>
             <button class="filter-btn" data-type="CX">CX系列</button>
         </div>
-        <div class="filter-row" id="getFilter">
-            <button class="filter-btn active" data-type="all">全部入手</button>
-            <button class="filter-btn" data-type="A">📱 App</button>
-            <button class="filter-btn" data-type="J">🇯🇵 日本</button>
-            <button class="filter-btn" data-type="T">📦 通販</button>
-            <button class="filter-btn" data-type="box">🎲 抽包</button>
-        </div>
     </div>
     
     <!-- 排序功能 -->
     <div class="sort-section">
-        <button class="sort-btn active" id="sortSeries">🔤 系列優先 (BX→UX→CX)</button>
-        <button class="sort-btn" id="sortModel">📇 型號排序</button>
+        <button class="sort-btn active" id="sortModel">📇 型號</button>
+        <button class="sort-btn" id="sortRatchet">⚙️ Ratchet</button>
+        <button class="sort-btn" id="sortBit">🔰 Bit</button>
+        <button class="sort-btn" id="sortCode">🔤 代碼</button>
     </div>
     
     <div id="stats" class="stats"></div>
@@ -575,7 +630,7 @@
         let currentGet = 'all';
         let searchTerm = '';
         let currentLang = 'zh_hk';
-        let sortMode = 'series'; // 'series' 或 'model'
+        let sortMode = 'model'; // 'model', 'ratchet', 'bit', 'code'
 
         // ==================== Dark Mode ====================
         const darkModeToggle = document.getElementById('darkModeToggle');
@@ -598,18 +653,64 @@
             }
         });
 
+        // ==================== 下拉選單功能 ====================
+        function setupDropdown(buttonId, menuId, itemClass, callback) {
+            const button = document.getElementById(buttonId);
+            const menu = document.getElementById(menuId);
+            
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                // 關閉其他下拉選單
+                document.querySelectorAll('.dropdown-menu').forEach(m => {
+                    if (m.id !== menuId) m.classList.remove('show');
+                });
+                menu.classList.toggle('show');
+            });
+            
+            document.addEventListener('click', () => {
+                menu.classList.remove('show');
+            });
+            
+            menu.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+            
+            document.querySelectorAll(`.${itemClass}`).forEach(item => {
+                item.addEventListener('click', () => {
+                    document.querySelectorAll(`.${itemClass}`).forEach(i => i.classList.remove('active'));
+                    item.classList.add('active');
+                    callback(item);
+                    menu.classList.remove('show');
+                });
+            });
+        }
+
         // ==================== 排序切換 ====================
-        document.getElementById('sortSeries').addEventListener('click', () => {
-            document.getElementById('sortSeries').classList.add('active');
-            document.getElementById('sortModel').classList.remove('active');
-            sortMode = 'series';
+        document.getElementById('sortModel').addEventListener('click', () => {
+            document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('sortModel').classList.add('active');
+            sortMode = 'model';
             render();
         });
         
-        document.getElementById('sortModel').addEventListener('click', () => {
-            document.getElementById('sortModel').classList.add('active');
-            document.getElementById('sortSeries').classList.remove('active');
-            sortMode = 'model';
+        document.getElementById('sortRatchet').addEventListener('click', () => {
+            document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('sortRatchet').classList.add('active');
+            sortMode = 'ratchet';
+            render();
+        });
+        
+        document.getElementById('sortBit').addEventListener('click', () => {
+            document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('sortBit').classList.add('active');
+            sortMode = 'bit';
+            render();
+        });
+        
+        document.getElementById('sortCode').addEventListener('click', () => {
+            document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('sortCode').classList.add('active');
+            sortMode = 'code';
             render();
         });
 
@@ -770,14 +871,16 @@
                     if (currentGet === 'box' && (!p.data_get || !p.data_get.match(/^×\d+$/))) return false;
                 }
                 
-                // 搜尋篩選
+                // 搜尋篩選 (支援 keyword search)
                 if (searchTerm) {
                     const term = searchTerm.toLowerCase();
                     return (p.model && p.model.toLowerCase().includes(term)) ||
                            (p.main_blade_zh_hk && p.main_blade_zh_hk.toLowerCase().includes(term)) ||
                            (p.main_blade_en && p.main_blade_en.toLowerCase().includes(term)) ||
                            (p.chip_zh_hk && p.chip_zh_hk.toLowerCase().includes(term)) ||
-                           (p.assist_blade_code && p.assist_blade_code.toLowerCase().includes(term));
+                           (p.assist_blade_code && p.assist_blade_code.toLowerCase().includes(term)) ||
+                           (p.ratchet && p.ratchet.toLowerCase().includes(term)) ||
+                           (p.bit_code && p.bit_code.toLowerCase().includes(term));
                 }
                 return true;
             });
@@ -787,21 +890,36 @@
         function sortProducts(productsToSort) {
             const sorted = [...productsToSort];
             
-            if (sortMode === 'series') {
-                // 系列優先：BX > UX > CX，同系列內按 model 排序
-                const seriesOrder = { 'BX': 1, 'UX': 2, 'CX': 3 };
-                sorted.sort((a, b) => {
-                    // 先按系列排序
-                    const seriesDiff = (seriesOrder[a.type] || 999) - (seriesOrder[b.type] || 999);
-                    if (seriesDiff !== 0) return seriesDiff;
-                    
-                    // 同系列按 model 排序
+            // 先按系列排序 (BX > UX > CX)
+            const seriesOrder = { 'BX': 1, 'UX': 2, 'CX': 3 };
+            sorted.sort((a, b) => {
+                const seriesDiff = (seriesOrder[a.type] || 999) - (seriesOrder[b.type] || 999);
+                if (seriesDiff !== 0) return seriesDiff;
+                
+                // 同系列內按所選模式排序
+                if (sortMode === 'model') {
                     return a.model.localeCompare(b.model);
-                });
-            } else {
-                // 純 model 排序
-                sorted.sort((a, b) => a.model.localeCompare(b.model));
-            }
+                } else if (sortMode === 'ratchet') {
+                    const aVal = a.ratchet || '';
+                    const bVal = b.ratchet || '';
+                    if (aVal && bVal) return aVal.localeCompare(bVal);
+                    if (aVal) return -1;
+                    if (bVal) return 1;
+                    return 0;
+                } else if (sortMode === 'bit') {
+                    const aVal = a.bit_code || '';
+                    const bVal = b.bit_code || '';
+                    if (aVal && bVal) return aVal.localeCompare(bVal);
+                    if (aVal) return -1;
+                    if (bVal) return 1;
+                    return 0;
+                } else if (sortMode === 'code') {
+                    const aVal = a.assist_blade_code || a.model || '';
+                    const bVal = b.assist_blade_code || b.model || '';
+                    return aVal.localeCompare(bVal);
+                }
+                return 0;
+            });
             
             return sorted;
         }
@@ -828,8 +946,8 @@
                 const assistCode = p.assist_blade_code ? escapeHTML(p.assist_blade_code) : '';
                 const bitName = escapeHTML(getNameByLang(p, 'bit'));
                 
-                // CX系列：chip · metal · over · assist
-                // 其他系列：main only (用 chip_zh_hk 同 main_blade)
+                // CX系列：chip + main_blade + metal + over + assist
+                // 其他系列：main_blade only
                 let nameHtml = '';
                 let tags = '';
                 let assistCodeHtml = '';
@@ -837,10 +955,11 @@
                 if (p.type === 'CX') {
                     const parts = [];
                     if (chipName) parts.push(chipName);
+                    if (mainName) parts.push(mainName);
                     if (metalName) parts.push(metalName);
                     if (overName) parts.push(overName);
                     if (assistName) parts.push(assistName);
-                    nameHtml = parts.join(' · ');
+                    nameHtml = parts.join(' + ');
                     
                     // 顯示 Assist Blade code
                     if (assistCode) {
@@ -855,7 +974,6 @@
                         tags += `<span class="product-tag">⬆️ ${overName}</span>`;
                     }
                 } else {
-                    // 其他系列用 main blade 做名稱
                     nameHtml = mainName;
                 }
                 
@@ -1008,6 +1126,21 @@
             document.getElementById('detailModal').classList.remove('show');
         };
 
+        // ==================== 設定下拉選單 ====================
+        setupDropdown('partButton', 'partMenu', 'dropdown-item[data-part]', (item) => {
+            const part = item.dataset.part;
+            document.getElementById('selectedPart').innerHTML = item.innerHTML;
+            currentPart = part;
+            render();
+        });
+        
+        setupDropdown('getButton', 'getMenu', 'dropdown-item[data-get]', (item) => {
+            const get = item.dataset.get;
+            document.getElementById('selectedGet').innerHTML = item.innerHTML;
+            currentGet = get;
+            render();
+        });
+
         // ==================== 事件監聽 ====================
         document.getElementById('searchInput').addEventListener('input', (e) => {
             searchTerm = e.target.value;
@@ -1023,30 +1156,11 @@
             });
         });
 
-        // 零件篩選事件
-        document.querySelectorAll('#partFilter .part-filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('#partFilter .part-filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentPart = btn.dataset.type;
-                render();
-            });
-        });
-
         document.querySelectorAll('#seriesFilter .filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 document.querySelectorAll('#seriesFilter .filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
                 currentSeries = btn.dataset.type;
-                render();
-            });
-        });
-
-        document.querySelectorAll('#getFilter .filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('#getFilter .filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentGet = btn.dataset.type;
                 render();
             });
         });
