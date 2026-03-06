@@ -644,9 +644,9 @@
                 if (searchTerm) {
                     const term = searchTerm.toLowerCase();
                     return (p.model && p.model.toLowerCase().includes(term)) ||
-                           (p.chip_zh_hk && p.chip_zh_hk.toLowerCase().includes(term)) ||
-                           (p.chip_en && p.chip_en.toLowerCase().includes(term)) ||
-                           (p.main_blade_zh_hk && p.main_blade_zh_hk.toLowerCase().includes(term));
+                           (p.main_blade_zh_hk && p.main_blade_zh_hk.toLowerCase().includes(term)) ||
+                           (p.main_blade_en && p.main_blade_en.toLowerCase().includes(term)) ||
+                           (p.chip_zh_hk && p.chip_zh_hk.toLowerCase().includes(term));
                 }
                 return true;
             });
@@ -672,8 +672,8 @@
                 const bitName = escapeHTML(getNameByLang(p, 'bit'));
                 
                 // CX系列：chip · metal · over · assist
-                // 其他系列：chip + main
-                let nameHtml = chipName;
+                // 其他系列：main only
+                let nameHtml = '';
                 let tags = '';
                 
                 if (p.type === 'CX') {
@@ -692,9 +692,7 @@
                         tags += `<span class="product-tag">⬆️ ${overName}</span>`;
                     }
                 } else {
-                    if (mainName) {
-                        nameHtml = `${chipName} + ${mainName}`;
-                    }
+                    nameHtml = mainName; // 其他系列只顯示 main
                 }
                 
                 const dataGetClass = getDataGetClass(p.data_get);
@@ -739,18 +737,20 @@
                 </div>
             `;
             
-            // 本體名稱
-            content += `
-                <div class="detail-section">
-                    <div class="detail-title">📝 本體名稱 (Chip)</div>
-                    <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.chip_zh_hk) || '—'}</div>
-                    <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.chip_zh_tw) || '—'}</div>
-                    <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.chip_en) || '—'}</div>
-                    <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.chip_jp) || '—'}</div>
-                </div>
-            `;
+            // 本體名稱 (CX系列)
+            if (product.type === 'CX' && product.chip_zh_hk) {
+                content += `
+                    <div class="detail-section">
+                        <div class="detail-title">📝 本體名稱 (Chip)</div>
+                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.chip_zh_hk) || '—'}</div>
+                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.chip_zh_tw) || '—'}</div>
+                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.chip_en) || '—'}</div>
+                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.chip_jp) || '—'}</div>
+                    </div>
+                `;
+            }
             
-            // Metal (如果有)
+            // Metal (CX系列)
             if (product.metal_zh_hk) {
                 content += `
                     <div class="detail-section">
@@ -763,7 +763,7 @@
                 `;
             }
             
-            // Over (上層部件)
+            // Over (CX系列)
             if (product.over_zh_hk) {
                 content += `
                     <div class="detail-section">
@@ -776,8 +776,8 @@
                 `;
             }
             
-            // 主 blade (非CX系列)
-            if (product.main_blade_zh_hk && product.type !== 'CX') {
+            // 主 blade (所有系列)
+            if (product.main_blade_zh_hk) {
                 content += `
                     <div class="detail-section">
                         <div class="detail-title">⚔️ 主 blade</div>
