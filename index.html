@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Beyblade X 完整查詢系統</title>
     <style>
+        /* ===== 現有樣式 (保留之前所有樣式) ===== */
         * {
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -45,6 +46,8 @@
             --dropdown-bg: white;
             --dropdown-border: #ddd;
             --dropdown-hover: #eef2f5;
+            --favorite-color: #ffb347;
+            --wishlist-color: #4a90e2;
         }
         
         body.dark-mode {
@@ -81,6 +84,8 @@
             --dropdown-bg: #2d2d2d;
             --dropdown-border: #444;
             --dropdown-hover: #404040;
+            --favorite-color: #ffa500;
+            --wishlist-color: #6a8cff;
         }
         
         body {
@@ -90,6 +95,7 @@
             color: var(--text-primary);
         }
         
+        /* ===== Header ===== */
         .header {
             background: var(--header-bg);
             color: var(--header-text);
@@ -133,7 +139,7 @@
             flex-wrap: wrap;
         }
         
-        /* 語言下拉選單 (放喺 Dark Mode 右邊) */
+        /* ===== 語言下拉選單 ===== */
         .lang-dropdown {
             position: relative;
             display: inline-block;
@@ -210,6 +216,192 @@
             background: rgba(255,255,255,0.2);
         }
         
+        /* ===== 功能按鈕欄 ===== */
+        .action-bar {
+            display: flex;
+            gap: 8px;
+            margin: 0 16px 16px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .action-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .action-btn {
+            background: var(--filter-btn-bg);
+            border: 1px solid var(--filter-btn-border);
+            border-radius: 30px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .action-btn:hover {
+            background: var(--badge-bg);
+        }
+        
+        .action-btn.active {
+            background: var(--filter-btn-active-bg);
+            color: var(--filter-btn-active-text);
+        }
+        
+        .action-btn.favorite {
+            background: var(--favorite-color);
+            color: #1e2b3c;
+            border-color: var(--favorite-color);
+        }
+        
+        .action-btn.wishlist {
+            background: var(--wishlist-color);
+            color: white;
+            border-color: var(--wishlist-color);
+        }
+        
+        .action-btn.export {
+            background: var(--filter-btn-bg);
+            border-color: var(--filter-btn-border);
+        }
+        
+        /* ===== 零件收集清單 ===== */
+        .wishlist-panel {
+            background: var(--card-bg);
+            border: 2px solid var(--wishlist-color);
+            border-radius: 20px;
+            margin: 0 16px 16px;
+            padding: 16px;
+            box-shadow: var(--card-shadow);
+        }
+        
+        .wishlist-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .wishlist-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--wishlist-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .wishlist-progress {
+            background: var(--badge-bg);
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 0.9rem;
+        }
+        
+        .wishlist-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .wishlist-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .wishlist-category-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+        
+        .wishlist-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .wishlist-option {
+            background: var(--badge-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            padding: 6px 12px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        .wishlist-option.selected {
+            background: var(--wishlist-color);
+            color: white;
+            border-color: var(--wishlist-color);
+        }
+        
+        .wishlist-option.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .wishlist-recommendations {
+            background: var(--badge-bg);
+            border-radius: 16px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+        
+        .wishlist-recommendations-title {
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        
+        .wishlist-products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .wishlist-product-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 12px;
+            flex: 1;
+            min-width: 150px;
+            cursor: pointer;
+        }
+        
+        .wishlist-product-card:hover {
+            box-shadow: var(--card-shadow);
+        }
+        
+        .wishlist-product-model {
+            font-weight: bold;
+            color: var(--wishlist-color);
+        }
+        
+        .wishlist-product-parts {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+        
+        .wishlist-clear {
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-decoration: underline;
+        }
+        
+        /* ===== 搜尋框 ===== */
         .search-box {
             background: var(--bg-secondary);
             margin: 0 16px 16px;
@@ -229,7 +421,7 @@
             color: var(--text-primary);
         }
         
-        /* 下拉選單容器 */
+        /* ===== 下拉選單容器 ===== */
         .dropdowns-container {
             display: flex;
             gap: 12px;
@@ -295,7 +487,7 @@
             color: var(--filter-btn-active-text);
         }
         
-        /* 系列篩選 */
+        /* ===== 系列篩選 ===== */
         .filter-section {
             margin: 0 16px 16px;
         }
@@ -327,7 +519,7 @@
             border-color: var(--filter-btn-active-bg);
         }
         
-        /* 排序按鈕 */
+        /* ===== 排序按鈕 ===== */
         .sort-section {
             display: flex;
             gap: 8px;
@@ -363,6 +555,7 @@
             opacity: 0.8;
         }
         
+        /* ===== 統計 ===== */
         .stats {
             background: var(--stats-bg);
             margin: 0 16px 16px;
@@ -391,6 +584,7 @@
             color: var(--text-muted);
         }
         
+        /* ===== 產品列表 ===== */
         .product-list {
             margin: 0 16px 20px;
         }
@@ -405,11 +599,18 @@
             transition: 0.2s;
             border: 1px solid var(--border-color);
             border-left-width: 4px;
+            position: relative;
         }
         
         .product-card.BX { border-left-color: var(--bx-color); }
         .product-card.UX { border-left-color: var(--ux-color); }
         .product-card.CX { border-left-color: var(--cx-color); }
+        .product-card:active { transform: scale(0.98); background: var(--badge-bg); }
+        
+        .product-card.favorite {
+            border-left-width: 6px;
+            border-left-color: var(--favorite-color);
+        }
         
         .product-header {
             display: flex;
@@ -422,6 +623,15 @@
             font-size: 1.1rem;
             font-weight: bold;
             color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .favorite-star {
+            color: var(--favorite-color);
+            font-size: 1.2rem;
+            cursor: pointer;
         }
         
         .product-type {
@@ -477,7 +687,8 @@
         
         .product-footer {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
+            align-items: center;
             margin-top: 8px;
         }
         
@@ -509,6 +720,34 @@
             color: var(--get-box-text);
         }
         
+        /* ===== 最近瀏覽 ===== */
+        .recent-bar {
+            background: var(--badge-bg);
+            margin: 0 16px 16px;
+            padding: 8px 12px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        
+        .recent-item {
+            background: var(--card-bg);
+            padding: 4px 12px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .recent-item:hover {
+            background: var(--filter-btn-active-bg);
+            color: white;
+        }
+        
+        /* ===== 模態框 ===== */
         .modal {
             display: none;
             position: fixed;
@@ -555,6 +794,7 @@
             color: var(--text-primary);
         }
         
+        /* ===== 詳細頁樣式 ===== */
         .detail-section {
             margin: 20px 0;
         }
@@ -586,6 +826,7 @@
             margin-top: 8px;
         }
         
+        /* ===== 其他 ===== */
         .loading-message {
             text-align: center;
             padding: 40px;
@@ -606,7 +847,7 @@
             <h1>⚙️ Beyblade X 完整查詢 <span id="dataCount">0</span></h1>
         </div>
         <div class="header-right">
-            <!-- 語言下拉選單 (放喺 Dark Mode 右邊) -->
+            <!-- 語言下拉選單 -->
             <div class="lang-dropdown" id="langDropdown">
                 <button class="lang-button" id="langButton">
                     <span id="selectedLang">🇭🇰 港</span>
@@ -623,11 +864,44 @@
         </div>
     </div>
     
+    <!-- 功能按鈕欄 -->
+    <div class="action-bar">
+        <div class="action-group">
+            <button class="action-btn favorite" id="showFavoritesBtn">⭐ 最愛 (<span id="favoriteCount">0</span>)</button>
+            <button class="action-btn wishlist" id="showWishlistBtn">📋 零件清單</button>
+            <button class="action-btn export" id="exportFavoritesBtn" style="display: none;">📤 匯出最愛</button>
+        </div>
+    </div>
+    
+    <!-- 零件收集清單面板 (預設隱藏) -->
+    <div class="wishlist-panel" id="wishlistPanel" style="display: none;">
+        <div class="wishlist-header">
+            <div class="wishlist-title">
+                <span>📋 我想收集嘅零件</span>
+                <span class="wishlist-progress" id="wishlistProgress">0/12</span>
+            </div>
+            <span class="wishlist-clear" id="clearWishlistBtn">清除所有</span>
+        </div>
+        
+        <div class="wishlist-items" id="wishlistItems"></div>
+        
+        <div class="wishlist-recommendations" id="wishlistRecommendations" style="display: none;">
+            <div class="wishlist-recommendations-title">🛒 建議購買產品</div>
+            <div class="wishlist-products" id="wishlistProducts"></div>
+        </div>
+    </div>
+    
+    <!-- 最近瀏覽 -->
+    <div class="recent-bar" id="recentBar" style="display: none;">
+        <span>🕒 最近瀏覽:</span>
+        <div id="recentList"></div>
+    </div>
+    
     <div class="search-box">
         <input type="text" id="searchInput" placeholder="搜尋型號、名稱...">
     </div>
     
-    <!-- 兩個下拉選單並排 (零件 + 入手方式) -->
+    <!-- 兩個下拉選單並排 -->
     <div class="dropdowns-container">
         <!-- 零件篩選下拉選單 -->
         <div class="dropdown" id="partDropdown">
@@ -669,7 +943,7 @@
         </div>
     </div>
     
-    <!-- 排序功能 (三個按鈕) -->
+    <!-- 排序功能 -->
     <div class="sort-section">
         <button class="sort-btn active" id="sortModel" data-sort="model" data-order="asc">
             📇 型號 <span class="sort-direction">↑</span>
@@ -691,564 +965,926 @@
         <div id="updateTime"></div>
     </div>
     
-    <div id="detailModal" class="modal" onclick="if(event.target===this) hideDetail()">
+    <div id="detailModal" class="modal" onclick="if(event.target===this) app.hideDetail()">
         <div class="modal-content" id="modalContent"></div>
     </div>
 
     <script>
-        // 直接用 GitHub Pages 嘅 JSON
-        const DATA_URL = 'beyblade_db.json';
-        
-        let products = [];
-        let currentSeries = 'all';
-        let currentPart = 'all';
-        let currentGet = 'all';
-        let searchTerm = '';
-        let currentLang = 'zh_hk';
-        
-        // 排序設定
-        let sortMode = 'model'; // 'model', 'ratchet', 'bit'
-        let sortOrder = 'asc';  // 'asc' 順序, 'desc' 倒序
-
-        // ==================== Dark Mode ====================
-        const darkModeToggle = document.getElementById('darkModeToggle');
-        const body = document.body;
-        
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            body.classList.add('dark-mode');
-            darkModeToggle.innerHTML = '☀️ 亮色';
-        }
-        
-        darkModeToggle.addEventListener('click', () => {
-            if (body.classList.contains('dark-mode')) {
-                body.classList.remove('dark-mode');
-                localStorage.setItem('darkMode', 'disabled');
-                darkModeToggle.innerHTML = '🌙 深色';
-            } else {
-                body.classList.add('dark-mode');
-                localStorage.setItem('darkMode', 'enabled');
-                darkModeToggle.innerHTML = '☀️ 亮色';
-            }
-        });
-
-        // ==================== 語言下拉選單 ====================
-        const langButton = document.getElementById('langButton');
-        const langMenu = document.getElementById('langMenu');
-        const selectedLang = document.getElementById('selectedLang');
-        
-        langButton.addEventListener('click', (e) => {
-            e.stopPropagation();
-            langMenu.classList.toggle('show');
-        });
-        
-        document.addEventListener('click', () => {
-            langMenu.classList.remove('show');
-        });
-        
-        langMenu.addEventListener('click', (e) => {
-            e.stopPropagation();
-        });
-        
-        document.querySelectorAll('.lang-item').forEach(item => {
-            item.addEventListener('click', () => {
-                document.querySelectorAll('.lang-item').forEach(i => i.classList.remove('active'));
-                item.classList.add('active');
-                currentLang = item.dataset.lang;
-                selectedLang.innerHTML = item.innerHTML;
-                langMenu.classList.remove('show');
-                render();
-            });
-        });
-
-        // ==================== 下拉選單通用功能 ====================
-        function setupDropdown(buttonId, menuId, itemClass, callback) {
-            const button = document.getElementById(buttonId);
-            const menu = document.getElementById(menuId);
+        // ==================== 應用程式主物件 ====================
+        const app = {
+            // 數據
+            products: [],
             
-            button.addEventListener('click', (e) => {
-                e.stopPropagation();
-                // 關閉其他下拉選單
-                document.querySelectorAll('.dropdown-menu').forEach(m => {
-                    if (m.id !== menuId) m.classList.remove('show');
+            // 狀態
+            currentSeries: 'all',
+            currentPart: 'all',
+            currentGet: 'all',
+            searchTerm: '',
+            currentLang: 'zh_hk',
+            sortMode: 'model',
+            sortOrder: 'asc',
+            showingFavorites: false,
+            
+            // 新功能狀態
+            favorites: JSON.parse(localStorage.getItem('beyblade_favorites') || '[]'),
+            recent: JSON.parse(localStorage.getItem('beyblade_recent') || '[]'),
+            wishlist: JSON.parse(localStorage.getItem('beyblade_wishlist') || '{"blade":[],"ratchet":[],"bit":[]}'),
+            
+            // 可用零件選項
+            availableParts: {
+                blade: [],
+                ratchet: [],
+                bit: []
+            },
+            
+            // 數據來源
+            dataUrl: 'beyblade_db.json',
+            
+            // ==================== 初始化 ====================
+            init: function() {
+                this.loadData();
+                this.bindEvents();
+                this.updateFavoritesCount();
+                this.renderRecentBar();
+                this.checkExportButton();
+                this.renderWishlistPanel();
+            },
+            
+            // ==================== 綁定事件 ====================
+            bindEvents: function() {
+                // Dark Mode
+                document.getElementById('darkModeToggle').addEventListener('click', () => this.toggleDarkMode());
+                
+                // 語言下拉選單
+                this.setupLangDropdown();
+                
+                // 零件篩選下拉選單
+                this.setupDropdown('partButton', 'partMenu', 'dropdown-item[data-part]', (item) => {
+                    const part = item.dataset.part;
+                    document.getElementById('selectedPart').innerHTML = item.innerHTML;
+                    this.currentPart = part;
+                    this.showingFavorites = false;
+                    this.render();
                 });
-                menu.classList.toggle('show');
-            });
-            
-            document.addEventListener('click', () => {
-                menu.classList.remove('show');
-            });
-            
-            menu.addEventListener('click', (e) => {
-                e.stopPropagation();
-            });
-            
-            document.querySelectorAll(`.${itemClass}`).forEach(item => {
-                item.addEventListener('click', () => {
-                    document.querySelectorAll(`.${itemClass}`).forEach(i => i.classList.remove('active'));
-                    item.classList.add('active');
-                    callback(item);
-                    menu.classList.remove('show');
+                
+                // 入手方式下拉選單
+                this.setupDropdown('getButton', 'getMenu', 'dropdown-item[data-get]', (item) => {
+                    const get = item.dataset.get;
+                    document.getElementById('selectedGet').innerHTML = item.innerHTML;
+                    this.currentGet = get;
+                    this.showingFavorites = false;
+                    this.render();
                 });
-            });
-        }
-
-        // ==================== 排序功能 (支援順序/倒序) ====================
-        function handleSort(clickedBtn, mode) {
-            const currentActive = document.querySelector('.sort-btn.active');
-            const orderSpan = clickedBtn.querySelector('.sort-direction');
+                
+                // 系列篩選
+                document.querySelectorAll('#seriesFilter .filter-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        document.querySelectorAll('#seriesFilter .filter-btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        this.currentSeries = btn.dataset.type;
+                        this.showingFavorites = false;
+                        this.render();
+                    });
+                });
+                
+                // 排序按鈕
+                document.getElementById('sortModel').addEventListener('click', (e) => this.handleSort(e.target.closest('.sort-btn'), 'model'));
+                document.getElementById('sortRatchet').addEventListener('click', (e) => this.handleSort(e.target.closest('.sort-btn'), 'ratchet'));
+                document.getElementById('sortBit').addEventListener('click', (e) => this.handleSort(e.target.closest('.sort-btn'), 'bit'));
+                
+                // 搜尋輸入
+                document.getElementById('searchInput').addEventListener('input', (e) => {
+                    this.searchTerm = e.target.value;
+                    this.showingFavorites = false;
+                    this.render();
+                });
+                
+                // 最愛按鈕
+                document.getElementById('showFavoritesBtn').addEventListener('click', () => this.toggleFavorites());
+                
+                // 零件清單按鈕
+                document.getElementById('showWishlistBtn').addEventListener('click', () => this.toggleWishlist());
+                
+                // 清除所有零件
+                document.getElementById('clearWishlistBtn').addEventListener('click', () => this.clearWishlist());
+                
+                // 匯出最愛按鈕
+                document.getElementById('exportFavoritesBtn').addEventListener('click', () => this.exportFavorites());
+            },
             
-            if (currentActive && currentActive.id === clickedBtn.id) {
-                // 同一個按鈕：切換順序
-                sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
-            } else {
-                // 唔同按鈕：設定新模式，預設順序
-                if (currentActive) {
-                    currentActive.classList.remove('active');
-                }
-                clickedBtn.classList.add('active');
-                sortMode = mode;
-                sortOrder = 'asc';
-            }
-            
-            // 更新所有按鈕的箭嘴顯示
-            document.querySelectorAll('.sort-btn').forEach(btn => {
-                const span = btn.querySelector('.sort-direction');
-                if (btn.id === clickedBtn.id) {
-                    span.innerHTML = sortOrder === 'asc' ? '↑' : '↓';
+            // ==================== Dark Mode ====================
+            toggleDarkMode: function() {
+                const body = document.body;
+                const btn = document.getElementById('darkModeToggle');
+                
+                if (body.classList.contains('dark-mode')) {
+                    body.classList.remove('dark-mode');
+                    localStorage.setItem('darkMode', 'disabled');
+                    btn.innerHTML = '🌙 深色';
                 } else {
-                    span.innerHTML = '↑';
+                    body.classList.add('dark-mode');
+                    localStorage.setItem('darkMode', 'enabled');
+                    btn.innerHTML = '☀️ 亮色';
                 }
-            });
+            },
             
-            render();
-        }
-
-        // 綁定排序按鈕
-        document.getElementById('sortModel').addEventListener('click', function() {
-            handleSort(this, 'model');
-        });
-        document.getElementById('sortRatchet').addEventListener('click', function() {
-            handleSort(this, 'ratchet');
-        });
-        document.getElementById('sortBit').addEventListener('click', function() {
-            handleSort(this, 'bit');
-        });
-
-        // ==================== 載入數據 ====================
-        async function loadData() {
-            const listEl = document.getElementById('productList');
-            const dataCountEl = document.getElementById('dataCount');
-            const updateTimeEl = document.getElementById('updateTime');
+            // ==================== 語言下拉選單 ====================
+            setupLangDropdown: function() {
+                const button = document.getElementById('langButton');
+                const menu = document.getElementById('langMenu');
+                const selected = document.getElementById('selectedLang');
+                
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    menu.classList.toggle('show');
+                });
+                
+                document.addEventListener('click', () => menu.classList.remove('show'));
+                menu.addEventListener('click', (e) => e.stopPropagation());
+                
+                document.querySelectorAll('.lang-item').forEach(item => {
+                    item.addEventListener('click', () => {
+                        document.querySelectorAll('.lang-item').forEach(i => i.classList.remove('active'));
+                        item.classList.add('active');
+                        this.currentLang = item.dataset.lang;
+                        selected.innerHTML = item.innerHTML;
+                        menu.classList.remove('show');
+                        this.render();
+                    });
+                });
+            },
             
-            try {
-                const response = await fetch(DATA_URL);
-                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            // ==================== 通用下拉選單 ====================
+            setupDropdown: function(buttonId, menuId, itemSelector, callback) {
+                const button = document.getElementById(buttonId);
+                const menu = document.getElementById(menuId);
                 
-                const data = await response.json();
-                products = Array.isArray(data) ? data : [];
+                button.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    document.querySelectorAll('.dropdown-menu').forEach(m => {
+                        if (m.id !== menuId) m.classList.remove('show');
+                    });
+                    menu.classList.toggle('show');
+                });
                 
-                // 為每個產品加入零件類型標記
-                products = products.map(p => {
-                    if (!p.part_type) {
-                        if (p.type === 'CX') {
-                            p.part_type = 'blade';
-                        } else if (p.ratchet && p.ratchet !== '') {
-                            p.part_type = 'ratchet';
-                        } else if (p.bit_code) {
-                            p.part_type = 'bit';
-                        } else {
-                            p.part_type = 'blade';
+                document.addEventListener('click', () => menu.classList.remove('show'));
+                menu.addEventListener('click', (e) => e.stopPropagation());
+                
+                document.querySelectorAll(itemSelector).forEach(item => {
+                    item.addEventListener('click', () => {
+                        document.querySelectorAll(itemSelector).forEach(i => i.classList.remove('active'));
+                        item.classList.add('active');
+                        callback(item);
+                        menu.classList.remove('show');
+                    });
+                });
+            },
+            
+            // ==================== 排序處理 ====================
+            handleSort: function(clickedBtn, mode) {
+                const currentActive = document.querySelector('.sort-btn.active');
+                const orderSpan = clickedBtn.querySelector('.sort-direction');
+                
+                if (currentActive && currentActive.id === clickedBtn.id) {
+                    this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+                } else {
+                    if (currentActive) currentActive.classList.remove('active');
+                    clickedBtn.classList.add('active');
+                    this.sortMode = mode;
+                    this.sortOrder = 'asc';
+                }
+                
+                document.querySelectorAll('.sort-btn').forEach(btn => {
+                    const span = btn.querySelector('.sort-direction');
+                    if (btn.id === clickedBtn.id) {
+                        span.innerHTML = this.sortOrder === 'asc' ? '↑' : '↓';
+                    } else {
+                        span.innerHTML = '↑';
+                    }
+                });
+                
+                this.render();
+            },
+            
+            // ==================== 載入數據 ====================
+            loadData: async function() {
+                const listEl = document.getElementById('productList');
+                const dataCountEl = document.getElementById('dataCount');
+                const updateTimeEl = document.getElementById('updateTime');
+                
+                try {
+                    const response = await fetch(this.dataUrl);
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    
+                    const data = await response.json();
+                    this.products = Array.isArray(data) ? data : [];
+                    
+                    // 加入零件類型標記
+                    this.products = this.products.map(p => {
+                        if (!p.part_type) {
+                            if (p.type === 'CX') {
+                                p.part_type = 'blade';
+                            } else if (p.ratchet && p.ratchet !== '') {
+                                p.part_type = 'ratchet';
+                            } else if (p.bit_code) {
+                                p.part_type = 'bit';
+                            } else {
+                                p.part_type = 'blade';
+                            }
+                        }
+                        return p;
+                    });
+                    
+                    // 建立可用零件選項
+                    this.buildAvailableParts();
+                    
+                    dataCountEl.textContent = this.products.length;
+                    updateTimeEl.innerHTML = `最後更新: ${new Date().toLocaleString('zh-HK')} (共 ${this.products.length} 項)`;
+                    
+                    this.updateStats();
+                    this.render();
+                    
+                } catch (error) {
+                    listEl.innerHTML = `
+                        <div style="text-align:center; padding:40px; color:#cc0000;">
+                            <h3>📛 無法載入數據</h3>
+                            <p>${this.escapeHTML(error.message)}</p>
+                            <p>請確保 <code>beyblade_db.json</code> 同 HTML 放埋一齊</p>
+                            <button class="filter-btn" style="margin-top:20px;" onclick="location.reload()">🔄 重試</button>
+                        </div>
+                    `;
+                }
+            },
+            
+            // ==================== 建立可用零件選項 ====================
+            buildAvailableParts: function() {
+                const bladeSet = new Set();
+                const ratchetSet = new Set();
+                const bitSet = new Set();
+                
+                this.products.forEach(p => {
+                    // Blade 名稱 (main_blade)
+                    if (p.main_blade_zh_hk) bladeSet.add(p.main_blade_zh_hk);
+                    
+                    // Ratchet
+                    if (p.ratchet) ratchetSet.add(p.ratchet);
+                    
+                    // Bit 代碼
+                    if (p.bit_code) bitSet.add(p.bit_code);
+                });
+                
+                this.availableParts.blade = Array.from(bladeSet).sort();
+                this.availableParts.ratchet = Array.from(ratchetSet).sort();
+                this.availableParts.bit = Array.from(bitSet).sort();
+            },
+            
+            // ==================== 更新統計 ====================
+            updateStats: function() {
+                const total = this.products.length;
+                const bx = this.products.filter(p => p.type === 'BX').length;
+                const ux = this.products.filter(p => p.type === 'UX').length;
+                const cx = this.products.filter(p => p.type === 'CX').length;
+                
+                document.getElementById('stats').innerHTML = `
+                    <div class="stat-item">
+                        <div class="stat-number">${total}</div>
+                        <div class="stat-label">總數</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${bx}</div>
+                        <div class="stat-label">BX</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${ux}</div>
+                        <div class="stat-label">UX</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">${cx}</div>
+                        <div class="stat-label">CX</div>
+                    </div>
+                `;
+            },
+            
+            // ==================== 輔助函數 ====================
+            escapeHTML: function(str) {
+                if (!str) return '';
+                return String(str).replace(/[&<>]/g, function(m) {
+                    if (m === '&') return '&amp;';
+                    if (m === '<') return '&lt;';
+                    if (m === '>') return '&gt;';
+                    return m;
+                });
+            },
+            
+            getNameByLang: function(product, field) {
+                if (field === 'chip') {
+                    return product[`chip_${this.currentLang}`] || product.chip_zh_hk || product.chip_en || '';
+                }
+                if (field === 'main') {
+                    return product[`main_blade_${this.currentLang}`] || product.main_blade_zh_hk || '';
+                }
+                if (field === 'metal') {
+                    return product[`metal_${this.currentLang}`] || product.metal_zh_hk || '';
+                }
+                if (field === 'over') {
+                    return product[`over_${this.currentLang}`] || product.over_zh_hk || '';
+                }
+                if (field === 'assist') {
+                    return product[`assist_blade_${this.currentLang}`] || product.assist_blade_zh_hk || '';
+                }
+                if (field === 'bit') {
+                    return product[`bit_name_${this.currentLang}`] || product.bit_name_zh_hk || product.bit_name_en || '';
+                }
+                return '';
+            },
+            
+            getDataGetClass: function(dataGet) {
+                if (!dataGet || dataGet === '') return 'data-get-t';
+                if (dataGet === 'A') return 'data-get-a';
+                if (dataGet === 'J') return 'data-get-j';
+                if (dataGet.match(/^×\d+$/)) return 'data-get-box';
+                return 'data-get-t';
+            },
+            
+            getDataGetDisplay: function(dataGet) {
+                if (!dataGet || dataGet === '') return '📦 通販';
+                if (dataGet === 'A') return '📱 App';
+                if (dataGet === 'J') return '🇯🇵 日本';
+                if (dataGet === '×3') return '🎲 3入';
+                if (dataGet === '×4') return '🎲 4入';
+                if (dataGet === '×5') return '🎲 5入';
+                if (dataGet === '×8') return '🎲 8入';
+                if (dataGet === '×12') return '🎲 12入';
+                return '📦 通販';
+            },
+            
+            // ==================== 最愛功能 ====================
+            toggleFavorite: function(model, event) {
+                if (event) event.stopPropagation();
+                
+                const index = this.favorites.indexOf(model);
+                if (index === -1) {
+                    this.favorites.push(model);
+                } else {
+                    this.favorites.splice(index, 1);
+                }
+                
+                localStorage.setItem('beyblade_favorites', JSON.stringify(this.favorites));
+                this.updateFavoritesCount();
+                this.checkExportButton();
+                this.render();
+            },
+            
+            updateFavoritesCount: function() {
+                document.getElementById('favoriteCount').textContent = this.favorites.length;
+            },
+            
+            checkExportButton: function() {
+                const exportBtn = document.getElementById('exportFavoritesBtn');
+                if (this.favorites.length > 0) {
+                    exportBtn.style.display = 'inline-flex';
+                } else {
+                    exportBtn.style.display = 'none';
+                }
+            },
+            
+            isFavorite: function(model) {
+                return this.favorites.includes(model);
+            },
+            
+            toggleFavorites: function() {
+                if (this.favorites.length === 0) {
+                    alert('你仲未有最愛產品 ⭐\n點擊產品上的星星就可以加入最愛！');
+                    return;
+                }
+                
+                this.showingFavorites = !this.showingFavorites;
+                
+                const btn = document.getElementById('showFavoritesBtn');
+                if (this.showingFavorites) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+                
+                this.render();
+            },
+            
+            // ==================== 匯出最愛 ====================
+            exportFavorites: function() {
+                if (this.favorites.length === 0) {
+                    alert('沒有最愛產品可以匯出');
+                    return;
+                }
+                
+                const favoriteProducts = this.products.filter(p => this.favorites.includes(p.model));
+                
+                let text = 'Beyblade X 最愛產品清單\n';
+                text += `產生時間: ${new Date().toLocaleString('zh-HK')}\n`;
+                text += `總共 ${favoriteProducts.length} 項\n`;
+                text += '='.repeat(40) + '\n\n';
+                
+                favoriteProducts.forEach(p => {
+                    text += `${p.model} - ${p.main_blade_zh_hk || ''}\n`;
+                    text += `  Ratchet: ${p.ratchet || '—'}\n`;
+                    text += `  Bit: ${p.bit_code || '—'} ${p.bit_name_zh_hk || ''}\n`;
+                    text += `  入手: ${this.getDataGetDisplay(p.data_get)}\n`;
+                    text += '-'.repeat(30) + '\n';
+                });
+                
+                const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `beyblade_favorites_${new Date().getTime()}.txt`;
+                a.click();
+                URL.revokeObjectURL(url);
+            },
+            
+            // ==================== 最近瀏覽 ====================
+            addToRecent: function(model) {
+                this.recent = this.recent.filter(m => m !== model);
+                this.recent.unshift(model);
+                if (this.recent.length > 10) this.recent.pop();
+                
+                localStorage.setItem('beyblade_recent', JSON.stringify(this.recent));
+                this.renderRecentBar();
+            },
+            
+            renderRecentBar: function() {
+                const bar = document.getElementById('recentBar');
+                const listEl = document.getElementById('recentList');
+                
+                if (this.recent.length === 0) {
+                    bar.style.display = 'none';
+                    return;
+                }
+                
+                bar.style.display = 'flex';
+                
+                let html = '';
+                this.recent.forEach(model => {
+                    const product = this.products.find(p => p.model === model);
+                    if (product) {
+                        const name = product.main_blade_zh_hk || product.model;
+                        html += `<span class="recent-item" onclick="app.showDetail('${model}')">${this.escapeHTML(name)}</span>`;
+                    }
+                });
+                
+                listEl.innerHTML = html;
+            },
+            
+            // ==================== 零件收集清單 ====================
+            toggleWishlist: function() {
+                const panel = document.getElementById('wishlistPanel');
+                if (panel.style.display === 'none') {
+                    panel.style.display = 'block';
+                    this.renderWishlistPanel();
+                } else {
+                    panel.style.display = 'none';
+                }
+            },
+            
+            renderWishlistPanel: function() {
+                const panel = document.getElementById('wishlistItems');
+                const progress = document.getElementById('wishlistProgress');
+                
+                // 計算總數
+                const totalSelected = this.wishlist.blade.length + this.wishlist.ratchet.length + this.wishlist.bit.length;
+                progress.textContent = `${totalSelected}/12`;
+                
+                let html = '';
+                
+                // Blade 部分
+                html += `
+                    <div class="wishlist-category">
+                        <div class="wishlist-category-title">⚔️ Blade</div>
+                        <div class="wishlist-options">
+                `;
+                
+                this.availableParts.blade.slice(0, 8).forEach(blade => {
+                    const selected = this.wishlist.blade.includes(blade);
+                    html += `<span class="wishlist-option ${selected ? 'selected' : ''}" onclick="app.toggleWishlistItem('blade', '${blade}')">${blade}</span>`;
+                });
+                
+                html += `</div></div>`;
+                
+                // Ratchet 部分
+                html += `
+                    <div class="wishlist-category">
+                        <div class="wishlist-category-title">⚙️ Ratchet</div>
+                        <div class="wishlist-options">
+                `;
+                
+                this.availableParts.ratchet.slice(0, 8).forEach(ratchet => {
+                    const selected = this.wishlist.ratchet.includes(ratchet);
+                    html += `<span class="wishlist-option ${selected ? 'selected' : ''}" onclick="app.toggleWishlistItem('ratchet', '${ratchet}')">${ratchet}</span>`;
+                });
+                
+                html += `</div></div>`;
+                
+                // Bit 部分
+                html += `
+                    <div class="wishlist-category">
+                        <div class="wishlist-category-title">🔰 Bit</div>
+                        <div class="wishlist-options">
+                `;
+                
+                this.availableParts.bit.slice(0, 8).forEach(bit => {
+                    const selected = this.wishlist.bit.includes(bit);
+                    html += `<span class="wishlist-option ${selected ? 'selected' : ''}" onclick="app.toggleWishlistItem('bit', '${bit}')">${bit}</span>`;
+                });
+                
+                html += `</div></div>`;
+                
+                panel.innerHTML = html;
+                
+                // 更新推薦產品
+                this.updateWishlistRecommendations();
+            },
+            
+            toggleWishlistItem: function(category, value) {
+                const index = this.wishlist[category].indexOf(value);
+                if (index === -1) {
+                    if (this.getTotalWishlistCount() >= 12) {
+                        alert('最多可以揀 12 個零件！');
+                        return;
+                    }
+                    this.wishlist[category].push(value);
+                } else {
+                    this.wishlist[category].splice(index, 1);
+                }
+                
+                localStorage.setItem('beyblade_wishlist', JSON.stringify(this.wishlist));
+                this.renderWishlistPanel();
+            },
+            
+            getTotalWishlistCount: function() {
+                return this.wishlist.blade.length + this.wishlist.ratchet.length + this.wishlist.bit.length;
+            },
+            
+            clearWishlist: function() {
+                if (confirm('確定要清除所有已選零件？')) {
+                    this.wishlist = { blade: [], ratchet: [], bit: [] };
+                    localStorage.setItem('beyblade_wishlist', JSON.stringify(this.wishlist));
+                    this.renderWishlistPanel();
+                }
+            },
+            
+            updateWishlistRecommendations: function() {
+                const recommendationsDiv = document.getElementById('wishlistRecommendations');
+                const productsDiv = document.getElementById('wishlistProducts');
+                
+                const totalSelected = this.getTotalWishlistCount();
+                
+                if (totalSelected === 0) {
+                    recommendationsDiv.style.display = 'none';
+                    return;
+                }
+                
+                // 尋找可以滿足最多已選零件的產品
+                const productScores = [];
+                
+                this.products.forEach(p => {
+                    let score = 0;
+                    const parts = [];
+                    
+                    // 檢查 Blade
+                    if (p.main_blade_zh_hk && this.wishlist.blade.includes(p.main_blade_zh_hk)) {
+                        score++;
+                        parts.push(`⚔️ ${p.main_blade_zh_hk}`);
+                    }
+                    
+                    // 檢查 Ratchet
+                    if (p.ratchet && this.wishlist.ratchet.includes(p.ratchet)) {
+                        score++;
+                        parts.push(`⚙️ ${p.ratchet}`);
+                    }
+                    
+                    // 檢查 Bit
+                    if (p.bit_code && this.wishlist.bit.includes(p.bit_code)) {
+                        score++;
+                        parts.push(`🔰 ${p.bit_code}`);
+                    }
+                    
+                    if (score > 0) {
+                        productScores.push({
+                            product: p,
+                            score: score,
+                            parts: parts
+                        });
+                    }
+                });
+                
+                // 按分數排序
+                productScores.sort((a, b) => b.score - a.score);
+                
+                if (productScores.length === 0) {
+                    recommendationsDiv.style.display = 'none';
+                    return;
+                }
+                
+                recommendationsDiv.style.display = 'block';
+                
+                let html = '';
+                productScores.slice(0, 3).forEach(ps => {
+                    html += `
+                        <div class="wishlist-product-card" onclick="app.showDetail('${ps.product.model}')">
+                            <div class="wishlist-product-model">${ps.product.model}</div>
+                            <div>${ps.product.main_blade_zh_hk || ''}</div>
+                            <div class="wishlist-product-parts">${ps.parts.join(' · ')}</div>
+                            <div style="font-size:0.8rem; margin-top:4px;">✅ 滿足 ${ps.score} 個零件</div>
+                        </div>
+                    `;
+                });
+                
+                productsDiv.innerHTML = html;
+            },
+            
+            // ==================== 過濾產品 ====================
+            getFilteredProducts: function() {
+                if (this.showingFavorites) {
+                    return this.products.filter(p => this.favorites.includes(p.model));
+                }
+                
+                return this.products.filter(p => {
+                    if (this.currentSeries !== 'all' && p.type !== this.currentSeries) return false;
+                    if (this.currentPart !== 'all' && p.part_type !== this.currentPart) return false;
+                    
+                    if (this.currentGet !== 'all') {
+                        if (this.currentGet === 'A' && p.data_get !== 'A') return false;
+                        if (this.currentGet === 'J' && p.data_get !== 'J') return false;
+                        if (this.currentGet === 'T' && p.data_get && p.data_get !== '') return false;
+                        if (this.currentGet === 'box' && (!p.data_get || !p.data_get.match(/^×\d+$/))) return false;
+                    }
+                    
+                    if (this.searchTerm) {
+                        const term = this.searchTerm.toLowerCase();
+                        return (p.model && p.model.toLowerCase().includes(term)) ||
+                               (p.main_blade_zh_hk && p.main_blade_zh_hk.toLowerCase().includes(term)) ||
+                               (p.main_blade_en && p.main_blade_en.toLowerCase().includes(term)) ||
+                               (p.chip_zh_hk && p.chip_zh_hk.toLowerCase().includes(term)) ||
+                               (p.assist_blade_code && p.assist_blade_code.toLowerCase().includes(term)) ||
+                               (p.ratchet && p.ratchet.toLowerCase().includes(term)) ||
+                               (p.bit_code && p.bit_code.toLowerCase().includes(term));
+                    }
+                    return true;
+                });
+            },
+            
+            // ==================== 排序產品 ====================
+            sortProducts: function(productsToSort) {
+                const sorted = [...productsToSort];
+                
+                sorted.sort((a, b) => {
+                    let compareResult = 0;
+                    
+                    if (this.sortMode === 'model') {
+                        compareResult = a.model.localeCompare(b.model);
+                    } else if (this.sortMode === 'ratchet') {
+                        const aVal = a.ratchet || '';
+                        const bVal = b.ratchet || '';
+                        if (aVal && bVal) {
+                            compareResult = aVal.localeCompare(bVal);
+                        } else if (aVal) {
+                            compareResult = -1;
+                        } else if (bVal) {
+                            compareResult = 1;
+                        }
+                    } else if (this.sortMode === 'bit') {
+                        const aVal = a.bit_code || '';
+                        const bVal = b.bit_code || '';
+                        if (aVal && bVal) {
+                            compareResult = aVal.localeCompare(bVal);
+                        } else if (aVal) {
+                            compareResult = -1;
+                        } else if (bVal) {
+                            compareResult = 1;
                         }
                     }
-                    return p;
+                    
+                    return this.sortOrder === 'asc' ? compareResult : -compareResult;
                 });
                 
-                dataCountEl.textContent = products.length;
-                updateTimeEl.innerHTML = `最後更新: ${new Date().toLocaleString('zh-HK')} (共 ${products.length} 項)`;
-                
-                updateStats();
-                render();
-                
-            } catch (error) {
-                listEl.innerHTML = `
-                    <div style="text-align:center; padding:40px; color:#cc0000;">
-                        <h3>📛 無法載入數據</h3>
-                        <p>${error.message}</p>
-                        <p>請確保 <code>beyblade_db.json</code> 同 HTML 放埋一齊</p>
-                        <button class="filter-btn" style="margin-top:20px;" onclick="location.reload()">🔄 重試</button>
-                    </div>
-                `;
-            }
-        }
-
-        // ==================== 更新統計 (只保留系列統計) ====================
-        function updateStats() {
-            const total = products.length;
-            const bx = products.filter(p => p.type === 'BX').length;
-            const ux = products.filter(p => p.type === 'UX').length;
-            const cx = products.filter(p => p.type === 'CX').length;
+                return sorted;
+            },
             
-            document.getElementById('stats').innerHTML = `
-                <div class="stat-item">
-                    <div class="stat-number">${total}</div>
-                    <div class="stat-label">總數</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">${bx}</div>
-                    <div class="stat-label">BX</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">${ux}</div>
-                    <div class="stat-label">UX</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">${cx}</div>
-                    <div class="stat-label">CX</div>
-                </div>
-            `;
-        }
-
-        // ==================== 輔助函數 ====================
-        function escapeHTML(str) {
-            if (!str) return '';
-            return String(str).replace(/[&<>]/g, function(m) {
-                if (m === '&') return '&amp;';
-                if (m === '<') return '&lt;';
-                if (m === '>') return '&gt;';
-                return m;
-            });
-        }
-
-        function getNameByLang(product, field) {
-            if (field === 'chip') {
-                return product[`chip_${currentLang}`] || product.chip_zh_hk || product.chip_en || '';
-            }
-            if (field === 'main') {
-                return product[`main_blade_${currentLang}`] || product.main_blade_zh_hk || '';
-            }
-            if (field === 'metal') {
-                return product[`metal_${currentLang}`] || product.metal_zh_hk || '';
-            }
-            if (field === 'over') {
-                return product[`over_${currentLang}`] || product.over_zh_hk || '';
-            }
-            if (field === 'assist') {
-                return product[`assist_blade_${currentLang}`] || product.assist_blade_zh_hk || '';
-            }
-            if (field === 'bit') {
-                return product[`bit_name_${currentLang}`] || product.bit_name_zh_hk || product.bit_name_en || '';
-            }
-            return '';
-        }
-
-        function getDataGetClass(dataGet) {
-            if (!dataGet || dataGet === '') return 'data-get-t';
-            if (dataGet === 'A') return 'data-get-a';
-            if (dataGet === 'J') return 'data-get-j';
-            if (dataGet.match(/^×\d+$/)) return 'data-get-box';
-            return 'data-get-t';
-        }
-
-        function getDataGetDisplay(dataGet) {
-            if (!dataGet || dataGet === '') return '📦 通販';
-            if (dataGet === 'A') return '📱 App';
-            if (dataGet === 'J') return '🇯🇵 日本';
-            if (dataGet === '×3') return '🎲 3入';
-            if (dataGet === '×4') return '🎲 4入';
-            if (dataGet === '×5') return '🎲 5入';
-            if (dataGet === '×8') return '🎲 8入';
-            if (dataGet === '×12') return '🎲 12入';
-            return '📦 通販';
-        }
-
-        // ==================== 過濾產品 ====================
-        function getFilteredProducts() {
-            return products.filter(p => {
-                if (currentSeries !== 'all' && p.type !== currentSeries) return false;
-                if (currentPart !== 'all' && p.part_type !== currentPart) return false;
+            // ==================== 渲染 ====================
+            render: function() {
+                let filtered = this.getFilteredProducts();
+                filtered = this.sortProducts(filtered);
                 
-                if (currentGet !== 'all') {
-                    if (currentGet === 'A' && p.data_get !== 'A') return false;
-                    if (currentGet === 'J' && p.data_get !== 'J') return false;
-                    if (currentGet === 'T' && p.data_get && p.data_get !== '') return false;
-                    if (currentGet === 'box' && (!p.data_get || !p.data_get.match(/^×\d+$/))) return false;
-                }
+                const listEl = document.getElementById('productList');
                 
-                if (searchTerm) {
-                    const term = searchTerm.toLowerCase();
-                    return (p.model && p.model.toLowerCase().includes(term)) ||
-                           (p.main_blade_zh_hk && p.main_blade_zh_hk.toLowerCase().includes(term)) ||
-                           (p.main_blade_en && p.main_blade_en.toLowerCase().includes(term)) ||
-                           (p.chip_zh_hk && p.chip_zh_hk.toLowerCase().includes(term)) ||
-                           (p.assist_blade_code && p.assist_blade_code.toLowerCase().includes(term)) ||
-                           (p.ratchet && p.ratchet.toLowerCase().includes(term)) ||
-                           (p.bit_code && p.bit_code.toLowerCase().includes(term));
-                }
-                return true;
-            });
-        }
-
-        // ==================== 排序產品 (唔再分系列) ====================
-        function sortProducts(productsToSort) {
-            const sorted = [...productsToSort];
-            
-            sorted.sort((a, b) => {
-                let compareResult = 0;
-                
-                if (sortMode === 'model') {
-                    compareResult = a.model.localeCompare(b.model);
-                } else if (sortMode === 'ratchet') {
-                    const aVal = a.ratchet || '';
-                    const bVal = b.ratchet || '';
-                    if (aVal && bVal) {
-                        compareResult = aVal.localeCompare(bVal);
-                    } else if (aVal) {
-                        compareResult = -1;
-                    } else if (bVal) {
-                        compareResult = 1;
+                if (filtered.length === 0) {
+                    if (this.showingFavorites) {
+                        listEl.innerHTML = '<div class="loading-message">⭐ 你最愛清單仲係空嘅</div>';
+                    } else {
+                        listEl.innerHTML = '<div class="loading-message">🔍 沒有符合的產品</div>';
                     }
-                } else if (sortMode === 'bit') {
-                    const aVal = a.bit_code || '';
-                    const bVal = b.bit_code || '';
-                    if (aVal && bVal) {
-                        compareResult = aVal.localeCompare(bVal);
-                    } else if (aVal) {
-                        compareResult = -1;
-                    } else if (bVal) {
-                        compareResult = 1;
-                    }
+                    return;
                 }
                 
-                // 根據順序/倒序調整結果
-                return sortOrder === 'asc' ? compareResult : -compareResult;
-            });
-            
-            return sorted;
-        }
-
-        // ==================== 渲染 ====================
-        function render() {
-            let filtered = getFilteredProducts();
-            filtered = sortProducts(filtered);
-            
-            const listEl = document.getElementById('productList');
-            
-            if (filtered.length === 0) {
-                listEl.innerHTML = '<div class="loading-message">🔍 沒有符合的產品</div>';
-                return;
-            }
-            
-            let html = '';
-            filtered.forEach(p => {
-                const chipName = escapeHTML(getNameByLang(p, 'chip'));
-                const mainName = escapeHTML(getNameByLang(p, 'main'));
-                const metalName = escapeHTML(getNameByLang(p, 'metal'));
-                const overName = escapeHTML(getNameByLang(p, 'over'));
-                const assistName = escapeHTML(getNameByLang(p, 'assist'));
-                const assistCode = p.assist_blade_code ? escapeHTML(p.assist_blade_code) : '';
-                const bitName = escapeHTML(getNameByLang(p, 'bit'));
-                
-                let nameHtml = '';
-                let tags = '';
-                let assistCodeHtml = '';
-                
-                if (p.type === 'CX') {
-                    const parts = [];
-                    if (chipName) parts.push(chipName);
-                    if (mainName) parts.push(mainName);
-                    if (metalName) parts.push(metalName);
-                    if (overName) parts.push(overName);
-                    if (assistName) parts.push(assistName);
-                    // 用「·」代替「+」
-                    nameHtml = parts.join(' · ');
+                let html = '';
+                filtered.forEach(p => {
+                    const chipName = this.escapeHTML(this.getNameByLang(p, 'chip'));
+                    const mainName = this.escapeHTML(this.getNameByLang(p, 'main'));
+                    const metalName = this.escapeHTML(this.getNameByLang(p, 'metal'));
+                    const overName = this.escapeHTML(this.getNameByLang(p, 'over'));
+                    const assistName = this.escapeHTML(this.getNameByLang(p, 'assist'));
+                    const assistCode = p.assist_blade_code ? this.escapeHTML(p.assist_blade_code) : '';
+                    const bitName = this.escapeHTML(this.getNameByLang(p, 'bit'));
                     
-                    if (assistCode) {
-                        assistCodeHtml = `<span class="product-assist-code">🔪 ${assistCode}</span>`;
+                    let nameHtml = '';
+                    let tags = '';
+                    let assistCodeHtml = '';
+                    
+                    if (p.type === 'CX') {
+                        const parts = [];
+                        if (chipName) parts.push(chipName);
+                        if (mainName) parts.push(mainName);
+                        if (metalName) parts.push(metalName);
+                        if (overName) parts.push(overName);
+                        if (assistName) parts.push(assistName);
+                        nameHtml = parts.join(' · ');
+                        
+                        if (assistCode) {
+                            assistCodeHtml = `<span class="product-assist-code">🔪 ${assistCode}</span>`;
+                        }
+                        
+                        if (metalName) {
+                            tags += `<span class="product-tag">⚙️ ${metalName}</span>`;
+                        }
+                        if (overName) {
+                            tags += `<span class="product-tag">⬆️ ${overName}</span>`;
+                        }
+                    } else {
+                        nameHtml = mainName;
                     }
                     
-                    if (metalName) {
-                        tags += `<span class="product-tag">⚙️ ${metalName}</span>`;
-                    }
-                    if (overName) {
-                        tags += `<span class="product-tag">⬆️ ${overName}</span>`;
-                    }
-                } else {
-                    nameHtml = mainName;
+                    const dataGetClass = this.getDataGetClass(p.data_get);
+                    const dataGetDisplay = this.getDataGetDisplay(p.data_get);
+                    const isFav = this.isFavorite(p.model);
+                    
+                    html += `
+                        <div class="product-card ${this.escapeHTML(p.type)} ${isFav ? 'favorite' : ''}" onclick="app.showDetail('${this.escapeHTML(p.model)}')">
+                            <div class="product-header">
+                                <span class="product-model">
+                                    ${this.escapeHTML(p.model)} ${assistCodeHtml}
+                                    <span class="favorite-star" onclick="app.toggleFavorite('${this.escapeHTML(p.model)}', event)">${isFav ? '⭐' : '☆'}</span>
+                                </span>
+                                <span class="product-type">${this.escapeHTML(p.type)}</span>
+                            </div>
+                            <div class="product-name">${nameHtml}</div>
+                            ${tags ? `<div class="product-tags">${tags}</div>` : ''}
+                            <div class="product-specs">
+                                ${p.ratchet ? `<span>⚙️ ${this.escapeHTML(p.ratchet)}</span>` : ''}
+                                ${p.bit_code ? `<span>🔰 ${this.escapeHTML(p.bit_code)}</span>` : ''}
+                                ${bitName ? `<span>${bitName}</span>` : ''}
+                            </div>
+                            <div class="product-footer">
+                                <span class="data-get-badge ${dataGetClass}">${this.escapeHTML(dataGetDisplay)}</span>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                listEl.innerHTML = html;
+            },
+            
+            // ==================== 顯示詳細 ====================
+            showDetail: function(model) {
+                const product = this.products.find(p => p.model === model);
+                if (!product) return;
+                
+                this.addToRecent(model);
+                
+                const dataGetClass = this.getDataGetClass(product.data_get);
+                const dataGetDisplay = this.getDataGetDisplay(product.data_get);
+                const isFav = this.isFavorite(model);
+                
+                let content = `
+                    <span class="close-btn" onclick="app.hideDetail()">&times;</span>
+                    <div style="display:flex; justify-content:space-between; align-items:center;">
+                        <h2 style="margin-top:0;">${this.escapeHTML(product.model)}</h2>
+                        <span class="favorite-star" style="font-size:2rem; cursor:pointer;" onclick="app.toggleFavorite('${this.escapeHTML(product.model)}', event)">${isFav ? '⭐' : '☆'}</span>
+                    </div>
+                    <div style="display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap;">
+                        <span style="background:var(--badge-bg); padding:4px 12px; border-radius:20px;">${this.escapeHTML(product.type)} 系列</span>
+                        <span style="background:var(--badge-bg); padding:4px 12px; border-radius:20px;">零件: ${this.escapeHTML(product.part_type)}</span>
+                    </div>
+                `;
+                
+                if (product.type === 'CX' && product.chip_zh_hk) {
+                    content += `
+                        <div class="detail-section">
+                            <div class="detail-title">📝 本體名稱 (Chip)</div>
+                            <div><span class="lang-tag">🇭🇰 港</span> ${this.escapeHTML(product.chip_zh_hk) || '—'}</div>
+                            <div><span class="lang-tag">🇨🇳 台</span> ${this.escapeHTML(product.chip_zh_tw) || '—'}</div>
+                            <div><span class="lang-tag">🇬🇧 英</span> ${this.escapeHTML(product.chip_en) || '—'}</div>
+                            <div><span class="lang-tag">🇯🇵 日</span> ${this.escapeHTML(product.chip_jp) || '—'}</div>
+                        </div>
+                    `;
                 }
                 
-                const dataGetClass = getDataGetClass(p.data_get);
-                const dataGetDisplay = getDataGetDisplay(p.data_get);
+                if (product.metal_zh_hk) {
+                    content += `
+                        <div class="detail-section">
+                            <div class="detail-title">⚙️ Metal</div>
+                            <div><span class="lang-tag">🇭🇰 港</span> ${this.escapeHTML(product.metal_zh_hk) || '—'}</div>
+                            <div><span class="lang-tag">🇨🇳 台</span> ${this.escapeHTML(product.metal_zh_tw) || '—'}</div>
+                            <div><span class="lang-tag">🇬🇧 英</span> ${this.escapeHTML(product.metal_en) || '—'}</div>
+                            <div><span class="lang-tag">🇯🇵 日</span> ${this.escapeHTML(product.metal_jp) || '—'}</div>
+                        </div>
+                    `;
+                }
                 
-                html += `
-                    <div class="product-card ${escapeHTML(p.type)}" onclick="showDetail('${escapeHTML(p.model)}')">
-                        <div class="product-header">
-                            <span class="product-model">${escapeHTML(p.model)} ${assistCodeHtml}</span>
-                            <span class="product-type">${escapeHTML(p.type)}</span>
+                if (product.over_zh_hk) {
+                    content += `
+                        <div class="detail-section">
+                            <div class="detail-title">⬆️ Over</div>
+                            <div><span class="lang-tag">🇭🇰 港</span> ${this.escapeHTML(product.over_zh_hk) || '—'}</div>
+                            <div><span class="lang-tag">🇨🇳 台</span> ${this.escapeHTML(product.over_zh_tw) || '—'}</div>
+                            <div><span class="lang-tag">🇬🇧 英</span> ${this.escapeHTML(product.over_en) || '—'}</div>
+                            <div><span class="lang-tag">🇯🇵 日</span> ${this.escapeHTML(product.over_jp) || '—'}</div>
                         </div>
-                        <div class="product-name">${nameHtml}</div>
-                        ${tags ? `<div class="product-tags">${tags}</div>` : ''}
-                        <div class="product-specs">
-                            ${p.ratchet ? `<span>⚙️ ${escapeHTML(p.ratchet)}</span>` : ''}
-                            ${p.bit_code ? `<span>🔰 ${escapeHTML(p.bit_code)}</span>` : ''}
-                            ${bitName ? `<span>${bitName}</span>` : ''}
+                    `;
+                }
+                
+                if (product.main_blade_zh_hk) {
+                    content += `
+                        <div class="detail-section">
+                            <div class="detail-title">⚔️ 主 blade</div>
+                            <div><span class="lang-tag">🇭🇰 港</span> ${this.escapeHTML(product.main_blade_zh_hk) || '—'}</div>
+                            <div><span class="lang-tag">🇨🇳 台</span> ${this.escapeHTML(product.main_blade_zh_tw) || '—'}</div>
+                            <div><span class="lang-tag">🇬🇧 英</span> ${this.escapeHTML(product.main_blade_en) || '—'}</div>
+                            <div><span class="lang-tag">🇯🇵 日</span> ${this.escapeHTML(product.main_blade_jp) || '—'}</div>
                         </div>
-                        <div class="product-footer">
-                            <span class="data-get-badge ${dataGetClass}">${escapeHTML(dataGetDisplay)}</span>
+                    `;
+                }
+                
+                if (product.assist_blade_zh_hk) {
+                    content += `
+                        <div class="detail-section">
+                            <div class="detail-title">🔪 輔助刀 (Assist Blade)</div>
+                            <div><strong>代碼:</strong> ${this.escapeHTML(product.assist_blade_code) || '—'}</div>
+                            <div><span class="lang-tag">🇭🇰 港</span> ${this.escapeHTML(product.assist_blade_zh_hk) || '—'}</div>
+                            <div><span class="lang-tag">🇨🇳 台</span> ${this.escapeHTML(product.assist_blade_zh_tw) || '—'}</div>
+                            <div><span class="lang-tag">🇬🇧 英</span> ${this.escapeHTML(product.assist_blade_en) || '—'}</div>
+                            <div><span class="lang-tag">🇯🇵 日</span> ${this.escapeHTML(product.assist_blade_jp) || '—'}</div>
                         </div>
-                    </div>
-                `;
-            });
-            
-            listEl.innerHTML = html;
-        }
-
-        // ==================== 詳細頁 ====================
-        window.showDetail = function(model) {
-            const product = products.find(p => p.model === model);
-            if (!product) return;
-            
-            const dataGetClass = getDataGetClass(product.data_get);
-            const dataGetDisplay = getDataGetDisplay(product.data_get);
-            
-            let content = `
-                <span class="close-btn" onclick="hideDetail()">&times;</span>
-                <h2 style="margin-top:0;">${escapeHTML(product.model)}</h2>
-                <div style="display:flex; gap:8px; margin-bottom:16px;">
-                    <span style="background:var(--badge-bg); padding:4px 12px; border-radius:20px;">${escapeHTML(product.type)} 系列</span>
-                    <span style="background:var(--badge-bg); padding:4px 12px; border-radius:20px;">零件: ${escapeHTML(product.part_type)}</span>
-                </div>
-            `;
-            
-            if (product.type === 'CX' && product.chip_zh_hk) {
+                    `;
+                }
+                
+                if (product.ratchet) {
+                    content += `
+                        <div class="detail-section">
+                            <div class="detail-title">⚙️ Ratchet</div>
+                            <div style="font-size:1.2rem;">${this.escapeHTML(product.ratchet)}</div>
+                        </div>
+                    `;
+                }
+                
+                if (product.bit_code) {
+                    content += `
+                        <div class="detail-section">
+                            <div class="detail-title">🔰 Bit</div>
+                            <div><strong>代碼:</strong> ${this.escapeHTML(product.bit_code)}</div>
+                            <div><span class="lang-tag">🇭🇰 港</span> ${this.escapeHTML(product.bit_name_zh_hk) || '—'}</div>
+                            <div><span class="lang-tag">🇨🇳 台</span> ${this.escapeHTML(product.bit_name_zh_tw) || '—'}</div>
+                            <div><span class="lang-tag">🇬🇧 英</span> ${this.escapeHTML(product.bit_name_en) || '—'}</div>
+                            <div><span class="lang-tag">🇯🇵 日</span> ${this.escapeHTML(product.bit_name_jp) || '—'}</div>
+                        </div>
+                    `;
+                }
+                
                 content += `
                     <div class="detail-section">
-                        <div class="detail-title">📝 本體名稱 (Chip)</div>
-                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.chip_zh_hk) || '—'}</div>
-                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.chip_zh_tw) || '—'}</div>
-                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.chip_en) || '—'}</div>
-                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.chip_jp) || '—'}</div>
+                        <div class="detail-title">📦 入手方式</div>
+                        <div class="data-get-info ${dataGetClass}">${this.escapeHTML(dataGetDisplay)}</div>
                     </div>
                 `;
+                
+                document.getElementById('modalContent').innerHTML = content;
+                document.getElementById('detailModal').classList.add('show');
+            },
+            
+            // ==================== 隱藏詳細 ====================
+            hideDetail: function() {
+                document.getElementById('detailModal').classList.remove('show');
             }
-            
-            if (product.metal_zh_hk) {
-                content += `
-                    <div class="detail-section">
-                        <div class="detail-title">⚙️ Metal</div>
-                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.metal_zh_hk) || '—'}</div>
-                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.metal_zh_tw) || '—'}</div>
-                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.metal_en) || '—'}</div>
-                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.metal_jp) || '—'}</div>
-                    </div>
-                `;
-            }
-            
-            if (product.over_zh_hk) {
-                content += `
-                    <div class="detail-section">
-                        <div class="detail-title">⬆️ Over</div>
-                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.over_zh_hk) || '—'}</div>
-                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.over_zh_tw) || '—'}</div>
-                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.over_en) || '—'}</div>
-                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.over_jp) || '—'}</div>
-                    </div>
-                `;
-            }
-            
-            if (product.main_blade_zh_hk) {
-                content += `
-                    <div class="detail-section">
-                        <div class="detail-title">⚔️ 主 blade</div>
-                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.main_blade_zh_hk) || '—'}</div>
-                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.main_blade_zh_tw) || '—'}</div>
-                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.main_blade_en) || '—'}</div>
-                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.main_blade_jp) || '—'}</div>
-                    </div>
-                `;
-            }
-            
-            if (product.assist_blade_zh_hk) {
-                content += `
-                    <div class="detail-section">
-                        <div class="detail-title">🔪 輔助刀 (Assist Blade)</div>
-                        <div><strong>代碼:</strong> ${escapeHTML(product.assist_blade_code) || '—'}</div>
-                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.assist_blade_zh_hk) || '—'}</div>
-                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.assist_blade_zh_tw) || '—'}</div>
-                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.assist_blade_en) || '—'}</div>
-                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.assist_blade_jp) || '—'}</div>
-                    </div>
-                `;
-            }
-            
-            if (product.ratchet) {
-                content += `
-                    <div class="detail-section">
-                        <div class="detail-title">⚙️ Ratchet</div>
-                        <div style="font-size:1.2rem;">${escapeHTML(product.ratchet)}</div>
-                    </div>
-                `;
-            }
-            
-            if (product.bit_code) {
-                content += `
-                    <div class="detail-section">
-                        <div class="detail-title">🔰 Bit</div>
-                        <div><strong>代碼:</strong> ${escapeHTML(product.bit_code)}</div>
-                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.bit_name_zh_hk) || '—'}</div>
-                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.bit_name_zh_tw) || '—'}</div>
-                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.bit_name_en) || '—'}</div>
-                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.bit_name_jp) || '—'}</div>
-                    </div>
-                `;
-            }
-            
-            content += `
-                <div class="detail-section">
-                    <div class="detail-title">📦 入手方式</div>
-                    <div class="data-get-info ${dataGetClass}">${escapeHTML(dataGetDisplay)}</div>
-                </div>
-            `;
-            
-            document.getElementById('modalContent').innerHTML = content;
-            document.getElementById('detailModal').classList.add('show');
         };
-
-        window.hideDetail = function() {
-            document.getElementById('detailModal').classList.remove('show');
-        };
-
-        // ==================== 設定下拉選單 ====================
-        setupDropdown('partButton', 'partMenu', 'dropdown-item[data-part]', (item) => {
-            const part = item.dataset.part;
-            document.getElementById('selectedPart').innerHTML = item.innerHTML;
-            currentPart = part;
-            render();
-        });
-        
-        setupDropdown('getButton', 'getMenu', 'dropdown-item[data-get]', (item) => {
-            const get = item.dataset.get;
-            document.getElementById('selectedGet').innerHTML = item.innerHTML;
-            currentGet = get;
-            render();
-        });
-
-        // ==================== 事件監聽 ====================
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            searchTerm = e.target.value;
-            render();
-        });
-
-        document.querySelectorAll('#seriesFilter .filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('#seriesFilter .filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentSeries = btn.dataset.type;
-                render();
-            });
-        });
 
         // ==================== 初始化 ====================
-        document.addEventListener('DOMContentLoaded', loadData);
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('darkMode') === 'enabled') {
+                document.body.classList.add('dark-mode');
+                document.getElementById('darkModeToggle').innerHTML = '☀️ 亮色';
+            }
+            
+            window.app = app;
+            app.init();
+        });
     </script>
 </body>
 </html>
