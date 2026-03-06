@@ -308,7 +308,7 @@
     "bit_name_jp": "ユナイト",
     "data_get": "×8"
   },
-   {
+  {
     "model": "CX-07",
     "type": "CX",
     "chip_zh_hk": "天馬",
@@ -2587,7 +2587,7 @@
     "bit_name_jp": "ボール",
     "data_get": ""
   },
-    {
+  {
     "model": "BXC-01",
     "type": "BX",
     "main_blade_zh_hk": "鳳凰炎羽",
@@ -3545,7 +3545,7 @@
     "bit_name_jp": "フラット",
     "data_get": "J"
   },
-    {
+  {
     "model": "BXG-02",
     "type": "BX",
     "main_blade_zh_hk": "銀牙獵犬",
@@ -3606,6 +3606,3 @@
     "data_get": ""
   }
 ]
-
-
-
