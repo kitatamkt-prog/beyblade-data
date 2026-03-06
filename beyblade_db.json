@@ -1,6 +1,4 @@
 [
-  // ========== CX 系列 ==========
-  // CX-01
   {
     "model": "CX-01",
     "type": "CX",
@@ -25,8 +23,6 @@
     "bit_name_jp": "ボルテックス",
     "data_get": ""
   },
-
-  // CX-02
   {
     "model": "CX-02",
     "type": "CX",
@@ -51,8 +47,6 @@
     "bit_name_jp": "ローオーブ",
     "data_get": ""
   },
-
-  // CX-03
   {
     "model": "CX-03",
     "type": "CX",
@@ -77,8 +71,6 @@
     "bit_name_jp": "ウェッジ",
     "data_get": ""
   },
-
-  // CX-04-01 (英仙)
   {
     "model": "CX-04-01",
     "type": "CX",
@@ -103,8 +95,6 @@
     "bit_name_jp": "ウェッジ",
     "data_get": ""
   },
-
-  // CX-04-02 (翔龍)
   {
     "model": "CX-04-02",
     "type": "CX",
@@ -129,8 +119,6 @@
     "bit_name_jp": "ボルテックス",
     "data_get": ""
   },
-
-  // CX-05-01 (煉獄/死神)
   {
     "model": "CX-05-01",
     "type": "CX",
@@ -155,8 +143,6 @@
     "bit_name_jp": "キック",
     "data_get": "×3"
   },
-
-  // CX-05-02 (犀牛/死神)
   {
     "model": "CX-05-02",
     "type": "CX",
@@ -181,8 +167,6 @@
     "bit_name_jp": "ドット",
     "data_get": "×4"
   },
-
-  // CX-05-03 (煉獄/弧光)
   {
     "model": "CX-05-03",
     "type": "CX",
@@ -207,8 +191,6 @@
     "bit_name_jp": "オーブ",
     "data_get": "×5"
   },
-
-  // CX-05-04 (獅王徽章)
   {
     "model": "CX-05-04",
     "type": "CX",
@@ -224,8 +206,6 @@
     "bit_name_jp": "キック",
     "data_get": "×4"
   },
-
-  // CX-05-05 (鳳凰炎舵)
   {
     "model": "CX-05-05",
     "type": "CX",
@@ -241,8 +221,6 @@
     "bit_name_jp": "ローフラット",
     "data_get": "×4"
   },
-
-  // CX-05-06 (戰鯨波浪)
   {
     "model": "CX-05-06",
     "type": "CX",
@@ -258,8 +236,6 @@
     "bit_name_jp": "キック",
     "data_get": "×4"
   },
-
-  // CX-06-01 (妖狐/兇尾)
   {
     "model": "CX-06-01",
     "type": "CX",
@@ -284,8 +260,6 @@
     "bit_name_jp": "ギアラッシュ",
     "data_get": "×8"
   },
-
-  // CX-06-02 (妖狐/兇尾)
   {
     "model": "CX-06-02",
     "type": "CX",
@@ -310,8 +284,6 @@
     "bit_name_jp": "ディスクボール",
     "data_get": "×8"
   },
-
-  // CX-06-03 (妖狐/兇尾)
   {
     "model": "CX-06-03",
     "type": "CX",
@@ -336,8 +308,6 @@
     "bit_name_jp": "ユナイト",
     "data_get": "×8"
   },
-
-  // CX-07
   {
     "model": "CX-07",
     "type": "CX",
@@ -361,8 +331,6 @@
     "bit_name_jp": "ターボ",
     "data_get": ""
   },
-
-  // CX-08-01 (地獄犬/烈焰)
   {
     "model": "CX-08-01",
     "type": "CX",
@@ -387,8 +355,6 @@
     "bit_name_jp": "ウォールボール",
     "data_get": "×3"
   },
-
-  // CX-08-02 (戰鯨/烈焰)
   {
     "model": "CX-08-02",
     "type": "CX",
@@ -413,8 +379,6 @@
     "bit_name_jp": "ハイテーパー",
     "data_get": "×4"
   },
-
-  // CX-08-03 (地獄犬/幽暗)
   {
     "model": "CX-08-03",
     "type": "CX",
@@ -439,8 +403,6 @@
     "bit_name_jp": "フラット",
     "data_get": "×5"
   },
-
-  // CX-08-04 (翔龍破壞劍)
   {
     "model": "CX-08-04",
     "type": "CX",
@@ -456,8 +418,6 @@
     "bit_name_jp": "メタルニードル",
     "data_get": "×4"
   },
-
-  // CX-08-05 (漆黑護殼)
   {
     "model": "CX-08-05",
     "type": "CX",
@@ -473,8 +433,6 @@
     "bit_name_jp": "ウォールボール",
     "data_get": "×4"
   },
-
-  // CX-08-06 (鈷藍青龍)
   {
     "model": "CX-08-06",
     "type": "CX",
@@ -490,8 +448,6 @@
     "bit_name_jp": "ウォールボール",
     "data_get": "×4"
   },
-
-  // CX-09
   {
     "model": "CX-09",
     "type": "CX",
@@ -516,8 +472,6 @@
     "bit_name_jp": "トランスキック",
     "data_get": ""
   },
-
-  // CX-10
   {
     "model": "CX-10",
     "type": "CX",
@@ -542,8 +496,6 @@
     "bit_name_jp": "ディスクボール",
     "data_get": ""
   },
-
-  // CX-11-01 (帝皇)
   {
     "model": "CX-11-01",
     "type": "CX",
@@ -567,8 +519,6 @@
     "bit_name_jp": "オペレート",
     "data_get": ""
   },
-
-  // CX-11-02 (魔像巨石)
   {
     "model": "CX-11-02",
     "type": "CX",
@@ -584,8 +534,6 @@
     "bit_name_jp": "ハイニードル",
     "data_get": ""
   },
-
-  // CX-11-03 (烈鯊鰓刃)
   {
     "model": "CX-11-03",
     "type": "CX",
@@ -601,8 +549,6 @@
     "bit_name_jp": "フリーボール",
     "data_get": ""
   },
-
-  // CX-12
   {
     "model": "CX-12",
     "type": "CX",
@@ -627,8 +573,6 @@
     "bit_name_jp": "ウォールウェッジ",
     "data_get": ""
   },
-
-  // CX-13
   {
     "model": "CX-13",
     "type": "CX",
@@ -658,8 +602,6 @@
     "bit_name_jp": "イグニッション",
     "data_get": ""
   },
-
-  // CX-14
   {
     "model": "CX-14",
     "type": "CX",
@@ -689,8 +631,6 @@
     "bit_name_jp": "ギアニードル",
     "data_get": ""
   },
-
-  // CX-15
   {
     "model": "CX-15",
     "type": "CX",
@@ -720,8 +660,6 @@
     "bit_name_jp": "イールディング",
     "data_get": ""
   },
-
-  // CX-16
   {
     "model": "CX-16",
     "type": "CX",
@@ -751,9 +689,6 @@
     "bit_name_jp": "イグニッション",
     "data_get": ""
   },
-
-  // ========== UX 系列 ==========
-  // UX-01
   {
     "model": "UX-01",
     "type": "UX",
@@ -769,8 +704,6 @@
     "bit_name_jp": "アクセル",
     "data_get": ""
   },
-
-  // UX-02
   {
     "model": "UX-02",
     "type": "UX",
@@ -786,8 +719,6 @@
     "bit_name_jp": "ヘキサ",
     "data_get": ""
   },
-
-  // UX-03
   {
     "model": "UX-03",
     "type": "UX",
@@ -803,8 +734,6 @@
     "bit_name_jp": "ディスクボール",
     "data_get": ""
   },
-
-  // UX-04-01 (翔龍破壞劍)
   {
     "model": "UX-04-01",
     "type": "UX",
@@ -820,8 +749,6 @@
     "bit_name_jp": "アクセル",
     "data_get": ""
   },
-
-  // UX-04-02 (巫師幻杖)
   {
     "model": "UX-04-02",
     "type": "UX",
@@ -837,8 +764,6 @@
     "bit_name_jp": "ディスクボール",
     "data_get": ""
   },
-
-  // UX-05-01 (忍者幻影 1-80)
   {
     "model": "UX-05-01",
     "type": "UX",
@@ -854,8 +779,6 @@
     "bit_name_jp": "メタルニードル",
     "data_get": "×8"
   },
-
-  // UX-05-02 (忍者幻影 9-60)
   {
     "model": "UX-05-02",
     "type": "UX",
@@ -871,8 +794,6 @@
     "bit_name_jp": "ローフラット",
     "data_get": "×8"
   },
-
-  // UX-05-03 (忍者幻影 3-70)
   {
     "model": "UX-05-03",
     "type": "UX",
@@ -888,8 +809,6 @@
     "bit_name_jp": "ギアポイント",
     "data_get": "×8"
   },
-
-  // UX-06
   {
     "model": "UX-06",
     "type": "UX",
@@ -905,8 +824,6 @@
     "bit_name_jp": "ギアニードル",
     "data_get": ""
   },
-
-  // UX-07-01 (鳳凰炎舵)
   {
     "model": "UX-07-01",
     "type": "UX",
@@ -922,8 +839,6 @@
     "bit_name_jp": "グライド",
     "data_get": ""
   },
-
-  // UX-07-02 (飛龍狂風)
   {
     "model": "UX-07-02",
     "type": "UX",
@@ -939,8 +854,6 @@
     "bit_name_jp": "スパイク",
     "data_get": ""
   },
-
-  // UX-07-03 (史芬克斯斗篷)
   {
     "model": "UX-07-03",
     "type": "UX",
@@ -956,8 +869,6 @@
     "bit_name_jp": "ギアフラット",
     "data_get": ""
   },
-
-  // UX-08
   {
     "model": "UX-08",
     "type": "UX",
@@ -973,8 +884,6 @@
     "bit_name_jp": "フリーボール",
     "data_get": ""
   },
-
-  // UX-09
   {
     "model": "UX-09",
     "type": "UX",
@@ -990,8 +899,6 @@
     "bit_name_jp": "レベル",
     "data_get": ""
   },
-
-  // UX-10-01 (騎士護甲)
   {
     "model": "UX-10-01",
     "type": "UX",
@@ -1007,8 +914,6 @@
     "bit_name_jp": "バウンドスパイク",
     "data_get": ""
   },
-
-  // UX-10-02 (翼龍波動)
   {
     "model": "UX-10-02",
     "type": "UX",
@@ -1024,8 +929,6 @@
     "bit_name_jp": "ボール",
     "data_get": ""
   },
-
-  // UX-10-03 (暴龍節拍)
   {
     "model": "UX-10-03",
     "type": "UX",
@@ -1041,8 +944,6 @@
     "bit_name_jp": "ラバーアクセル",
     "data_get": ""
   },
-
-  // UX-10-04 (煉獄惡鎚)
   {
     "model": "UX-10-04",
     "type": "UX",
@@ -1057,8 +958,6 @@
     "bit_name_jp": "ポイント",
     "data_get": ""
   },
-
-  // UX-10-05 (Metal Needle)
   {
     "model": "UX-10-05",
     "type": "UX",
@@ -1073,8 +972,6 @@
     "bit_name_jp": "メタルニードル",
     "data_get": ""
   },
-
-  // UX-10-06 (Rush)
   {
     "model": "UX-10-06",
     "type": "UX",
@@ -1089,8 +986,6 @@
     "bit_name_jp": "ラッシュ",
     "data_get": ""
   },
-
-  // UX-11
   {
     "model": "UX-11",
     "type": "UX",
@@ -1106,8 +1001,6 @@
     "bit_name_jp": "ローラッシュ",
     "data_get": ""
   },
-
-  // UX-12-01 (幽靈圓環 0-80)
   {
     "model": "UX-12-01",
     "type": "UX",
@@ -1123,8 +1016,6 @@
     "bit_name_jp": "ギアボール",
     "data_get": "×3"
   },
-
-  // UX-12-02 (幽靈圓環 4-60)
   {
     "model": "UX-12-02",
     "type": "UX",
@@ -1140,8 +1031,6 @@
     "bit_name_jp": "ヘキサ",
     "data_get": "×3"
   },
-
-  // UX-12-03 (忍者幻影)
   {
     "model": "UX-12-03",
     "type": "UX",
@@ -1157,8 +1046,6 @@
     "bit_name_jp": "フラット",
     "data_get": "×5"
   },
-
-  // UX-12-04 (獅王鋭爪)
   {
     "model": "UX-12-04",
     "type": "UX",
@@ -1174,8 +1061,6 @@
     "bit_name_jp": "エレベート",
     "data_get": "×4"
   },
-
-  // UX-12-05 (鳳凰炎羽)
   {
     "model": "UX-12-05",
     "type": "UX",
@@ -1191,8 +1076,6 @@
     "bit_name_jp": "ニードル",
     "data_get": "×4"
   },
-
-  // UX-12-06 (飛龍狂風)
   {
     "model": "UX-12-06",
     "type": "UX",
@@ -1208,8 +1091,6 @@
     "bit_name_jp": "サイクロン",
     "data_get": "×5"
   },
-
-  // UX-13
   {
     "model": "UX-13",
     "type": "UX",
@@ -1225,8 +1106,6 @@
     "bit_name_jp": "アンダーニードル",
     "data_get": ""
   },
-
-  // UX-14
   {
     "model": "UX-14",
     "type": "UX",
@@ -1242,8 +1121,6 @@
     "bit_name_jp": "ザップ",
     "data_get": ""
   },
-
-  // UX-15-01 (烈鯊鱗甲)
   {
     "model": "UX-15-01",
     "type": "UX",
@@ -1259,8 +1136,6 @@
     "bit_name_jp": "アンダーフラット",
     "data_get": ""
   },
-
-  // UX-15-02 (暴龍咆哮)
   {
     "model": "UX-15-02",
     "type": "UX",
@@ -1276,8 +1151,6 @@
     "bit_name_jp": "レベル",
     "data_get": ""
   },
-
-  // UX-15-03 (煉獄勇者)
   {
     "model": "UX-15-03",
     "type": "UX",
@@ -1302,8 +1175,6 @@
     "bit_name_jp": "ギアフラット",
     "data_get": ""
   },
-
-  // UX-16-01 (時鐘幽景)
   {
     "model": "UX-16-01",
     "type": "UX",
@@ -1319,8 +1190,6 @@
     "bit_name_jp": "ボール",
     "data_get": "×8"
   },
-
-  // UX-16-02 (時鐘幽景)
   {
     "model": "UX-16-02",
     "type": "UX",
@@ -1336,8 +1205,6 @@
     "bit_name_jp": "ボール",
     "data_get": "×8"
   },
-
-  // UX-16-03 (時鐘幽景)
   {
     "model": "UX-16-03",
     "type": "UX",
@@ -1353,8 +1220,6 @@
     "bit_name_jp": "ボール",
     "data_get": "×8"
   },
-
-  // UX-17
   {
     "model": "UX-17",
     "type": "UX",
@@ -1370,8 +1235,6 @@
     "bit_name_jp": "ジョルト",
     "data_get": ""
   },
-
-  // UX-18-01 (木乃伊詛咒 7-55)
   {
     "model": "UX-18-01",
     "type": "UX",
@@ -1387,8 +1250,6 @@
     "bit_name_jp": "ウェッジ",
     "data_get": "×3"
   },
-
-  // UX-18-02 (木乃伊詛咒 4-60)
   {
     "model": "UX-18-02",
     "type": "UX",
@@ -1404,8 +1265,6 @@
     "bit_name_jp": "サイクロン",
     "data_get": "×4"
   },
-
-  // UX-18-03 (天馬兇尾)
   {
     "model": "UX-18-03",
     "type": "UX",
@@ -1430,8 +1289,6 @@
     "bit_name_jp": "ウェッジ",
     "data_get": "×4"
   },
-
-  // UX-18-04 (天陽勇者)
   {
     "model": "UX-18-04",
     "type": "UX",
@@ -1456,8 +1313,6 @@
     "bit_name_jp": "トランスポイント",
     "data_get": "×3"
   },
-
-  // UX-18-05 (翔龍雙刃)
   {
     "model": "UX-18-05",
     "type": "UX",
@@ -1473,8 +1328,6 @@
     "bit_name_jp": "グライド",
     "data_get": "×5"
   },
-
-  // UX-18-06 (純白猛虎)
   {
     "model": "UX-18-06",
     "type": "UX",
@@ -1490,8 +1343,6 @@
     "bit_name_jp": "ローラッシュ",
     "data_get": "×5"
   },
-
-  // UX-19
   {
     "model": "UX-19",
     "type": "UX",
@@ -1506,9 +1357,6 @@
     "bit_name_jp": "ヘキサ",
     "data_get": ""
   },
-
-  // ========== BX 系列 ==========
-  // BX-01
   {
     "model": "BX-01",
     "type": "BX",
@@ -1524,8 +1372,6 @@
     "bit_name_jp": "フラット",
     "data_get": ""
   },
-
-  // BX-02
   {
     "model": "BX-02",
     "type": "BX",
@@ -1541,8 +1387,6 @@
     "bit_name_jp": "テーパー",
     "data_get": ""
   },
-
-  // BX-03
   {
     "model": "BX-03",
     "type": "BX",
@@ -1558,8 +1402,6 @@
     "bit_name_jp": "ボール",
     "data_get": ""
   },
-
-  // BX-04
   {
     "model": "BX-04",
     "type": "BX",
@@ -1575,8 +1417,6 @@
     "bit_name_jp": "ニードル",
     "data_get": ""
   },
-
-  // BX-05
   {
     "model": "BX-05",
     "type": "BX",
@@ -1592,8 +1432,6 @@
     "bit_name_jp": "ボール",
     "data_get": ""
   },
-
-  // BX-06
   {
     "model": "BX-06",
     "type": "BX",
@@ -1609,8 +1447,6 @@
     "bit_name_jp": "ニードル",
     "data_get": ""
   },
-
-  // BX-07
   {
     "model": "BX-07",
     "type": "BX",
@@ -1626,8 +1462,6 @@
     "bit_name_jp": "フラット",
     "data_get": ""
   },
-
-  // BX-08-01 (騎士護盾)
   {
     "model": "BX-08-01",
     "type": "BX",
@@ -1643,8 +1477,6 @@
     "bit_name_jp": "テーパー",
     "data_get": ""
   },
-
-  // BX-08-02 (巫師弩箭)
   {
     "model": "BX-08-02",
     "type": "BX",
@@ -1660,8 +1492,6 @@
     "bit_name_jp": "ニードル",
     "data_get": ""
   },
-
-  // BX-08-03 (煉獄魔鐮)
   {
     "model": "BX-08-03",
     "type": "BX",
@@ -1677,8 +1507,6 @@
     "bit_name_jp": "ボール",
     "data_get": ""
   },
-
-  // BX-13
   {
     "model": "BX-13",
     "type": "BX",
@@ -1694,8 +1522,6 @@
     "bit_name_jp": "ハイニードル",
     "data_get": ""
   },
-
-  // BX-14-01 (烈鯊利刃 3-60)
   {
     "model": "BX-14-01",
     "type": "BX",
@@ -1711,8 +1537,6 @@
     "bit_name_jp": "ローフラット",
     "data_get": "×3"
   },
-
-  // BX-14-02 (烈鯊利刃 4-80)
   {
     "model": "BX-14-02",
     "type": "BX",
@@ -1728,8 +1552,6 @@
     "bit_name_jp": "ニードル",
     "data_get": "×3"
   },
-
-  // BX-14-03 (翔龍神劍)
   {
     "model": "BX-14-03",
     "type": "BX",
@@ -1745,8 +1567,6 @@
     "bit_name_jp": "ボール",
     "data_get": "×5"
   },
-
-  // BX-14-04 (煉獄魔鐮)
   {
     "model": "BX-14-04",
     "type": "BX",
@@ -1762,8 +1582,6 @@
     "bit_name_jp": "ローフラット",
     "data_get": "×4"
   },
-
-  // BX-14-05 (騎士護盾)
   {
     "model": "BX-14-05",
     "type": "BX",
@@ -1779,8 +1597,6 @@
     "bit_name_jp": "ローフラット",
     "data_get": "×4"
   },
-
-  // BX-14-06 (巫師弩箭)
   {
     "model": "BX-14-06",
     "type": "BX",
@@ -1796,8 +1612,6 @@
     "bit_name_jp": "テーパー",
     "data_get": "×5"
   },
-
-  // BX-15
   {
     "model": "BX-15",
     "type": "BX",
@@ -1813,8 +1627,6 @@
     "bit_name_jp": "ポイント",
     "data_get": ""
   },
-
-  // BX-16-01 (毒蛇靈尾 5-80)
   {
     "model": "BX-16-01",
     "type": "BX",
@@ -1830,8 +1642,6 @@
     "bit_name_jp": "オーブ",
     "data_get": "×8"
   },
-
-  // BX-16-02 (毒蛇靈尾 4-60)
   {
     "model": "BX-16-02",
     "type": "BX",
@@ -1847,8 +1657,6 @@
     "bit_name_jp": "フラット",
     "data_get": "×8"
   },
-
-  // BX-16-03 (毒蛇靈尾 3-80)
   {
     "model": "BX-16-03",
     "type": "BX",
@@ -1864,8 +1672,6 @@
     "bit_name_jp": "ハイニードル",
     "data_get": "×8"
   },
-
-  // BX-17-01 (翔龍神劍)
   {
     "model": "BX-17-01",
     "type": "BX",
@@ -1881,8 +1687,6 @@
     "bit_name_jp": "フラット",
     "data_get": ""
   },
-
-  // BX-17-02 (巫師弩箭)
   {
     "model": "BX-17-02",
     "type": "BX",
@@ -1898,8 +1702,6 @@
     "bit_name_jp": "ボール",
     "data_get": ""
   },
-
-  // BX-19
   {
     "model": "BX-19",
     "type": "BX",
@@ -1915,8 +1717,6 @@
     "bit_name_jp": "スパイク",
     "data_get": ""
   },
-
-  // BX-20-01 (翔龍雙刃)
   {
     "model": "BX-20-01",
     "type": "BX",
@@ -1932,8 +1732,6 @@
     "bit_name_jp": "ラッシュ",
     "data_get": ""
   },
-
-  // BX-20-02 (烈鯊利刃)
   {
     "model": "BX-20-02",
     "type": "BX",
@@ -1949,8 +1747,6 @@
     "bit_name_jp": "フラット",
     "data_get": ""
   },
-
-  // BX-20-03 (騎士護盾)
   {
     "model": "BX-20-03",
     "type": "BX",
@@ -1966,8 +1762,6 @@
     "bit_name_jp": "テーパー",
     "data_get": ""
   },
-
-  // BX-21-01 (煉獄鎖鏈)
   {
     "model": "BX-21-01",
     "type": "BX",
@@ -1983,8 +1777,6 @@
     "bit_name_jp": "ハイテーパー",
     "data_get": ""
   },
-
-  // BX-21-02 (騎士長槍)
   {
     "model": "BX-21-02",
     "type": "BX",
@@ -2000,8 +1792,6 @@
     "bit_name_jp": "ローフラット",
     "data_get": ""
   },
-
-  // BX-21-03 (巫師弩箭)
   {
     "model": "BX-21-03",
     "type": "BX",
@@ -2017,8 +1807,6 @@
     "bit_name_jp": "ニードル",
     "data_get": ""
   },
-
-  // BX-22
   {
     "model": "BX-22",
     "type": "BX",
@@ -2034,8 +1822,6 @@
     "bit_name_jp": "フラット",
     "data_get": ""
   },
-
-  // BX-23
   {
     "model": "BX-23",
     "type": "BX",
@@ -2051,8 +1837,6 @@
     "bit_name_jp": "ギアフラット",
     "data_get": ""
   },
-
-  // BX-24-01 (飛龍狂風 5-80)
   {
     "model": "BX-24-01",
     "type": "BX",
@@ -2068,8 +1852,6 @@
     "bit_name_jp": "ギアボール",
     "data_get": "×3"
   },
-
-  // BX-24-02 (飛龍狂風 3-60)
   {
     "model": "BX-24-02",
     "type": "BX",
@@ -2085,8 +1867,6 @@
     "bit_name_jp": "テーパー",
     "data_get": "×3"
   },
-
-  // BX-24-03 (騎士長槍)
   {
     "model": "BX-24-03",
     "type": "BX",
@@ -2102,8 +1882,6 @@
     "bit_name_jp": "ギアボール",
     "data_get": "×5"
   },
-
-  // BX-24-04 (毒蛇靈尾)
   {
     "model": "BX-24-04",
     "type": "BX",
@@ -2119,8 +1897,6 @@
     "bit_name_jp": "フラット",
     "data_get": "×4"
   },
-
-  // BX-24-05 (獅王鋭爪)
   {
     "model": "BX-24-05",
     "type": "BX",
@@ -2136,8 +1912,6 @@
     "bit_name_jp": "ハイニードル",
     "data_get": "×4"
   },
-
-  // BX-24-06 (巫師弩箭)
   {
     "model": "BX-24-06",
     "type": "BX",
@@ -2153,8 +1927,6 @@
     "bit_name_jp": "ギアボール",
     "data_get": ""
   },
-
-  // BX-26
   {
     "model": "BX-26",
     "type": "BX",
@@ -2170,8 +1942,6 @@
     "bit_name_jp": "ギアポイント",
     "data_get": ""
   },
-
-  // BX-27-01 (史芬克斯斗篷 9-80)
   {
     "model": "BX-27-01",
     "type": "BX",
@@ -2187,8 +1957,6 @@
     "bit_name_jp": "ギアニードル",
     "data_get": "×8"
   },
-
-  // BX-27-02 (史芬克斯斗篷 4-80)
   {
     "model": "BX-27-02",
     "type": "BX",
@@ -2204,8 +1972,6 @@
     "bit_name_jp": "ハイテーパー",
     "data_get": "×8"
   },
-
-  // BX-27-03 (史芬克斯斗篷 5-60)
   {
     "model": "BX-27-03",
     "type": "BX",
@@ -2221,8 +1987,6 @@
     "bit_name_jp": "オーブ",
     "data_get": "×8"
   },
-
-  // BX-31-01 (暴龍節拍 4-70)
   {
     "model": "BX-31-01",
     "type": "BX",
@@ -2238,8 +2002,6 @@
     "bit_name_jp": "クエイク",
     "data_get": "×3"
   },
-
-  // BX-31-02 (暴龍節拍 3-60)
   {
     "model": "BX-31-02",
     "type": "BX",
@@ -2255,8 +2017,6 @@
     "bit_name_jp": "スパイク",
     "data_get": "×3"
   },
-
-  // BX-31-03 (煉獄鎖鏈)
   {
     "model": "BX-31-03",
     "type": "BX",
@@ -2272,8 +2032,6 @@
     "bit_name_jp": "オーブ",
     "data_get": "×4"
   },
-
-  // BX-31-04 (翔龍雙刃)
   {
     "model": "BX-31-04",
     "type": "BX",
@@ -2289,8 +2047,6 @@
     "bit_name_jp": "ポイント",
     "data_get": "×4"
   },
-
-  // BX-31-05 (烈鯊利刃)
   {
     "model": "BX-31-05",
     "type": "BX",
@@ -2306,8 +2062,6 @@
     "bit_name_jp": "クエイク",
     "data_get": "×5"
   },
-
-  // BX-31-06 (犀牛號角)
   {
     "model": "BX-31-06",
     "type": "BX",
@@ -2323,8 +2077,6 @@
     "bit_name_jp": "クエイク",
     "data_get": "×5"
   },
-
-  // BX-33
   {
     "model": "BX-33",
     "type": "BX",
@@ -2340,8 +2092,6 @@
     "bit_name_jp": "ユナイト",
     "data_get": ""
   },
-
-  // BX-34
   {
     "model": "BX-34",
     "type": "BX",
@@ -2357,8 +2107,6 @@
     "bit_name_jp": "サイクロン",
     "data_get": ""
   },
-
-  // BX-35-01 (漆黑護殼 4-60)
   {
     "model": "BX-35-01",
     "type": "BX",
@@ -2374,8 +2122,6 @@
     "bit_name_jp": "ドット",
     "data_get": "×3"
   },
-
-  // BX-35-02 (漆黑護殼 9-80)
   {
     "model": "BX-35-02",
     "type": "BX",
@@ -2391,8 +2137,6 @@
     "bit_name_jp": "ボール",
     "data_get": "×3"
   },
-
-  // BX-35-03 (獨角幻刺)
   {
     "model": "BX-35-03",
     "type": "BX",
@@ -2408,8 +2152,6 @@
     "bit_name_jp": "ドット",
     "data_get": "×5"
   },
-
-  // BX-35-04 (巫師幻杖)
   {
     "model": "BX-35-04",
     "type": "BX",
@@ -2425,8 +2167,6 @@
     "bit_name_jp": "ラッシュ",
     "data_get": ""
   },
-
-  // BX-35-05 (鳳凰飛翼)
   {
     "model": "BX-35-05",
     "type": "BX",
@@ -2442,8 +2182,6 @@
     "bit_name_jp": "ヘキサ",
     "data_get": "×4"
   },
-
-  // BX-35-06 (毒蛇靈尾)
   {
     "model": "BX-35-06",
     "type": "BX",
@@ -2459,8 +2197,6 @@
     "bit_name_jp": "ドット",
     "data_get": "×5"
   },
-
-  // BX-36-01 (戰鯨波浪 5-80)
   {
     "model": "BX-36-01",
     "type": "BX",
@@ -2476,8 +2212,6 @@
     "bit_name_jp": "エレベート",
     "data_get": "×8"
   },
-
-  // BX-36-02 (戰鯨波浪 4-70)
   {
     "model": "BX-36-02",
     "type": "BX",
@@ -2493,8 +2227,6 @@
     "bit_name_jp": "ハイニードル",
     "data_get": "×8"
   },
-
-  // BX-36-03 (戰鯨波浪 3-80)
   {
     "model": "BX-36-03",
     "type": "BX",
@@ -2510,8 +2242,6 @@
     "bit_name_jp": "ギアボール",
     "data_get": "×8"
   },
-
-  // BX-37
   {
     "model": "BX-37",
     "type": "BX",
@@ -2527,8 +2257,6 @@
     "bit_name_jp": "フラット",
     "data_get": ""
   },
-
-  // BX-38
   {
     "model": "BX-38",
     "type": "BX",
@@ -2544,8 +2272,6 @@
     "bit_name_jp": "トランスポイント",
     "data_get": ""
   },
-
-  // BX-39-01 (神護魔龍 7-80)
   {
     "model": "BX-39-01",
     "type": "BX",
@@ -2561,8 +2287,6 @@
     "bit_name_jp": "ギアポイント",
     "data_get": "×8"
   },
-
-  // BX-39-02 (神護魔龍 5-70)
   {
     "model": "BX-39-02",
     "type": "BX",
@@ -2578,8 +2302,6 @@
     "bit_name_jp": "オーブ",
     "data_get": "×8"
   },
-
-  // BX-39-03 (神護魔龍 3-60)
   {
     "model": "BX-39-03",
     "type": "BX",
@@ -2595,8 +2317,6 @@
     "bit_name_jp": "ドット",
     "data_get": "×8"
   },
-
-  // BX-44
   {
     "model": "BX-44",
     "type": "BX",
@@ -2612,8 +2332,6 @@
     "bit_name_jp": "バウンドスパイク",
     "data_get": ""
   },
-
-  // BX-45
   {
     "model": "BX-45",
     "type": "BX",
@@ -2629,8 +2347,6 @@
     "bit_name_jp": "マージ",
     "data_get": ""
   },
-
-  // BX-46-01 (鈷藍魔龍)
   {
     "model": "BX-46-01",
     "type": "BX",
@@ -2646,8 +2362,6 @@
     "bit_name_jp": "ラッシュ",
     "data_get": ""
   },
-
-  // BX-46-02 (凶羊截擊)
   {
     "model": "BX-46-02",
     "type": "BX",
@@ -2663,8 +2377,6 @@
     "bit_name_jp": "テーパー",
     "data_get": ""
   },
-
-  // BX-48-01 (鈷藍青龍)
   {
     "model": "BX-48-01",
     "type": "BX",
@@ -2680,8 +2392,6 @@
     "bit_name_jp": "フラット",
     "data_get": "×5"
   },
-
-  // BX-48-02 (烈鯊利刃)
   {
     "model": "BX-48-02",
     "type": "BX",
@@ -2697,8 +2407,6 @@
     "bit_name_jp": "エレベート",
     "data_get": "×5"
   },
-
-  // BX-48-03 (狂象長牙)
   {
     "model": "BX-48-03",
     "type": "BX",
@@ -2714,8 +2422,6 @@
     "bit_name_jp": "スパイク",
     "data_get": "×4"
   },
-
-  // BX-48-04 (煉獄魔鐮)
   {
     "model": "BX-48-04",
     "type": "BX",
@@ -2731,8 +2437,6 @@
     "bit_name_jp": "ギアボール",
     "data_get": "×5"
   },
-
-  // BX-48-05 (翔龍破壞劍)
   {
     "model": "BX-48-05",
     "type": "BX",
@@ -2748,8 +2452,6 @@
     "bit_name_jp": "クエイク",
     "data_get": "×5"
   },
-
-  // BX-49
   {
     "model": "BX-49",
     "type": "BX",
@@ -2765,8 +2467,6 @@
     "bit_name_jp": "フリーフラット",
     "data_get": ""
   },
-
-  // BXA-03-01 (Captain America)
   {
     "model": "BXA-03-01",
     "type": "BX",
@@ -2782,8 +2482,6 @@
     "bit_name_jp": "ギアボール",
     "data_get": ""
   },
-
-  // BXA-03-02 (Red Hulk)
   {
     "model": "BXA-03-02",
     "type": "BX",
@@ -2799,8 +2497,6 @@
     "bit_name_jp": "ラッシュ",
     "data_get": ""
   },
-
-  // BXA-04-01 (Miles Morales)
   {
     "model": "BXA-04-01",
     "type": "BX",
@@ -2816,8 +2512,6 @@
     "bit_name_jp": "ギアニードル",
     "data_get": ""
   },
-
-  // BXA-04-02 (Green Goblin)
   {
     "model": "BXA-04-02",
     "type": "BX",
@@ -2833,8 +2527,6 @@
     "bit_name_jp": "ハイテーパー",
     "data_get": ""
   },
-
-  // BXA-05-01 (Obi-Wan Kenobi)
   {
     "model": "BXA-05-01",
     "type": "BX",
@@ -2850,8 +2542,6 @@
     "bit_name_jp": "ポイント",
     "data_get": ""
   },
-
-  // BXA-05-02 (General Grievous)
   {
     "model": "BXA-05-02",
     "type": "BX",
@@ -2867,8 +2557,6 @@
     "bit_name_jp": "ハイニードル",
     "data_get": ""
   },
-
-  // BXA-06-01 (Chewbacca)
   {
     "model": "BXA-06-01",
     "type": "BX",
@@ -2884,8 +2572,6 @@
     "bit_name_jp": "ローフラット",
     "data_get": ""
   },
-
-  // BXA-06-02 (Stormtrooper)
   {
     "model": "BXA-06-02",
     "type": "BX",
