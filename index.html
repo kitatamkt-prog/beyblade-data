@@ -278,6 +278,24 @@
             margin: 4px 0;
         }
         
+        .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 8px 0;
+        }
+        
+        .product-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            background: var(--badge-bg);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
         .product-specs {
             display: flex;
             flex-wrap: wrap;
@@ -653,16 +671,26 @@
                 const assistName = escapeHTML(getNameByLang(p, 'assist'));
                 const bitName = escapeHTML(getNameByLang(p, 'bit'));
                 
-                // CX系列：chip + metal + over + assist
+                // CX系列：chip · metal · over · assist
                 // 其他系列：chip + main
                 let nameHtml = chipName;
+                let tags = '';
+                
                 if (p.type === 'CX') {
                     const parts = [];
                     if (chipName) parts.push(chipName);
                     if (metalName) parts.push(metalName);
                     if (overName) parts.push(overName);
                     if (assistName) parts.push(assistName);
-                    nameHtml = parts.join(' + ');
+                    nameHtml = parts.join(' · ');
+                    
+                    // 顯示 Metal 同 Over 標籤
+                    if (metalName) {
+                        tags += `<span class="product-tag">⚙️ ${metalName}</span>`;
+                    }
+                    if (overName) {
+                        tags += `<span class="product-tag">⬆️ ${overName}</span>`;
+                    }
                 } else {
                     if (mainName) {
                         nameHtml = `${chipName} + ${mainName}`;
@@ -679,6 +707,7 @@
                             <span class="product-type">${escapeHTML(p.type)}</span>
                         </div>
                         <div class="product-name">${nameHtml}</div>
+                        ${tags ? `<div class="product-tags">${tags}</div>` : ''}
                         <div class="product-specs">
                             ${p.ratchet ? `<span>⚙️ ${escapeHTML(p.ratchet)}</span>` : ''}
                             ${p.bit_code ? `<span>🔰 ${escapeHTML(p.bit_code)}</span>` : ''}
