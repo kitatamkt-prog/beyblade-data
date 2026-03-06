@@ -576,6 +576,12 @@
             if (field === 'main') {
                 return product[`main_blade_${currentLang}`] || product.main_blade_zh_hk || '';
             }
+            if (field === 'metal') {
+                return product[`metal_${currentLang}`] || product.metal_zh_hk || '';
+            }
+            if (field === 'over') {
+                return product[`over_${currentLang}`] || product.over_zh_hk || '';
+            }
             if (field === 'assist') {
                 return product[`assist_blade_${currentLang}`] || product.assist_blade_zh_hk || '';
             }
@@ -642,14 +648,23 @@
             filtered.forEach(p => {
                 const chipName = escapeHTML(getNameByLang(p, 'chip'));
                 const mainName = escapeHTML(getNameByLang(p, 'main'));
+                const metalName = escapeHTML(getNameByLang(p, 'metal'));
+                const overName = escapeHTML(getNameByLang(p, 'over'));
                 const assistName = escapeHTML(getNameByLang(p, 'assist'));
                 const bitName = escapeHTML(getNameByLang(p, 'bit'));
                 
+                // CX系列：chip + metal + over + assist
+                // 其他系列：chip + main
                 let nameHtml = chipName;
                 if (p.type === 'CX') {
-                    if (mainName && assistName) {
-                        nameHtml = `${chipName} + ${mainName} / ${assistName}`;
-                    } else if (mainName) {
+                    const parts = [];
+                    if (chipName) parts.push(chipName);
+                    if (metalName) parts.push(metalName);
+                    if (overName) parts.push(overName);
+                    if (assistName) parts.push(assistName);
+                    nameHtml = parts.join(' + ');
+                } else {
+                    if (mainName) {
                         nameHtml = `${chipName} + ${mainName}`;
                     }
                 }
@@ -698,7 +713,7 @@
             // 本體名稱
             content += `
                 <div class="detail-section">
-                    <div class="detail-title">📝 本體名稱</div>
+                    <div class="detail-title">📝 本體名稱 (Chip)</div>
                     <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.chip_zh_hk) || '—'}</div>
                     <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.chip_zh_tw) || '—'}</div>
                     <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.chip_en) || '—'}</div>
@@ -706,8 +721,34 @@
                 </div>
             `;
             
-            // 主 blade
-            if (product.main_blade_zh_hk) {
+            // Metal (如果有)
+            if (product.metal_zh_hk) {
+                content += `
+                    <div class="detail-section">
+                        <div class="detail-title">⚙️ Metal</div>
+                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.metal_zh_hk) || '—'}</div>
+                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.metal_zh_tw) || '—'}</div>
+                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.metal_en) || '—'}</div>
+                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.metal_jp) || '—'}</div>
+                    </div>
+                `;
+            }
+            
+            // Over (上層部件)
+            if (product.over_zh_hk) {
+                content += `
+                    <div class="detail-section">
+                        <div class="detail-title">⬆️ Over</div>
+                        <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.over_zh_hk) || '—'}</div>
+                        <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.over_zh_tw) || '—'}</div>
+                        <div><span class="lang-tag">🇬🇧 英</span> ${escapeHTML(product.over_en) || '—'}</div>
+                        <div><span class="lang-tag">🇯🇵 日</span> ${escapeHTML(product.over_jp) || '—'}</div>
+                    </div>
+                `;
+            }
+            
+            // 主 blade (非CX系列)
+            if (product.main_blade_zh_hk && product.type !== 'CX') {
                 content += `
                     <div class="detail-section">
                         <div class="detail-title">⚔️ 主 blade</div>
@@ -719,11 +760,11 @@
                 `;
             }
             
-            // 輔助刀
+            // 輔助刀 (CX系列)
             if (product.assist_blade_zh_hk) {
                 content += `
                     <div class="detail-section">
-                        <div class="detail-title">🔪 輔助刀</div>
+                        <div class="detail-title">🔪 輔助刀 (Assist Blade)</div>
                         <div><strong>代碼:</strong> ${escapeHTML(product.assist_blade_code) || '—'}</div>
                         <div><span class="lang-tag">🇭🇰 港</span> ${escapeHTML(product.assist_blade_zh_hk) || '—'}</div>
                         <div><span class="lang-tag">🇨🇳 台</span> ${escapeHTML(product.assist_blade_zh_tw) || '—'}</div>
