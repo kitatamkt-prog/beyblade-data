@@ -308,7 +308,7 @@
     "bit_name_jp": "ユナイト",
     "data_get": "×8"
   },
-  {
+   {
     "model": "CX-07",
     "type": "CX",
     "chip_zh_hk": "天馬",
@@ -3606,5 +3606,6 @@
     "data_get": ""
   }
 ]
+
 
 
