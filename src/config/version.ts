@@ -1,6 +1,10 @@
-export const APP_VERSION_CURRENT = "v1.1.0";
+
+// src/config/version.ts
+
+export const APP_VERSION_CURRENT = "v2.0.0"; // ✅ 確保這行有 export
 
 export const APP_VERSION_DATA = [
+  { version: "v2.0.0", date: "2026-03-08", desc: "V2.0 大改版：數據與 UI 徹底分離 (Hooks/Components)，新增收藏最愛功能" },
   { version: "v1.1.0", date: "2026-03-07", desc: "優化顯示介面、修復排版重疊與日夜切換卡頓問題" },
   { version: "v1.0.0", date: "2024-03-11", desc: "全新 UI 設計，現代化界面" },
   { version: "v0.7.0", date: "2024-03-11", desc: "修正 MORE 按鈕可收回功能，修復分頁點擊事件，套用論壇風格" },
