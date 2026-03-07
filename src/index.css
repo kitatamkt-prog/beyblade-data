@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* 1. 🟢 核心定義：硬核電競色系 */
+@theme {
+  --color-background: #050505;
+  --color-foreground: #ffffff;
+  --color-primary: #00f2ff; /* 賽博藍 */
+  --color-card: rgba(15, 15, 20, 0.9);
+  --color-border: rgba(0, 242, 255, 0.2);
+}
+
+@layer base {
+  .light {
+    --color-background: #eef2f5 !important;
+    --color-foreground: #1a1a1b !important;
+    --color-card: #ffffff !important;
+    --color-border: #ccd6dd !important;
+    --color-primary: #0055ff !important;
+  }
+
+  .pink-mode {
+    --color-background: #1a0b12 !important;
+    --color-foreground: #ffb7c5 !important;
+    --color-primary: #ff1493 !important;
+    --color-card: #2d1622 !important;
+    --color-border: #ff69b4 !important;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-all duration-500 antialiased;
+    /* 加入戰鬥掃描線背景 */
+    background-image: 
+      linear-gradient(rgba(0, 242, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 242, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* 🟢 TopBar 戰鬥儀表板 */
+.top-bar-custom {
+  @apply sticky top-0 z-50 bg-black border-b-2 border-primary/30 backdrop-blur-xl;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8), 0 0 20px rgba(0, 242, 255, 0.15);
+}
+
+/* 🟢 超大語言 Tab (Terminal 樣式) */
+.lang-tab-btn {
+  @apply flex flex-col items-center justify-center transition-all h-20 px-6 border-l border-white/10;
+}
+
+.lang-tab-active {
+  background: linear-gradient(to bottom, rgba(0, 242, 255, 0.15), transparent);
+  border-bottom: 4px solid var(--color-primary);
+}
+
+/* 🟢 戰鬥切角卡片加強版 (Slanted Edge) */
+.bx-card {
+  @apply relative bg-card border-2 border-white/5 transition-all duration-300;
+  clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+}
+
+.bx-card:hover {
+  @apply border-primary/50 -translate-y-2;
+  box-shadow: 0 0 30px rgba(0, 242, 255, 0.2);
+}
+
+/* 🟢 金屬質感文字 */
+.metal-title {
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fff 30%, #666 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -1px;
+}
