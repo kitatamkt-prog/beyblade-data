@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/react-config'
 
 export default defineConfig({
-  base: './', // 👈 改做呢個，最無腦最穩陣
-  plugins: [react(), tailwindcss()],
+  plugins: [react()],
+  base: './', // ✅ 改做 './' 確保路徑係相對路徑，或者用 '/你的REPO名/'
 })
