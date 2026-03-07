@@ -1,0 +1,1898 @@
+{
+  "CX-01": {
+    "model": "CX-01",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "勇者翔龍 スターター",
+    "last_updated": "2026-03-06"
+  },
+  "CX-02": {
+    "model": "CX-02",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "巫師弧光 スターター",
+    "last_updated": "2026-03-06"
+  },
+  "CX-03": {
+    "model": "CX-03",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "英仙幽暗 スターター",
+    "last_updated": "2026-03-06"
+  },
+  "CX-04-01": {
+    "model": "CX-04-01",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "英仙幽暗 (CX-04套裝拆售)",
+    "last_updated": "2026-03-06"
+  },
+  "CX-04-02": {
+    "model": "CX-04-02",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "勇者翔龍 (CX-04套裝拆售)",
+    "last_updated": "2026-03-06"
+  },
+  "CX-05-01": {
+    "model": "CX-05-01",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "煉獄死神 T4-70K",
+    "last_updated": "2026-03-06"
+  },
+  "CX-05-02": {
+    "model": "CX-05-02",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "犀牛死神 C4-55D",
+    "last_updated": "2026-03-06"
+  },
+  "CX-05-03": {
+    "model": "CX-05-03",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "煉獄弧光 T3-85O",
+    "last_updated": "2026-03-06"
+  },
+  "CX-05-04": {
+    "model": "CX-05-04",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "獅王徽章 9-80K",
+    "last_updated": "2026-03-06"
+  },
+  "CX-05-05": {
+    "model": "CX-05-05",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "鳳凰炎舵 4-70LF",
+    "last_updated": "2026-03-06"
+  },
+  "CX-05-06": {
+    "model": "CX-05-06",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "戰鯨波浪 7-60K",
+    "last_updated": "2026-03-06"
+  },
+  "CX-06-01": {
+    "model": "CX-06-01",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "×8",
+    "notes": "妖狐兇尾 啟動套組",
+    "last_updated": "2026-03-06"
+  },
+  "CX-06-02": {
+    "model": "CX-06-02",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "妖狐兇尾 0-80DB",
+    "last_updated": "2026-03-06"
+  },
+  "CX-06-03": {
+    "model": "CX-06-03",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "妖狐兇尾 2-60U",
+    "last_updated": "2026-03-06"
+  },
+  "CX-07": {
+    "model": "CX-07",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "天馬轟裂 スターター",
+    "last_updated": "2026-03-06"
+  },
+  "CX-08-01": {
+    "model": "CX-08-01",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "地獄犬烈焰 W5-80WB",
+    "last_updated": "2026-03-06"
+  },
+  "CX-08-02": {
+    "model": "CX-08-02",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "戰鯨烈焰 M3-85HT",
+    "last_updated": "2026-03-06"
+  },
+  "CX-08-03": {
+    "model": "CX-08-03",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "地獄犬幽暗 W1-60F",
+    "last_updated": "2026-03-06"
+  },
+  "CX-08-04": {
+    "model": "CX-08-04",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "翔龍破壞劍 5-80MN",
+    "last_updated": "2026-03-06"
+  },
+  "CX-08-05": {
+    "model": "CX-08-05",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "漆黑護殼 7-70WB",
+    "last_updated": "2026-03-06"
+  },
+  "CX-08-06": {
+    "model": "CX-08-06",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "鈷藍青龍 4-55WB",
+    "last_updated": "2026-03-06"
+  },
+  "CX-09": {
+    "model": "CX-09",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "太陽日蝕 スターター",
+    "last_updated": "2026-03-06"
+  },
+  "CX-10": {
+    "model": "CX-10",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "戰狼狩獵 スターター",
+    "last_updated": "2026-03-06"
+  },
+  "CX-11-01": {
+    "model": "CX-11-01",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "帝皇霸權 (CX-11套裝拆售)",
+    "last_updated": "2026-03-06"
+  },
+  "CX-11-02": {
+    "model": "CX-11-02",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "魔像巨石 M-85HN",
+    "last_updated": "2026-03-06"
+  },
+  "CX-11-03": {
+    "model": "CX-11-03",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "烈鯊鰓刃 5-60FB",
+    "last_updated": "2026-03-06"
+  },
+  "CX-12": {
+    "model": "CX-12",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "鳳凰烈焰 Z9-80WW",
+    "last_updated": "2026-03-06"
+  },
+  "CX-13": {
+    "model": "CX-13",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Bahamut Blitz B1-50I",
+    "last_updated": "2026-03-06"
+  },
+  "CX-14": {
+    "model": "CX-14",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Knight Fortress G8-70GN",
+    "last_updated": "2026-03-06"
+  },
+  "CX-15": {
+    "model": "CX-15",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Ragna Rage F4-55Y",
+    "last_updated": "2026-03-06"
+  },
+  "CX-16": {
+    "model": "CX-16",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Bahamut Blitz (限定色)",
+    "last_updated": "2026-03-06"
+  },
+  "CX-17": {
+    "model": "CX-17",
+    "price_jpy": 1600,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "ランダムブースターVol.10",
+    "last_updated": "2026-03-06"
+  },
+  "CX-00-001": {
+    "model": "CX-00-001",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "翔龍 黑色 世界錦標賽限定",
+    "last_updated": "2026-03-06"
+  },
+  "CX-00-002": {
+    "model": "CX-00-002",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "天馬 紅色 アニメイト限定",
+    "last_updated": "2026-03-06"
+  },
+  "UX-01": {
+    "model": "UX-01",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Dran Buster 1-60A",
+    "last_updated": "2026-03-06"
+  },
+  "UX-02": {
+    "model": "UX-02",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Hells Hammer 3-70H",
+    "last_updated": "2026-03-06"
+  },
+  "UX-03": {
+    "model": "UX-03",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Wizard Rod 5-70DB",
+    "last_updated": "2026-03-06"
+  },
+  "UX-04-01": {
+    "model": "UX-04-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Dran Buster 1-60A",
+    "last_updated": "2026-03-06"
+  },
+  "UX-04-02": {
+    "model": "UX-04-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Rod 5-70DB",
+    "last_updated": "2026-03-06"
+  },
+  "UX-05-01": {
+    "model": "UX-05-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Shinobi Shadow 1-80MN",
+    "last_updated": "2026-03-06"
+  },
+  "UX-05-02": {
+    "model": "UX-05-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Shinobi Shadow 9-60LF",
+    "last_updated": "2026-03-06"
+  },
+  "UX-05-03": {
+    "model": "UX-05-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Shinobi Shadow 3-70GP",
+    "last_updated": "2026-03-06"
+  },
+  "UX-06": {
+    "model": "UX-06",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Leon Crest 7-60GN",
+    "last_updated": "2026-03-06"
+  },
+  "UX-07-01": {
+    "model": "UX-07-01",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Phoenix Rudder 9-70G",
+    "last_updated": "2026-03-06"
+  },
+  "UX-07-02": {
+    "model": "UX-07-02",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Wyvern Gale 2-60S",
+    "last_updated": "2026-03-06"
+  },
+  "UX-07-03": {
+    "model": "UX-07-03",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Sphinx Cowl 1-80GF",
+    "last_updated": "2026-03-06"
+  },
+  "UX-08": {
+    "model": "UX-08",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Silver Wolf 3-80FB",
+    "last_updated": "2026-03-06"
+  },
+  "UX-09": {
+    "model": "UX-09",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Samurai Saber 2-70L",
+    "last_updated": "2026-03-06"
+  },
+  "UX-10-01": {
+    "model": "UX-10-01",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Knight Mail 3-85BS",
+    "last_updated": "2026-03-06"
+  },
+  "UX-10-02": {
+    "model": "UX-10-02",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Ptera Swing 7-70B",
+    "last_updated": "2026-03-06"
+  },
+  "UX-10-03": {
+    "model": "UX-10-03",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Tyranno Beat 1-60RA",
+    "last_updated": "2026-03-06"
+  },
+  "UX-10-04": {
+    "model": "UX-10-04",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Hells Hammer P",
+    "last_updated": "2026-03-06"
+  },
+  "UX-10-05": {
+    "model": "UX-10-05",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "通販",
+    "notes": "Metal Needle (Bit only)",
+    "last_updated": "2026-03-06"
+  },
+  "UX-10-06": {
+    "model": "UX-10-06",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "通販",
+    "notes": "Rush (Bit only)",
+    "last_updated": "2026-03-06"
+  },
+  "UX-11": {
+    "model": "UX-11",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Impact Drake 9-60LR",
+    "last_updated": "2026-03-06"
+  },
+  "UX-12-01": {
+    "model": "UX-12-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Ghost Circle 0-80GB",
+    "last_updated": "2026-03-06"
+  },
+  "UX-12-02": {
+    "model": "UX-12-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Ghost Circle 4-60H",
+    "last_updated": "2026-03-06"
+  },
+  "UX-12-03": {
+    "model": "UX-12-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Shinobi Shadow 3-80F",
+    "last_updated": "2026-03-06"
+  },
+  "UX-12-04": {
+    "model": "UX-12-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Leon Claw 0-80E",
+    "last_updated": "2026-03-06"
+  },
+  "UX-12-05": {
+    "model": "UX-12-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Phoenix Feather 2-60N",
+    "last_updated": "2026-03-06"
+  },
+  "UX-12-06": {
+    "model": "UX-12-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Wyvern Gale 0-80C",
+    "last_updated": "2026-03-06"
+  },
+  "UX-13": {
+    "model": "UX-13",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Golem Rock 1-60UN",
+    "last_updated": "2026-03-06"
+  },
+  "UX-14": {
+    "model": "UX-14",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Scorpio Spear 0-70Z",
+    "last_updated": "2026-03-06"
+  },
+  "UX-15-01": {
+    "model": "UX-15-01",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Shark Scale 4-50UF",
+    "last_updated": "2026-03-06"
+  },
+  "UX-15-02": {
+    "model": "UX-15-02",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Tyranno Roar 1-70L",
+    "last_updated": "2026-03-06"
+  },
+  "UX-15-03": {
+    "model": "UX-15-03",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Hells Brave 3-60GF",
+    "last_updated": "2026-03-06"
+  },
+  "UX-16-01": {
+    "model": "UX-16-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Clock Mirage 9-65B",
+    "last_updated": "2026-03-06"
+  },
+  "UX-16-02": {
+    "model": "UX-16-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Clock Mirage 9-65B",
+    "last_updated": "2026-03-06"
+  },
+  "UX-16-03": {
+    "model": "UX-16-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Clock Mirage 9-65B",
+    "last_updated": "2026-03-06"
+  },
+  "UX-17": {
+    "model": "UX-17",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Meteor Dragoon 3-70J",
+    "last_updated": "2026-03-06"
+  },
+  "UX-18-01": {
+    "model": "UX-18-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Mummy Curse 7-55W",
+    "last_updated": "2026-03-06"
+  },
+  "UX-18-02": {
+    "model": "UX-18-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Mummy Curse 4-60C",
+    "last_updated": "2026-03-06"
+  },
+  "UX-18-03": {
+    "model": "UX-18-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Pegasus Brush M3-85W",
+    "last_updated": "2026-03-06"
+  },
+  "UX-18-04": {
+    "model": "UX-18-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Sol Brave C9-70TP",
+    "last_updated": "2026-03-06"
+  },
+  "UX-18-05": {
+    "model": "UX-18-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Dran Dagger 7-55G",
+    "last_updated": "2026-03-06"
+  },
+  "UX-18-06": {
+    "model": "UX-18-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Weiss Tiger 4-80LR",
+    "last_updated": "2026-03-06"
+  },
+  "UX-19": {
+    "model": "UX-19",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "Bullet Griffon H",
+    "last_updated": "2026-03-06"
+  },
+  "UX-00-001": {
+    "model": "UX-00-001",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "Dran Buster 藍色 亞洲冠軍紀念",
+    "last_updated": "2026-03-06"
+  },
+  "UX-00-002": {
+    "model": "UX-00-002",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "Dran Buster 藍色 FC Barcelona",
+    "last_updated": "2026-03-06"
+  },
+  "UX-00-003": {
+    "model": "UX-00-003",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "Hells Hammer FC Barcelona",
+    "last_updated": "2026-03-06"
+  },
+  "UX-00-004": {
+    "model": "UX-00-004",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "Wizard Rod FC Barcelona",
+    "last_updated": "2026-03-06"
+  },
+  "BX-01": {
+    "model": "BX-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Dran Sword 3-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-02": {
+    "model": "BX-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Hells Scythe 4-60T",
+    "last_updated": "2026-03-06"
+  },
+  "BX-03": {
+    "model": "BX-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Arrow 4-80B",
+    "last_updated": "2026-03-06"
+  },
+  "BX-04": {
+    "model": "BX-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Knight Shield 3-80N",
+    "last_updated": "2026-03-06"
+  },
+  "BX-05": {
+    "model": "BX-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Arrow 4-80B",
+    "last_updated": "2026-03-06"
+  },
+  "BX-06": {
+    "model": "BX-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Knight Shield 3-80N",
+    "last_updated": "2026-03-06"
+  },
+  "BX-07": {
+    "model": "BX-07",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Dran Sword 3-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-08-01": {
+    "model": "BX-08-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Knight Shield 4-80T",
+    "last_updated": "2026-03-06"
+  },
+  "BX-08-02": {
+    "model": "BX-08-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Arrow 4-60N",
+    "last_updated": "2026-03-06"
+  },
+  "BX-08-03": {
+    "model": "BX-08-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Hells Scythe 3-80B",
+    "last_updated": "2026-03-06"
+  },
+  "BX-13": {
+    "model": "BX-13",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Knight Lance 4-80HN",
+    "last_updated": "2026-03-06"
+  },
+  "BX-14-01": {
+    "model": "BX-14-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Shark Edge 3-60LF",
+    "last_updated": "2026-03-06"
+  },
+  "BX-14-02": {
+    "model": "BX-14-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Shark Edge 4-80N",
+    "last_updated": "2026-03-06"
+  },
+  "BX-14-03": {
+    "model": "BX-14-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Dran Sword 3-80B",
+    "last_updated": "2026-03-06"
+  },
+  "BX-14-04": {
+    "model": "BX-14-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Hells Scythe 4-80LF",
+    "last_updated": "2026-03-06"
+  },
+  "BX-14-05": {
+    "model": "BX-14-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Knight Shield 4-60LF",
+    "last_updated": "2026-03-06"
+  },
+  "BX-14-06": {
+    "model": "BX-14-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Wizard Arrow 3-60T",
+    "last_updated": "2026-03-06"
+  },
+  "BX-15": {
+    "model": "BX-15",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Leon Claw 5-60P",
+    "last_updated": "2026-03-06"
+  },
+  "BX-16-01": {
+    "model": "BX-16-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Viper Tail 5-80O",
+    "last_updated": "2026-03-06"
+  },
+  "BX-16-02": {
+    "model": "BX-16-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Viper Tail 4-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-16-03": {
+    "model": "BX-16-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Viper Tail 3-80HN",
+    "last_updated": "2026-03-06"
+  },
+  "BX-17-01": {
+    "model": "BX-17-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Dran Sword 3-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-17-02": {
+    "model": "BX-17-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Arrow 4-80B",
+    "last_updated": "2026-03-06"
+  },
+  "BX-19": {
+    "model": "BX-19",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Rhino Horn 3-80S",
+    "last_updated": "2026-03-06"
+  },
+  "BX-20-01": {
+    "model": "BX-20-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Dran Dagger 4-60R",
+    "last_updated": "2026-03-06"
+  },
+  "BX-20-02": {
+    "model": "BX-20-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Shark Edge 3-80F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-20-03": {
+    "model": "BX-20-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Knight Shield 5-80T",
+    "last_updated": "2026-03-06"
+  },
+  "BX-21-01": {
+    "model": "BX-21-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Hells Chain 5-60HT",
+    "last_updated": "2026-03-06"
+  },
+  "BX-21-02": {
+    "model": "BX-21-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Knight Lance 3-60LF",
+    "last_updated": "2026-03-06"
+  },
+  "BX-21-03": {
+    "model": "BX-21-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Arrow 4-80N",
+    "last_updated": "2026-03-06"
+  },
+  "BX-22": {
+    "model": "BX-22",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Dran Sword 3-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-23": {
+    "model": "BX-23",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Phoenix Wing 9-60GF",
+    "last_updated": "2026-03-06"
+  },
+  "BX-24-01": {
+    "model": "BX-24-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Wyvern Gale 5-80GB",
+    "last_updated": "2026-03-06"
+  },
+  "BX-24-02": {
+    "model": "BX-24-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Wyvern Gale 3-60T",
+    "last_updated": "2026-03-06"
+  },
+  "BX-24-03": {
+    "model": "BX-24-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Knight Lance 4-60GB",
+    "last_updated": "2026-03-06"
+  },
+  "BX-24-04": {
+    "model": "BX-24-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Viper Tail 5-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-24-05": {
+    "model": "BX-24-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Leon Claw 3-80HN",
+    "last_updated": "2026-03-06"
+  },
+  "BX-24-06": {
+    "model": "BX-24-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Arrow 4-80GB",
+    "last_updated": "2026-03-06"
+  },
+  "BX-26": {
+    "model": "BX-26",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Unicorn Sting 5-60GP",
+    "last_updated": "2026-03-06"
+  },
+  "BX-27-01": {
+    "model": "BX-27-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Sphinx Cowl 9-80GN",
+    "last_updated": "2026-03-06"
+  },
+  "BX-27-02": {
+    "model": "BX-27-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Sphinx Cowl 4-80HT",
+    "last_updated": "2026-03-06"
+  },
+  "BX-27-03": {
+    "model": "BX-27-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Sphinx Cowl 5-60O",
+    "last_updated": "2026-03-06"
+  },
+  "BX-31-01": {
+    "model": "BX-31-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Tyranno Beat 4-70Q",
+    "last_updated": "2026-03-06"
+  },
+  "BX-31-02": {
+    "model": "BX-31-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Tyranno Beat 3-60S",
+    "last_updated": "2026-03-06"
+  },
+  "BX-31-03": {
+    "model": "BX-31-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Hells Chain 9-80O",
+    "last_updated": "2026-03-06"
+  },
+  "BX-31-04": {
+    "model": "BX-31-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Dran Dagger 4-70P",
+    "last_updated": "2026-03-06"
+  },
+  "BX-31-05": {
+    "model": "BX-31-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Shark Edge 1-60Q",
+    "last_updated": "2026-03-06"
+  },
+  "BX-31-06": {
+    "model": "BX-31-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Rhino Horn 5-80Q",
+    "last_updated": "2026-03-06"
+  },
+  "BX-33": {
+    "model": "BX-33",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Weiss Tiger 3-60U",
+    "last_updated": "2026-03-06"
+  },
+  "BX-34": {
+    "model": "BX-34",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Cobalt Dragoon 2-60C",
+    "last_updated": "2026-03-06"
+  },
+  "BX-35-01": {
+    "model": "BX-35-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Black Shell 4-60D",
+    "last_updated": "2026-03-06"
+  },
+  "BX-35-02": {
+    "model": "BX-35-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×3",
+    "notes": "Black Shell 9-80B",
+    "last_updated": "2026-03-06"
+  },
+  "BX-35-03": {
+    "model": "BX-35-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Unicorn Sting 3-70D",
+    "last_updated": "2026-03-06"
+  },
+  "BX-35-04": {
+    "model": "BX-35-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wizard Rod 1-60R",
+    "last_updated": "2026-03-06"
+  },
+  "BX-35-05": {
+    "model": "BX-35-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Phoenix Wing 5-80H",
+    "last_updated": "2026-03-06"
+  },
+  "BX-35-06": {
+    "model": "BX-35-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Viper Tail 5-70D",
+    "last_updated": "2026-03-06"
+  },
+  "BX-36-01": {
+    "model": "BX-36-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Whale Wave 5-80E",
+    "last_updated": "2026-03-06"
+  },
+  "BX-36-02": {
+    "model": "BX-36-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Whale Wave 4-70HN",
+    "last_updated": "2026-03-06"
+  },
+  "BX-36-03": {
+    "model": "BX-36-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Whale Wave 3-80GB",
+    "last_updated": "2026-03-06"
+  },
+  "BX-37": {
+    "model": "BX-37",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Bear Scratch 5-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-38": {
+    "model": "BX-38",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Crimson Garuda 4-70TP",
+    "last_updated": "2026-03-06"
+  },
+  "BX-39-01": {
+    "model": "BX-39-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Shelter Drake 7-80GP",
+    "last_updated": "2026-03-06"
+  },
+  "BX-39-02": {
+    "model": "BX-39-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Shelter Drake 5-70O",
+    "last_updated": "2026-03-06"
+  },
+  "BX-39-03": {
+    "model": "BX-39-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×8",
+    "notes": "Shelter Drake 3-60D",
+    "last_updated": "2026-03-06"
+  },
+  "BX-44": {
+    "model": "BX-44",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Tricera Press M-85BS",
+    "last_updated": "2026-03-06"
+  },
+  "BX-45": {
+    "model": "BX-45",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Samurai Calibur 6-70M",
+    "last_updated": "2026-03-06"
+  },
+  "BX-46-01": {
+    "model": "BX-46-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Cobalt Drake 9-60R",
+    "last_updated": "2026-03-06"
+  },
+  "BX-46-02": {
+    "model": "BX-46-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Goat Tackle 7-70T",
+    "last_updated": "2026-03-06"
+  },
+  "BX-48-01": {
+    "model": "BX-48-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Cobalt Dragoon 9-80F",
+    "last_updated": "2026-03-06"
+  },
+  "BX-48-02": {
+    "model": "BX-48-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Shark Edge 4-70E",
+    "last_updated": "2026-03-06"
+  },
+  "BX-48-03": {
+    "model": "BX-48-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×4",
+    "notes": "Mammoth Tusk 7-60S",
+    "last_updated": "2026-03-06"
+  },
+  "BX-48-04": {
+    "model": "BX-48-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Hells Scythe 3-85GB",
+    "last_updated": "2026-03-06"
+  },
+  "BX-48-05": {
+    "model": "BX-48-05",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×5",
+    "notes": "Dran Buster 2-80Q",
+    "last_updated": "2026-03-06"
+  },
+  "BX-49": {
+    "model": "BX-49",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Dran Strike 4-50FF",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-01": {
+    "model": "BXG-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "朱雀戰神 25周年記念 紅色",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-02": {
+    "model": "BXG-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "銀牙獵犬 4-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-03": {
+    "model": "BXG-03",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "A",
+    "notes": "煉獄魔鐮 金色",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-04": {
+    "model": "BXG-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "青翼白虎 4-80P",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-05": {
+    "model": "BXG-05",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "A",
+    "notes": "獅王銳爪 金色",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-06": {
+    "model": "BXG-06",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "烈鯊利刃 5-60GF",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-07-01": {
+    "model": "BXG-07-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×12",
+    "notes": "雷霆魔龍 高空扣殺",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-07-02": {
+    "model": "BXG-07-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "×12",
+    "notes": "雷霆魔龍 連環攻擊",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-08": {
+    "model": "BXG-08",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "A",
+    "notes": "煉獄鎖鏈 5-60HT",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-09": {
+    "model": "BXG-09",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "鈷藍青龍 2-60C",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-11": {
+    "model": "BXG-11",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "青銅玄武 7-60D",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-12-01": {
+    "model": "BXG-12-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "暴風戰龍 4-60RA",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-12-02": {
+    "model": "BXG-12-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "烈風天馬 3-70RA",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-12-03": {
+    "model": "BXG-12-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "勝利武神 2-60RA",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-12-04": {
+    "model": "BXG-12-04",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "翔龍神劍 3-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-13": {
+    "model": "BXG-13",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "異界聖劍 3-60GF",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-14": {
+    "model": "BXG-14",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "J",
+    "notes": "翔龍雙刃 2-80GP 日本限定",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-15": {
+    "model": "BXG-15",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "朱雀戰神 3-80T",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-16": {
+    "model": "BXG-16",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "忍者刺刀",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-17-01": {
+    "model": "BXG-17-01",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Flat Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-17-02": {
+    "model": "BXG-17-02",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Taper Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-17-03": {
+    "model": "BXG-17-03",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Ball Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-17-04": {
+    "model": "BXG-17-04",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Needle Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-18": {
+    "model": "BXG-18",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "翔龍破壞劍 1-60A",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-19": {
+    "model": "BXG-19",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "煉獄惡鎚 3-70H",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-20": {
+    "model": "BXG-20",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "岩巖獅王 6-80GN",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-22": {
+    "model": "BXG-22",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "暴風戰龍 4-60RA",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-23": {
+    "model": "BXG-23",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "A",
+    "notes": "鈷藍魔龍 4-60F",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-24": {
+    "model": "BXG-24",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "A",
+    "notes": "翔空天馬 3-70A",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-25-01": {
+    "model": "BXG-25-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "翔龍破壞劍 3-70N",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-25-02": {
+    "model": "BXG-25-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "翔龍雙刃 9-60LF",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-25-03": {
+    "model": "BXG-25-03",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "翔龍神劍 4-80DB",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-29-01": {
+    "model": "BXG-29-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "鐵甲奇俠 4-80B Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-29-02": {
+    "model": "BXG-29-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "魁隆 4-60P Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-30-01": {
+    "model": "BXG-30-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "蜘蛛俠 3-60F Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-30-02": {
+    "model": "BXG-30-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "毒魔 3-80N Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-30-03": {
+    "model": "BXG-30-03",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "鐵甲奇俠 4-80B Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-30-04": {
+    "model": "BXG-30-04",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "魁隆 4-60P Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-31-01": {
+    "model": "BXG-31-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "J",
+    "notes": "翔龍破壞劍 黑色 J聯賽",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-31-02": {
+    "model": "BXG-31-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "J",
+    "notes": "翔龍破壞劍 紫色 J聯賽",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-31-03": {
+    "model": "BXG-31-03",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "J",
+    "notes": "翔龍破壞劍 黑色 J聯賽",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-32": {
+    "model": "BXG-32",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "狂象長牙 2-80E",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-33-01": {
+    "model": "BXG-33-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "路克天行者 4-80B Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-33-02": {
+    "model": "BXG-33-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "達斯維達 4-60P Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-34-01": {
+    "model": "BXG-34-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "曼達洛人 3-60F Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-34-02": {
+    "model": "BXG-34-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "星區長吉迪恩 3-80N Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-35": {
+    "model": "BXG-35",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "J",
+    "notes": "鳳凰飛翼 9-60LF 日本限定",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-36-01": {
+    "model": "BXG-36-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "柯柏文 4-60P Transformers",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-36-02": {
+    "model": "BXG-36-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "麥加登 4-80B Transformers",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-37-01": {
+    "model": "BXG-37-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "奧狄武 3-60F Transformers",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-37-02": {
+    "model": "BXG-37-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "星星叫 3-80N Transformers",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-38": {
+    "model": "BXG-38",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "獅王獠牙 T",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-39": {
+    "model": "BXG-39",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Wyvern Hover",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-40-01": {
+    "model": "BXG-40-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "暴龍節拍 1-80GB",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-40-02": {
+    "model": "BXG-40-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Tricera Spiky 9-60U",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-41-01": {
+    "model": "BXG-41-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "暴龍咆哮 3-85A",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-41-02": {
+    "model": "BXG-41-02",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "翼龍波動 4-55D",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-42": {
+    "model": "BXG-42",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "A",
+    "notes": "騎士護甲 3-85BS",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-43": {
+    "model": "BXG-43",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "A",
+    "notes": "巫師弧光 R4-55LO",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-45": {
+    "model": "BXG-45",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "天馬轟裂 A Tr",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-50-01": {
+    "model": "BXG-50-01",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Flat Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-50-02": {
+    "model": "BXG-50-02",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Taper Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-50-03": {
+    "model": "BXG-50-03",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Ball Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-50-04": {
+    "model": "BXG-50-04",
+    "price_jpy": 800,
+    "product_type": "bit",
+    "data_get": "A",
+    "notes": "Needle Bit",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-51": {
+    "model": "BXG-51",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "翔龍勇者 S6-60V",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-52": {
+    "model": "BXG-52",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "J",
+    "notes": "翔龍神劍 黑色 1-60V J聯賽",
+    "last_updated": "2026-03-06"
+  },
+  "BXG-53": {
+    "model": "BXG-53",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "J",
+    "notes": "鈷藍青龍 白色 9-60F J聯賽",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-03-01": {
+    "model": "BXA-03-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "美國隊長 4-70GB Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-03-02": {
+    "model": "BXA-03-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "紅浩克 1-80R Marvel",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-04-01": {
+    "model": "BXA-04-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "麥爾斯·莫拉雷斯 1-60GN",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-04-02": {
+    "model": "BXA-04-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "綠惡魔 9-80HT",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-05-01": {
+    "model": "BXA-05-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "歐比王·肯諾比 4-60P Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-05-02": {
+    "model": "BXA-05-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "格里弗斯將軍 3-80HN Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-06-01": {
+    "model": "BXA-06-01",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "丘巴卡 4-80LF Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXA-06-02": {
+    "model": "BXA-06-02",
+    "price_jpy": 2200,
+    "product_type": "limited",
+    "data_get": "通販",
+    "notes": "風暴兵 5-70B Star Wars",
+    "last_updated": "2026-03-06"
+  },
+  "BXC-01": {
+    "model": "BXC-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "鳳凰炎羽",
+    "last_updated": "2026-03-06"
+  },
+  "BXC-07": {
+    "model": "BXC-07",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Croco Crunch",
+    "last_updated": "2026-03-06"
+  },
+  "BXC-11": {
+    "model": "BXC-11",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Samurai Steel",
+    "last_updated": "2026-03-06"
+  },
+  "BXC-15": {
+    "model": "BXC-15",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "Orochi Cluster",
+    "last_updated": "2026-03-06"
+  },
+  "BXH-01": {
+    "model": "BXH-01",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "鈷藍魔龍",
+    "last_updated": "2026-03-06"
+  },
+  "BXH-10": {
+    "model": "BXH-10",
+    "price_jpy": 1391,
+    "product_type": "booster",
+    "data_get": "通販",
+    "notes": "翔空天馬",
+    "last_updated": "2026-03-06"
+  },
+  "BXH-14": {
+    "model": "BXH-14",
+    "price_jpy": 1600,
+    "product_type": "starter",
+    "data_get": "通販",
+    "notes": "戰神雷動 S",
+    "last_updated": "2026-03-06"
+  }
+}
