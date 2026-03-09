@@ -1,9 +1,13 @@
-
 // src/config/version.ts
 
-export const APP_VERSION_CURRENT = "v2.0.0"; // ✅ 確保這行有 export
+// ✅ 當前系統顯示的版本號
+export const APP_VERSION_CURRENT = "v2.0.2"; 
 
-export const APP_VERSION_DATA = [
+// ✅ 歷史版本紀錄 (供以後製作更新日誌 Modal 使用)
+export const APP_VERSION_HISTORY = [
+  { 
+    version: "v2.0.2", date: "2026-03-09", desc: "架構優化：完成語言包分離，修正過濾器數據映射邏輯，修復語言配置文件語法錯誤。"},
+  { version: "v2.0.1", date: "2026-03-08", desc: "核心架構重構：實現數據與 UI 徹底分離 (Component-Based)，優化 Intel 匹配算法，加入 Config 化語系管理。"},
   { version: "v2.0.0", date: "2026-03-08", desc: "V2.0 大改版：數據與 UI 徹底分離 (Hooks/Components)，新增收藏最愛功能" },
   { version: "v1.1.0", date: "2026-03-07", desc: "優化顯示介面、修復排版重疊與日夜切換卡頓問題" },
   { version: "v1.0.0", date: "2024-03-11", desc: "全新 UI 設計，現代化界面" },
