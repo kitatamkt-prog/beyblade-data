@@ -1,4 +1,3 @@
-// src/config/languages.ts
 export const LANGUAGES_DATA: Record<string, any> = {
   zh_hk: {
     SYSTEM: "BEYBLADE X 數據庫",
@@ -88,4 +87,4 @@ export const LANGUAGES_DATA: Record<string, any> = {
       jp: "国内限定"
     }
   }
-}; // ✅ 確保呢度有結尾括號
+};
