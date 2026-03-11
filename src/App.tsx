@@ -9,7 +9,7 @@ import { LANGUAGES_DATA } from './config/languages';
 export default function App() {
   const BASE_URL = import.meta.env.BASE_URL || "/";
   
-  // --- 1. States ---
+  // --- 狀態定義 ---
   const [lang, setLang] = useState("zh_hk");
   const [theme, setTheme] = useState("dark");
   const [products, setProducts] = useState<any[]>([]);
@@ -20,6 +20,11 @@ export default function App() {
   const [currentSeries, setCurrentSeries] = useState("all");
   const [currentGet, setCurrentGet] = useState("all");
   const [showFavOnly, setShowFavOnly] = useState(false);
+
+  // ✅ 核心修正：補回排序狀態
+  const [sortKey, setSortKey] = useState("model");   
+  const [sortOrder, setSortOrder] = useState("asc"); 
+
   const [favorites, setFavorites] = useState<string[]>(() => {
     const s = localStorage.getItem("bey_favs");
     return s ? JSON.parse(s) : [];
@@ -27,7 +32,7 @@ export default function App() {
 
   const ui = useMemo(() => LANGUAGES_DATA[lang] || LANGUAGES_DATA.zh_hk, [lang]);
 
-  // --- 2. Logic Helpers (定義在 return 之前) ---
+  // --- 工具函式 ---
   const getC = (p: any, key: string, l: string) => {
     if (!p) return "";
     return p[`${key}_${l}`] || p[`${key}_zh_hk`] || "";
@@ -35,8 +40,10 @@ export default function App() {
 
   const getDisplayName = (p: any, l: string) => {
     if (!p) return "";
-    const name = `${getC(p, 'chip', l)}${getC(p, 'main_blade', l)}${getC(p, 'assist_blade', l)}`;
-    return name.trim() || p.model;
+    if (p.chip_zh_hk || p.chip_en) {
+      return `${getC(p, 'chip', l)}${getC(p, 'main_blade', l)}${getC(p, 'assist_blade', l)}`.trim();
+    }
+    return p[`main_blade_${l}`] || p.main_blade_zh_hk || p.model;
   };
 
   const handleToggleFav = (e: any, model: string) => {
@@ -44,7 +51,7 @@ export default function App() {
     setFavorites(prev => prev.includes(model) ? prev.filter(m => m !== model) : [...prev, model]);
   };
 
-  // --- 3. Data Sync ---
+  // --- 數據加載 ---
   useEffect(() => {
     async function fetchData() {
       try {
@@ -60,28 +67,33 @@ export default function App() {
     localStorage.setItem("bey_favs", JSON.stringify(favorites));
   }, [favorites]);
 
-  // --- 4. Filter Logic ---
+  // --- 核心過濾與排序邏輯 (模仿 go-shoot 效率) ---
   const processedProducts = useMemo(() => {
-    return products.filter((p) => {
+    let filtered = products.filter((p) => {
       const name = getDisplayName(p, lang).toLowerCase();
       const matchesSearch = name.includes(searchTerm.toLowerCase()) || p.model.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesSeries = currentSeries === "all" || p.type === currentSeries;
-      
-      let matchesGet = false;
-      const g = p.data_get || "";
-      if (currentGet === "all") matchesGet = true;
-      else if (currentGet === "retail") matchesGet = (g === "通販");
-      else if (currentGet === "app") matchesGet = (g === "A");
-      else if (currentGet === "jp") matchesGet = (g === "J");
-      else if (currentGet === "set") matchesGet = g.includes('×');
-      else matchesGet = (g === currentGet);
-
+      let matchesGet = currentGet === "all" || (p.data_get && (
+        (currentGet === "retail" && p.data_get === "通販") ||
+        (currentGet === "app" && p.data_get === "A") ||
+        (currentGet === "jp" && p.data_get === "J") ||
+        (currentGet === "set" && p.data_get.includes('×'))
+      ));
       const matchesFav = !showFavOnly || favorites.includes(p.model);
       return matchesSearch && matchesSeries && matchesGet && matchesFav;
     });
-  }, [products, searchTerm, currentSeries, currentGet, showFavOnly, lang, favorites]);
 
-  if (loading) return <div className="h-screen flex items-center justify-center bg-black text-cyan-400 font-black italic">VER_2.0.1_STABLE...</div>;
+    // 執行排序
+    return [...filtered].sort((a, b) => {
+      const valA = String(a[sortKey] || "");
+      const valB = String(b[sortKey] || "");
+      return sortOrder === 'asc' 
+        ? valA.localeCompare(valB, undefined, { numeric: true })
+        : valB.localeCompare(valA, undefined, { numeric: true });
+    });
+  }, [products, searchTerm, currentSeries, currentGet, showFavOnly, lang, favorites, sortKey, sortOrder]);
+
+  if (loading) return <div className="h-screen flex items-center justify-center bg-black text-cyan-400 font-black italic select-none">SYSTEM_REBOOTING_v2.0.4...</div>;
 
   return (
     <div className={`min-h-screen transition-all ${theme === 'light' ? 'bg-white text-black' : 'bg-[#050505] text-cyan-50'}`}>
@@ -91,16 +103,20 @@ export default function App() {
         {activeTab === "ARSENAL" ? (
           <>
             <input 
-              id="search-box" name="search"
-              className="w-full bg-transparent border-b-2 p-5 mb-6 font-black text-xl outline-none border-current opacity-70"
+              className="w-full bg-transparent border-b-2 p-5 mb-6 font-black text-xl outline-none border-current opacity-70 focus:opacity-100 transition-all"
               placeholder={ui.QUERY} value={searchTerm} onChange={e => setSearchTerm(e.target.value)} 
             />
             <FilterSortBar 
               currentSeries={currentSeries} currentGet={currentGet} showFavOnly={showFavOnly}
               getMethods={ui.GET_METHODS} uiStrings={ui} theme={theme}
-              onSeriesChange={setCurrentSeries} onGetChange={setCurrentGet} onFavToggle={() => setShowFavOnly(!showFavOnly)} onSort={()=>{}}
+              sortKey={sortKey} sortOrder={sortOrder}
+              onSeriesChange={setCurrentSeries} onGetChange={setCurrentGet} onFavToggle={() => setShowFavOnly(!showFavOnly)} 
+              onSort={(key: string) => {
+                if (sortKey === key) setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+                else { setSortKey(key); setSortOrder('asc'); }
+              }}
             />
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               {processedProducts.map(p => (
                 <ProductCard key={p.model} product={p} lang={lang} theme={theme} isFav={favorites.includes(p.model)} onToggleFav={handleToggleFav} onClick={() => setSelectedProduct(p)} getDisplayName={getDisplayName} />
               ))}
@@ -115,11 +131,12 @@ export default function App() {
         <DetailModal product={selectedProduct} lang={lang} theme={theme} isFav={favorites.includes(selectedProduct.model)} onToggleFav={handleToggleFav} onClose={() => setSelectedProduct(null)} getDisplayName={getDisplayName} getC={getC} uiStrings={ui} />
       )}
 
-      {/* Footer Tabs */}
+      {/* 底部 Tab */}
       <div className={`fixed bottom-0 left-0 right-0 border-t-2 flex justify-around p-3 z-[100] backdrop-blur-md ${theme === 'light' ? 'bg-white border-black' : 'bg-black border-cyan-900/50'}`}>
-        <button onClick={() => setActiveTab("ARSENAL")} className={`font-black uppercase px-6 py-2 transition-all ${activeTab === "ARSENAL" ? 'text-cyan-400' : 'opacity-40'}`}>{ui.ARSENAL}</button>
-        <button onClick={() => setActiveTab("INTEL")} className={`font-black uppercase px-6 py-2 transition-all ${activeTab === "INTEL" ? 'text-cyan-400' : 'opacity-40'}`}>{ui.INTEL}</button>
+        <button onClick={() => setActiveTab("ARSENAL")} className={`font-black uppercase px-6 py-2 transition-all ${activeTab === "ARSENAL" ? 'text-cyan-400 shadow-glow' : 'opacity-40'}`}>{ui.ARSENAL}</button>
+        <button onClick={() => setActiveTab("INTEL")} className={`font-black uppercase px-6 py-2 transition-all ${activeTab === "INTEL" ? 'text-cyan-400 shadow-glow' : 'opacity-40'}`}>{ui.INTEL}</button>
       </div>
+      <style>{`.shadow-glow { filter: drop-shadow(0 0 8px rgba(0, 242, 255, 0.5)); }`}</style>
     </div>
   );
 }
